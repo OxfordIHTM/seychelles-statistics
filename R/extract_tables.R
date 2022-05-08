@@ -8,6 +8,10 @@
 #
 ################################################################################
 
+# extract_tables_pdf <- function(filename) {
+#   tabulizer::extract_tables(file = filename)
+# }
+
 extract_tables_pdf <- function(filename) {
-  tabulizer::extract_tables(file = filename)
+  pdftools::pdf_text(filename)
 }

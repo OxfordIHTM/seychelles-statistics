@@ -35,4 +35,5 @@ library(mapboxapi)
 #
 ################################################################################
 
-library(tabulizer)
+#library(tabulizer)
+library(pdftools)

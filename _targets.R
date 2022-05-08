@@ -48,10 +48,10 @@ extract_tables <- tar_plan(
 raw_data <- tar_plan(
   ##
   raw_midyear_demo_2021 = structure_midyear_demo_2021(
-    extracted_tables_midyear[[4]]
+    extracted_tables_midyear[[8]]
   ),
   raw_endyear_demo_2021 = structure_endyear_demo_2021(
-    extracted_tables_endyear[[6]]
+    extracted_tables_endyear[[7]]
   )
 )
 

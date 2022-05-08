@@ -21,7 +21,7 @@ jobs:
       - name: Install system dependencies
         run: |
           apt-get update && apt-get install -y --no-install-recommends \
-          git-crypt libxt6 libglpk-dev r-cran-rjava
+          git-crypt libxt6 libglpk-dev
       
       - name: Trust git repo
         run: |
