@@ -4,6 +4,8 @@
 .Ruserdata
 #data
 #!data/.gitkeep
-#outputs
-#!outputs/.gitkeep
+#pdf
+#!pdf/.gitkeep
+outputs
+!outputs/.gitkeep
 _targets

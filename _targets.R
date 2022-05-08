@@ -22,7 +22,7 @@ download_data <- tar_plan(
   download_list_population = get_downloads_population(download_list),
   download_year_latest = basename(download_list_population) |> max(),
   download_files_path_population = download_files_population(
-    download_list_population, year = download_year_latest, path = "data"
+    download_list_population, year = download_year_latest, path = "pdf"
   ),
   download_file_path_midyear = download_files_path_population$file_name |> 
     stringr::str_detect(pattern = "mid") |> 
