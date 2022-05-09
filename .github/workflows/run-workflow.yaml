@@ -1,16 +1,16 @@
-name: test S3M workflow
+name: run workflow
 
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
+  # push:
+  #   branches: [main, master]
+  # pull_request:
+  #   branches: [main, master]
   workflow_dispatch:
     branches:
       - '*'
 
 jobs:
-  test-S3M-workflow:
+  run-workflow:
     runs-on: ubuntu-latest
     container: rocker/geospatial:4.2.0
     env:
@@ -22,10 +22,10 @@ jobs:
         run: |
           apt-get update && apt-get install -y --no-install-recommends \
           git-crypt libxt6 libglpk-dev libpoppler-cpp-dev
-          
+      
       - name: Trust git repo
         run: |
-          git config --global --add safe.directory /__w/seychelles-statistics/seychelles-statistics
+          git config --global --add safe.directory /__w/seychelles-statistics/seychelles-statistics      
           
       - name: Decrypt repository using symmetric key
         run: |
