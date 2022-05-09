@@ -29,17 +29,28 @@ download_data <- tar_plan(
     (\(x) download_files_path_population$file_path[x])(),
   download_file_path_endyear = download_files_path_population$file_name |> 
     stringr::str_detect(pattern = "end") |> 
-    (\(x) download_files_path_population$file_path[x])()
+    (\(x) download_files_path_population$file_path[x])(),
+  download_files_path_population_2021 = download_files_population(
+    download_list_population, year = "2021", path = "pdf"
+  ),
+  download_file_path_midyear_2021 = download_files_path_population_2021 |>
+    (\(x) x$file_name)() |>
+    stringr::str_detect(pattern = "mid") |> 
+    (\(x) download_files_path_population_2021$file_path[x])(),
+  download_file_path_endyear_2021 = download_files_path_population |>
+    (\(x) x$file_name)() |>
+    stringr::str_detect(pattern = "end") |> 
+    (\(x) download_files_path_population_2021$file_path[x])()
 )
 
 
 ## Extract tables
 extract_tables <- tar_plan(
-  extracted_tables_midyear = extract_tables_pdf(
-    filename = download_file_path_midyear
+  extracted_tables_midyear_2021 = extract_tables_pdf(
+    filename = download_file_path_midyear_2021
   ),
-  extracted_tables_endyear = extract_tables_pdf(
-    filename = download_file_path_endyear
+  extracted_tables_endyear_2021 = extract_tables_pdf(
+    filename = download_file_path_endyear_2021
   )
 )
 
@@ -48,10 +59,22 @@ extract_tables <- tar_plan(
 raw_data <- tar_plan(
   ##
   raw_midyear_demo_2021 = structure_midyear_demo_2021(
-    extracted_tables_midyear[[8]]
+    extracted_tables_midyear_2021[[8]]
   ),
   raw_endyear_demo_2021 = structure_endyear_demo_2021(
-    extracted_tables_endyear[[7]]
+    extracted_tables_endyear_2021[[7]]
+  ),
+  raw_midyear_pop_change_2021 = structure_midyear_pop_change_2021(
+    extracted_tables_midyear_2021[[9]]
+  ),
+  raw_endyear_pop_change_2021 = structure_endyear_pop_change_2021(
+    extracted_tables_endyear_2021[[10]]
+  ),
+  raw_endyear_demo_rates_2021 = structure_endyear_demo_rates_2021(
+    extracted_tables_endyear_2021[[8]]
+  ),
+  raw_midyear_population_by_age_2021 = structure_midyear_population_by_age_2021(
+    extracted_tables_midyear_2021[[11]]
   )
 )
 
@@ -71,6 +94,31 @@ analysis <- tar_plan(
 ## Outputs
 outputs <- tar_plan(
   ##
+  raw_midyear_demo_2021_csv = write.csv(
+    x = raw_midyear_demo_2021, 
+    file = "data/midyear_demographics_2021.csv", 
+    row.names = FALSE
+  ),
+  raw_endyear_demo_2021_csv = write.csv(
+    x = raw_endyear_demo_2021,
+    file = "data/endyear_demographics_2021.csv",
+    row.names = FALSE
+  ),
+  raw_midyear_pop_change_2021_csv = write.csv(
+    x = raw_midyear_pop_change_2021,
+    file = "data/midyear_population_change_2021.csv",
+    row.names = FALSE
+  ),
+  raw_endyear_pop_change_2021_csv = write.csv(
+    x = raw_endyear_pop_change_2021,
+    file = "data/endyear_population_change_2021.csv",
+    row.names = FALSE
+  ),
+  raw_midyear_population_by_age_2021_csv = write.csv(
+    x = raw_midyear_population_by_age_2021,
+    file = "data/midyear_population_by_age_2021.csv",
+    row.names = FALSE
+  )
 )
 
 
