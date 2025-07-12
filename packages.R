@@ -12,6 +12,8 @@ library(here)
 library(rmarkdown)
 library(knitr)
 library(kableExtra)
+library(tibble)
+library(dplyr)
 
 
 ################################################################################

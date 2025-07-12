@@ -343,3 +343,163 @@ structure_midyear_population_by_age_2021 <- function(data_table) {
   rbind(y, z) |>
     (\(x) x[1:nrow(x) - 1, ])()
 }
+
+
+structure_midyear_population_by_age_2021 <- function(data_table) {
+  ## Set 1
+  set1 <- rbind(
+    matrix(data = data_table$text[19:90], ncol = 12), 
+    matrix(data = data_table$text[91:162], ncol = 12), 
+    matrix(data = data_table$text[163:234], ncol = 12), 
+    matrix(data = data_table$text[235:306], ncol = 12)
+  )
+  
+  set2 <- rbind(
+    matrix(data = data_table$text[307:354], ncol = 8),
+    matrix(data = data_table$text[359:406], ncol = 8)
+  )
+  
+  set3 <- cbind(
+    matrix(data = data_table$text[407:424], byrow = TRUE, ncol = 3),
+    matrix(data = data_table$text[430:435], byrow = TRUE, ncol = 1)
+  )
+  
+  set4 <- matrix(data = data_table$text[436:459], ncol = 4)
+  
+  set5 <- matrix(data = data_table$text[355:358], ncol = 4)
+  
+  full_table <- rbind(
+    set1[ , 1:4], set2[ , 1:4], set3, set1[ , 5:8], set2[ , 5:8], set4,
+    set1[ , 9:12], set5
+  )
+  
+  full_table[!seq_len(nrow(full_table)) %in% seq(from = 6, to = nrow(full_table), by = 6), ] |>
+    data.frame() |>
+    (\(x) { names(x) <- c("age", "male", "female", "total"); x })() |>
+    dplyr::mutate(
+      male = stringr::str_remove_all(male, pattern = ",") |> 
+        stringr::str_replace(pattern = "‐", replacement = "-") |>
+        as.integer(),
+      female = stringr::str_remove_all(female, pattern = ",") |> as.integer(),
+      total = stringr::str_remove_all(total, pattern = ",") |> as.integer()
+    )
+}
+
+
+structure_midyear_population_by_age_2020 <- function(data_table) {
+  ## Set 1
+  set1 <- rbind(
+    matrix(data = data_table$text[17:88], ncol = 12), 
+    matrix(data = data_table$text[89:160], ncol = 12), 
+    matrix(data = data_table$text[161:232], ncol = 12), 
+    matrix(data = data_table$text[233:304], ncol = 12)
+  )
+  
+  set2 <- rbind(
+    matrix(data = data_table$text[305:352], ncol = 8),
+    matrix(data = data_table$text[357:404], ncol = 8)
+  )
+  
+  set3 <- cbind(
+    matrix(data = data_table$text[405:422], byrow = TRUE, ncol = 3),
+    matrix(data = data_table$text[428:433], byrow = TRUE, ncol = 1)
+  )
+  
+  set4 <- matrix(data = data_table$text[434:457], ncol = 4)
+  
+  set5 <- matrix(data = data_table$text[353:356], ncol = 4)
+  
+  full_table <- rbind(
+    set1[ , 1:4], set2[ , 1:4], set3, set1[ , 5:8], set2[ , 5:8], set4,
+    set1[ , 9:12], set5
+  )
+  
+  full_table[!seq_len(nrow(full_table)) %in% seq(from = 6, to = nrow(full_table), by = 6), ] |>
+    data.frame() |>
+    (\(x) { names(x) <- c("age", "male", "female", "total"); x })() |>
+    dplyr::mutate(
+      male = stringr::str_remove_all(male, pattern = ",") |> 
+        stringr::str_replace(pattern = "‐", replacement = "-") |>
+        as.integer(),
+      female = stringr::str_remove_all(female, pattern = ",") |> as.integer(),
+      total = stringr::str_remove_all(total, pattern = ",") |> as.integer()
+    )
+}
+
+
+structure_midyear_population_by_age_2019 <- function(data_table) {
+  ## Set 1
+  set1 <- rbind(
+    matrix(data = data_table$text[17:88], ncol = 12), 
+    matrix(data = data_table$text[89:160], ncol = 12), 
+    matrix(data = data_table$text[161:232], ncol = 12), 
+    matrix(data = data_table$text[233:304], ncol = 12)
+  )
+  
+  set2 <- rbind(
+    matrix(data = data_table$text[305:352], ncol = 8),
+    matrix(data = data_table$text[357:404], ncol = 8)
+  )
+  
+  set3 <- cbind(
+    matrix(data = data_table$text[405:422], byrow = TRUE, ncol = 3),
+    matrix(data = data_table$text[428:433], byrow = TRUE, ncol = 1)
+  )
+  
+  set4 <- matrix(data = data_table$text[434:457], ncol = 4)
+  
+  set5 <- matrix(data = data_table$text[353:356], ncol = 4)
+  
+  full_table <- rbind(
+    set1[ , 1:4], set2[ , 1:4], set3, set1[ , 5:8], set2[ , 5:8], set4,
+    set1[ , 9:12], set5
+  )
+  
+  full_table[!seq_len(nrow(full_table)) %in% seq(from = 6, to = nrow(full_table), by = 6), ] |>
+    data.frame() |>
+    (\(x) { names(x) <- c("age", "male", "female", "total"); x })() |>
+    dplyr::mutate(
+      male = stringr::str_remove_all(male, pattern = ",") |> 
+        stringr::str_replace(pattern = "‐", replacement = "-") |>
+        as.integer(),
+      female = stringr::str_remove_all(female, pattern = ",") |> as.integer(),
+      total = stringr::str_remove_all(total, pattern = ",") |> as.integer()
+    )
+}
+
+
+structure_midyear_population_by_age_2018 <- function(data_table) {
+  ## Set 1
+  set1 <- rbind(
+    matrix(data = data_table$text[19:90], ncol = 12), 
+    matrix(data = data_table$text[91:162], ncol = 12), 
+    matrix(data = data_table$text[163:234], ncol = 12), 
+    matrix(data = data_table$text[235:306], ncol = 12)
+  )
+  
+  set2 <- rbind(
+    matrix(data = data_table$text[307:354], ncol = 8),
+    matrix(data = data_table$text[359:406], ncol = 8)
+  )
+  
+  set3 <- matrix(data = data_table$text[407:454], ncol = 8)
+  
+  set4 <- matrix(data = data_table$text[355:358], ncol = 4)
+  
+  full_table <- rbind(
+    set1[ , 1:4], set2[ , 1:4], set3[ , 1:4], set1[ , 5:8], set2[ , 5:8], set3[ , 5:8],
+    set1[ , 9:12], set4
+  )
+  
+  full_table[!seq_len(nrow(full_table)) %in% seq(from = 6, to = nrow(full_table), by = 6), ] |>
+    data.frame() |>
+    (\(x) { names(x) <- c("age", "male", "female", "total"); x })() |>
+    dplyr::mutate(
+      male = stringr::str_remove_all(male, pattern = ",") |> 
+        stringr::str_replace(pattern = "‐", replacement = "-") |>
+        as.integer(),
+      female = stringr::str_remove_all(female, pattern = ",") |> as.integer(),
+      total = stringr::str_remove_all(total, pattern = ",") |> as.integer()
+    )
+}
+

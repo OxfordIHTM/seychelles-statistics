@@ -1,43 +1,48 @@
-################################################################################
-#
 #'
 #' Download population and vital statistics bulletins by year
 #' 
 #' @param download_list_population List of URLs for population and vital
 #'   statistics downloads
-#' @param year Year of population and vital statistics bulletins to be
-#'   downloaded
 #' @param path Directory to save downloaded file/s into. If NULL, path is
 #'   set to a tempdir().
 #'   
 #'
-#
-################################################################################
 
-download_files_population <- function(download_list_population, 
-                                      year, path = NULL) {
-  download_urls <- download_list_population|>
-    stringr::str_detect(pattern = year) |>
-    (\(x) download_list_population[x])() |>
-    get_downloads_manifest()
-  
-  download_file_names <- stringr::str_split(
-    download_urls, pattern = "/", simplify = TRUE
+download_files_population <- function(download_population_list, 
+                                      path = NULL) {
+  ## Create download filenames
+  download_file_names <- ifelse(
+    stringr::str_detect(
+      download_population_list$name, 
+      pattern = "[0-9]{4}"
+    ),
+    stringr::str_split(
+      download_population_list$link, pattern = "/", simplify = TRUE
+    ) |>
+      (\(x) x[ , 5])(),
+    stringr::str_split(
+      download_population_list$link, pattern = "/", simplify = TRUE
+    ) |>
+      (\(x) paste(x[ , 5], download_population_list$year, sep = "-"))()
   ) |>
-    (\(x) paste0(x[ , 5], ".pdf"))()
+    (\(x) paste0(x, ".pdf"))()
   
   if (is.null(path)) {
-    destfile <- paste0(tempdir(), "/", download_file_names)
+    destfile <- file.path(tempdir(), download_file_names)
   } else {
-    destfile <- paste0(path, "/", download_file_names)
+    destfile <- file.path(path, download_file_names)
   }
   
   Map(
     f = download.file,
-    url = download_urls,
+    url = download_population_list$link,
     destfile = destfile
   )
   
-  tibble::tibble(download_file_names, destfile) |>
-    (\(x) { names(x) <- c("file_name", "file_path"); x })()
+  tibble::tibble(
+    download_population_list, 
+    file_path = destfile
+  )
 }
+
+

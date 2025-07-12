@@ -1,55 +1,56 @@
-################################################################################
-#
-# Project build script
-#
-################################################################################
+# Project build script ---------------------------------------------------------
 
-# Load packages (in packages.R) and load project-specific functions in R folder
+## Load packages and load project-specific functions in R folder ----
 suppressPackageStartupMessages(source("packages.R"))
 for (f in list.files(here::here("R"), full.names = TRUE)) source (f)
 
 
-# Set build options ------------------------------------------------------------
+## Set build options ----
 
 
+## Targets ----
 
-# Groups of targets ------------------------------------------------------------
+### Downloads ----
 
-## Downloads
 download_data <- tar_plan(
-  ## Get downloads page list
-  download_list = get_downloads_manifest(url = "https://nbs.gov.sc/downloads"),
-  download_list_population = get_downloads_population(download_list),
-  download_year_latest = basename(download_list_population) |> max(),
-  download_files_path_population = download_files_population(
-    download_list_population, year = download_year_latest, path = "pdf"
-  ),
-  download_file_path_midyear = download_files_path_population$file_name |> 
-    stringr::str_detect(pattern = "mid") |> 
-    (\(x) download_files_path_population$file_path[x])(),
-  download_file_path_endyear = download_files_path_population$file_name |> 
-    stringr::str_detect(pattern = "end") |> 
-    (\(x) download_files_path_population$file_path[x])(),
-  download_files_path_population_2021 = download_files_population(
-    download_list_population, year = "2021", path = "pdf"
-  ),
-  download_file_path_midyear_2021 = download_files_path_population_2021 |>
-    (\(x) x$file_name)() |>
-    stringr::str_detect(pattern = "mid") |> 
-    (\(x) download_files_path_population_2021$file_path[x])(),
-  download_file_path_endyear_2021 = download_files_path_population |>
-    (\(x) x$file_name)() |>
-    stringr::str_detect(pattern = "end") |> 
-    (\(x) download_files_path_population_2021$file_path[x])()
+  ## Get population and vital statistics downloads list
+  download_population_list = get_download_census(),
+  download_population_pdfs = download_files_population(
+    download_population_list, path = "pdf"
+  )
 )
 
 
 ## Extract tables
 extract_tables <- tar_plan(
+  extracted_pdf_text = extract_pdfs_text(
+    file_path = download_population_pdfs$file_path
+  ),
+  extracted_pdf_data = extract_pdfs_data(
+    file_path = download_population_pdfs$file_path
+  ),
   extracted_tables_midyear_2021 = extract_tables_pdf(
     filename = download_file_path_midyear_2021
   ),
+  extracted_tables_data_midyear_2021 = extract_tables_data_pdf(
+    filename = download_file_path_midyear_2021
+  ),
+  extracted_tables_data_midyear_2020 = extract_tables_data_pdf(
+    filename = download_file_path_midyear_2020
+  ),
+  extracted_tables_data_midyear_2019 = extract_tables_data_pdf(
+    filename = download_file_path_midyear_2019
+  ),
+  extracted_tables_data_midyear_2018 = extract_tables_data_pdf(
+    filename = download_file_path_midyear_2018
+  ),
+  extracted_tables_data_midyear_2017 = extract_tables_data_pdf(
+    filename = download_file_path_midyear_2017
+  ),
   extracted_tables_endyear_2021 = extract_tables_pdf(
+    filename = download_file_path_endyear_2021
+  ),
+  extracted_tables_data_endyear_2021 = extract_tables_data_pdf(
     filename = download_file_path_endyear_2021
   )
 )
@@ -74,7 +75,16 @@ raw_data <- tar_plan(
     extracted_tables_endyear_2021[[8]]
   ),
   raw_midyear_population_by_age_2021 = structure_midyear_population_by_age_2021(
-    extracted_tables_midyear_2021[[11]]
+    extracted_tables_data_midyear_2021[[11]]
+  ),
+  raw_midyear_population_by_age_2020 = structure_midyear_population_by_age_2020(
+    extracted_tables_data_midyear_2020[[10]]
+  ),
+  raw_midyear_population_by_age_2019 = structure_midyear_population_by_age_2019(
+    extracted_tables_data_midyear_2019[[10]]
+  ),
+  raw_midyear_population_by_age_2018 = structure_midyear_population_by_age_2018(
+    extracted_tables_data_midyear_2018[[10]]
   )
 )
 
