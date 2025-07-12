@@ -1,31 +1,44 @@
 #'
 #' Download population and vital statistics bulletins by year
 #' 
-#' @param download_list_population List of URLs for population and vital
-#'   statistics downloads
+#' @param download_census_documents_links A data.frame for population and vital
+#'   statistics documents downloads
+#' @param src
+#' @param file_type
 #' @param path Directory to save downloaded file/s into. If NULL, path is
-#'   set to a tempdir().
+#'   set to a [tempdir()].
 #'   
 #'
 
-download_files_population <- function(download_population_list, 
-                                      path = NULL) {
+download_files_census <- function(download_census_documents_links,
+                                  src = NULL,
+                                  file_type = NULL,
+                                  path = NULL) {
+  if (is.null(src)) {
+    if (is.null(file_type)) {
+      download_links <- download_census_documents_links
+    } else {
+      download_links <- download_census_documents_links |>
+        dplyr::filter(
+          stringr::str_detect(string = filename, pattern = file_type)
+        )
+    }
+  } else {
+    download_links <- download_census_documents_links |>
+      dplyr::filter(stringr::str_detect(string = name, pattern = src))
+
+    if (is.null(file_type)) {
+      download_links <- download_links
+    } else {
+      download_links <- download_links |>
+        dplyr::filter(
+          stringr::str_detect(string = filename, pattern = file_type)
+        )
+    }
+  }
+  
   ## Create download filenames
-  download_file_names <- ifelse(
-    stringr::str_detect(
-      download_population_list$name, 
-      pattern = "[0-9]{4}"
-    ),
-    stringr::str_split(
-      download_population_list$link, pattern = "/", simplify = TRUE
-    ) |>
-      (\(x) x[ , 5])(),
-    stringr::str_split(
-      download_population_list$link, pattern = "/", simplify = TRUE
-    ) |>
-      (\(x) paste(x[ , 5], download_population_list$year, sep = "-"))()
-  ) |>
-    (\(x) paste0(x, ".pdf"))()
+  download_file_names <- download_links$filename
   
   if (is.null(path)) {
     destfile <- file.path(tempdir(), download_file_names)
@@ -35,12 +48,12 @@ download_files_population <- function(download_population_list,
   
   Map(
     f = download.file,
-    url = download_population_list$link,
+    url = download_links$url,
     destfile = destfile
   )
   
   tibble::tibble(
-    download_population_list, 
+    download_links, 
     file_path = destfile
   )
 }

@@ -13,8 +13,7 @@
 #'
 
 get_download_category_links <- function(url) {
-  base_url <- dirname(url)
-
+  base_url <- "https://www.nbs.gov.sc"
   current_session <- rvest::session(url)
 
   current_elements <- current_session |>
@@ -22,17 +21,18 @@ get_download_category_links <- function(url) {
 
   if (length(current_elements) != 0) {
     labs <- current_elements |>
-      rvest::html_text() #|>
-      # stringr::str_remove_all(
-      #   pattern = "\\( [0-9]{1,} Documents \\)|\\( [0-9]{1,} Document \\)"
-      # ) |>
-      # trimws()
+      rvest::html_text() |>
+      trimws()
 
     links <- current_elements |>
       rvest::html_attr(name = "href") |>
       (\(x) paste0(base_url, x))()
     
-    names(links) <- labs
+    links <- data.frame(
+      name = labs,
+      url = links,
+      is_folder = TRUE
+    )
   } else {
     links <- NULL
   }
@@ -45,7 +45,7 @@ get_download_category_links <- function(url) {
 #' 
 
 get_download_document_links <- function(url) {
-  base_url <- dirname(url)
+  base_url <- "https://www.nbs.gov.sc"
 
   current_session <- rvest::session(url)
 
@@ -54,61 +54,55 @@ get_download_document_links <- function(url) {
 
   if (length(current_elements) != 0) {
     labs <- current_elements |>
-      rvest::html_text() #|>
-      #trimws()
+      rvest::html_text() |>
+      trimws()
 
     links <- current_elements |>
       rvest::html_attr(name = "href") |>
       (\(x) paste0(base_url, x))()
 
-    names(links) <- labs
+    filenames <- links |>
+      lapply(
+        FUN = function(x) {
+          h <- httr::HEAD(x) |>
+            httr::headers()
+          h$`content-disposition` |>
+            stringr::str_split(pattern = "; ", simplify = TRUE) |>
+            (\(x) x[1, 2])() |>
+            stringr::str_remove_all(pattern = 'filename=|\\"')
+        }
+      ) |>
+      unlist()
+
+    links <- tibble::tibble(
+      name = labs,
+      filename = filenames,
+      url = links,
+      is_folder = FALSE
+    )
   } else {
     links <- NULL
   }
-
+  
   links
 }
-
 
 #'
 #' @rdname get_download
 #' 
 
-get_download_links <- function(url = "https://nbs.gov.sc/downloads") {
+get_download_census_links <- function(url) {
   category_links <- get_download_category_links(url = url)
   document_links <- get_download_document_links(url = url)
 
-  if (!is.null(category_links)) {
-    for (i in seq_len(length(category_links))) {
-      current_url <- category_links[i]
-      get_download_links(url = current_url)
-    }
-  } else {
-    links <- c(category_links, document_links)
-  }
+  ## GIS maps ----
+  gis_map_links <- get_download_document_links(url = category_links$url[1])
+  pop_stats_links <- get_download_category_links(url = category_links$url[2]) |>
+    (\(x) x$url)() |>
+    lapply(FUN = get_download_document_links) |>
+    dplyr::bind_rows()
 
-  links
+  rbind(gis_map_links, pop_stats_links, document_links)
 }
 
-
-#'
-#' @rdname get_download
-#'
-
-get_download_census <- function(url) {
-  x <- 
-  
-  y <- lapply(x$`Population and Vital Statistics`, get_download_links) |>
-    lapply(utils::stack) |>
-    dplyr::bind_rows(.id = "year") |>
-    (\(x)
-      data.frame(
-        year = as.integer(x$year),
-        name = as.character(x$ind),
-        link = x$values
-      )
-    )()
-  
-  tibble::tibble(category = names(x), y)
-}
 
