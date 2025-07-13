@@ -1,0 +1,217 @@
+"year","island","island_code","region","region_code","district","district_code","total"
+"2017","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",3011
+"2017","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",4422
+"2017","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3255
+"2017","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3382
+"2017","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",NA
+"2017","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",3603
+"2017","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",3985
+"2017","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2811
+"2017","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",3406
+"2017","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4057
+"2017","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",4461
+"2017","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",4392
+"2017","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",4497
+"2017","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3236
+"2017","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",2977
+"2017","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",4227
+"2017","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",3802
+"2017","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",3273
+"2017","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",2711
+"2017","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",4971
+"2017","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",4342
+"2017","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",3908
+"2017","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4039
+"2017","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",5139
+"2017","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",3928
+"2017","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",2910
+"2017","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",1098
+"2018","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",2936
+"2018","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",3704
+"2018","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3141
+"2018","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3212
+"2018","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",4545
+"2018","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",3388
+"2018","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",3939
+"2018","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2696
+"2018","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",2880
+"2018","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4198
+"2018","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",4274
+"2018","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",4624
+"2018","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",3776
+"2018","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3186
+"2018","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",2825
+"2018","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",4057
+"2018","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",3917
+"2018","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",3536
+"2018","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",3055
+"2018","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",4891
+"2018","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",3985
+"2018","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",3961
+"2018","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",3981
+"2018","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",4744
+"2018","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",3842
+"2018","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",2900
+"2018","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",569
+"2019","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",2963
+"2019","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",3737
+"2019","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3169
+"2019","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3241
+"2019","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",4586
+"2019","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",3418
+"2019","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",3974
+"2019","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2720
+"2019","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",2905
+"2019","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4236
+"2019","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",4312
+"2019","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",4665
+"2019","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",3810
+"2019","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3215
+"2019","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",2850
+"2019","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",4093
+"2019","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",3951
+"2019","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",3568
+"2019","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",3082
+"2019","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",4935
+"2019","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",4020
+"2019","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",3996
+"2019","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4016
+"2019","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",4786
+"2019","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",3876
+"2019","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",2926
+"2019","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",574
+"2020","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",2988
+"2020","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",3769
+"2020","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3196
+"2020","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3269
+"2020","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",4625
+"2020","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",3447
+"2020","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",4008
+"2020","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2743
+"2020","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",2930
+"2020","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4272
+"2020","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",4349
+"2020","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",4705
+"2020","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",3842
+"2020","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3242
+"2020","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",2874
+"2020","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",4128
+"2020","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",3985
+"2020","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",3599
+"2020","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",3109
+"2020","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",4977
+"2020","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",4055
+"2020","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",4031
+"2020","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4050
+"2020","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",4827
+"2020","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",3910
+"2020","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",2951
+"2020","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",579
+"2021","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",3010
+"2021","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",3797
+"2021","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3220
+"2021","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3293
+"2021","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",4660
+"2021","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",3473
+"2021","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",4039
+"2021","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2765
+"2021","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",2952
+"2021","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4304
+"2021","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",4382
+"2021","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",4741
+"2021","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",3871
+"2021","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3267
+"2021","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",2896
+"2021","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",4159
+"2021","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",4015
+"2021","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",3626
+"2021","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",3132
+"2021","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",5015
+"2021","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",4085
+"2021","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",4061
+"2021","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4081
+"2021","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",4863
+"2021","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",3939
+"2021","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",2973
+"2021","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",583
+"2022","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",3129
+"2022","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",4236
+"2022","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3383
+"2022","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3692
+"2022","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",6209
+"2022","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",4055
+"2022","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",4622
+"2022","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2719
+"2022","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",3828
+"2022","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4685
+"2022","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",5974
+"2022","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",5046
+"2022","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",7263
+"2022","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3750
+"2022","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",3871
+"2022","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",5382
+"2022","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",4795
+"2022","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",4140
+"2022","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",3243
+"2022","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",6555
+"2022","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",5603
+"2022","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",4829
+"2022","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4496
+"2022","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",5063
+"2022","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",4344
+"2022","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",3934
+"2022","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",1032
+"2023","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",2597
+"2023","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",3778
+"2023","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3092
+"2023","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3154
+"2023","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",5627
+"2023","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",3186
+"2023","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",3864
+"2023","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2315
+"2023","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",2662
+"2023","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4249
+"2023","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",5550
+"2023","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",4943
+"2023","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",4236
+"2023","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3541
+"2023","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",3296
+"2023","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",4524
+"2023","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",4106
+"2023","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",3624
+"2023","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",2792
+"2023","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",5569
+"2023","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",4490
+"2023","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",3900
+"2023","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4083
+"2023","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",4302
+"2023","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",3644
+"2023","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",2991
+"2023","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",152
+"2024","Mahe","SC1","Central 1 Mahe","SC11","Bel Air","SC1109BA",3167
+"2024","Mahe","SC1","Central 1 Mahe","SC11","English River","SC1116ER",4288
+"2024","Mahe","SC1","Central 1 Mahe","SC11","Mont Buxton","SC1117MB",3424
+"2024","Mahe","SC1","Central 1 Mahe","SC11","Saint Louis","SC1122SL",3737
+"2024","Mahe","SC1","Central 1 Mahe","SC11","Ile Perseverance","SC1127PI",6285
+"2024","Mahe","SC1","Central 2 Mahe","SC12","Mont Fleuri","SC1218MF",4105
+"2024","Mahe","SC1","Central 2 Mahe","SC12","Plaisance","SC1219PA",4680
+"2024","Mahe","SC1","Central 2 Mahe","SC12","Les Mamelles","SC1224LM",2753
+"2024","Mahe","SC1","Central 2 Mahe","SC12","Roche Caiman","SC1225RC",3875
+"2024","Mahe","SC1","East Mahe","SC13","Anse Aux Pins","SC1301AA",4743
+"2024","Mahe","SC1","East Mahe","SC13","Au Cap","SC1304AC",6047
+"2024","Mahe","SC1","East Mahe","SC13","Anse Royale","SC1305AR",5108
+"2024","Mahe","SC1","East Mahe","SC13","Cascade","SC1311CA",7353
+"2024","Mahe","SC1","East Mahe","SC13","Pointe Larue","SC1320PL",3796
+"2024","Mahe","SC1","East Mahe","SC13","Takamaka","SC1323TA",3918
+"2024","Mahe","SC1","West Mahe","SC14","Anse Boileau","SC1402AB",5448
+"2024","Mahe","SC1","West Mahe","SC14","Baie Lazare","SC1406BL",4854
+"2024","Mahe","SC1","West Mahe","SC14","Grand Anse Mahe","SC1413GM",4191
+"2024","Mahe","SC1","West Mahe","SC14","Port Glaud","SC1421PG",3283
+"2024","Mahe","SC1","North Mahe","SC15","Anse Etoile","SC1503AE",6635
+"2024","Mahe","SC1","North Mahe","SC15","Beau Vallon","SC1508BV",5672
+"2024","Mahe","SC1","North Mahe","SC15","Belombre","SC1510BO",4888
+"2024","Mahe","SC1","North Mahe","SC15","Glacis","SC1512GL",4552
+"2024","Praslin","SC2","Praslin","SC26","Baie Sainte Anne","SC2607BS",5126
+"2024","Praslin","SC2","Praslin","SC26","Grand Anse Praslin","SC2614GP",4397
+"2024","La Digue","SC3","La Digue","SC36","La Digue and Inner Islands","SC3615LD",3982
+"2024","Other Islands","SC4","Other Islands","SC47","Other Islands","SC4726OI",1045

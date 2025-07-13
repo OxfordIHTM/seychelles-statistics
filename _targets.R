@@ -11,6 +11,10 @@ for (f in list.files(here::here("R"), full.names = TRUE)) source (f)
 ## Targets ----
 
 data_download <- tar_plan(
+  tar_target(
+    name = download_map_files,
+    command = download_unzip_maps(dest = "maps")
+  ),
   ### Get download categories list of links ---- 
   tar_target(
     name = download_categories_links,
@@ -30,20 +34,54 @@ data_download <- tar_plan(
       path = "pdf"
     )
   ),
-  mid_population_census_files = get_mid_population_file_path(download_census_documents_files),
-  mid_population_census_pages = c(8, 10, 10, 10, 11, 13, 11, 11)
+  midyear_pop_census_files = get_mid_population_file_path(download_census_documents_files),
+  midyear_pop_census_pages = c(8, 10, 10, 10, 11, 13, 11, 11),
+  midyear_pop_district_census_pages = c(14, 16, 17, 17, 18, 14, 14, 13)
 )
 
 
 ## Extract tables
-extract_tables <- tar_plan(
+data_targets <- tar_plan(
   tar_target(
-    name = population_by_age_sex,
+    name = map_adm0,
+    command = sf::st_read(
+      dsn = download_map_files, layer = "syc_admbnda_adm0_nbs2010"
+    )
+  ),
+  tar_target(
+    name = map_adm1,
+    command = sf::st_read(
+      dsn = download_map_files, layer = "syc_admbnda_adm1_nbs2010"
+    )
+  ),
+  tar_target(
+    name = map_adm2,
+    command = sf::st_read(
+      dsn = download_map_files, layer = "syc_admbnda_adm2_nbs2010"
+    )
+  ),
+  tar_target(
+    name = map_adm3,
+    command = sf::st_read(
+      dsn = download_map_files, layer = "syc_admbnda_adm3_nbs2010"
+    )
+  ),
+  tar_target(
+    name = midyear_pop_by_age_sex,
     command = extract_midyear_pop(
-      pdf = mid_population_census_files,
-      page = mid_population_census_pages
+      pdf = midyear_pop_census_files,
+      page = midyear_pop_census_pages
     ),
-    pattern = map(mid_population_census_files, mid_population_census_pages)
+    pattern = map(midyear_pop_census_files, midyear_pop_census_pages)
+  ),
+  tar_target(
+    name = midyear_pop_by_district,
+    command = extract_midyear_pop_district(
+      pdf = midyear_pop_census_files,
+      page = midyear_pop_district_census_pages,
+      ref_map = map_adm3
+    ),
+    pattern = map(midyear_pop_census_files, midyear_pop_district_census_pages)
   )
 )
 
@@ -68,10 +106,17 @@ analysis <- tar_plan(
 ## Outputs
 outputs <- tar_plan(
   tar_target(
-    name = population_by_age_sex_csv,
+    name = midyear_pop_by_age_sex_csv,
     command = create_csv_data(
-      x = population_by_age_sex,
+      x = midyear_pop_by_age_sex,
       dest = "data/population_by_age_sex.csv"
+    )
+  ),
+  tar_target(
+    name = midyear_pop_by_district_csv,
+    command = create_csv_data(
+      x = midyear_pop_by_district,
+      dest = "data/population_by_district.csv"
     )
   )
 )
