@@ -8,9 +8,9 @@ for (f in list.files(here::here("R"), full.names = TRUE)) source (f)
 ## Set build options ----
 
 
-## Targets ----
+## Download targets ----
 
-data_download <- tar_plan(
+download_targets <- tar_plan(
   tar_target(
     name = download_map_files,
     command = download_unzip_maps(dest = "maps")
@@ -35,12 +35,15 @@ data_download <- tar_plan(
     )
   ),
   midyear_pop_census_files = get_mid_population_file_path(download_census_documents_files),
+  endyear_pop_census_files = get_end_population_file_path(download_census_documents_files),
   midyear_pop_census_pages = c(8, 10, 10, 10, 11, 13, 11, 11),
-  midyear_pop_district_census_pages = c(14, 16, 17, 17, 18, 14, 14, 13)
+  midyear_pop_district_census_pages = c(14, 16, 17, 17, 18, 14, 14, 13),
+  endyear_deaths_pages = c(11, 14, 12, 14, 14, 16, 15, 16)
 )
 
 
-## Extract tables
+## Data extraction targets ----
+
 data_targets <- tar_plan(
   tar_target(
     name = map_adm0,
@@ -82,29 +85,35 @@ data_targets <- tar_plan(
       ref_map = map_adm3
     ),
     pattern = map(midyear_pop_census_files, midyear_pop_district_census_pages)
+  ),
+  tar_target(
+    name = endyear_deaths_by_age_sex,
+    command = extract_endyear_deaths(
+      pdf = endyear_pop_census_files,
+      page = endyear_deaths_pages
+    ),
+    pattern = map(endyear_pop_census_files, endyear_deaths_pages)
   )
 )
 
 
-## Read raw data
-raw_data <- tar_plan(
+## Data processing targets ----
+
+data_processing_targets <- tar_plan(
+  
 )
 
 
-## Process data
-processed_data <- tar_plan(
-  ##
+## Analysis targets ----
+
+analysis_targets <- tar_plan(
+
 )
 
 
-## Analysis
-analysis <- tar_plan(
-  ##
-)
+## Outputs targets ----
 
-
-## Outputs
-outputs <- tar_plan(
+outputs_targets <- tar_plan(
   tar_target(
     name = midyear_pop_by_age_sex_csv,
     command = create_csv_data(
@@ -118,18 +127,27 @@ outputs <- tar_plan(
       x = midyear_pop_by_district,
       dest = "data/population_by_district.csv"
     )
+  ),
+  tar_target(
+    name = endyear_deaths_by_age_sex_csv,
+    command = create_csv_data(
+      x = endyear_deaths_by_age_sex,
+      dest = "data/deaths_by_age_sex.csv"
+    )
   )
 )
 
 
-## Reports
-reports <- tar_plan(
+## Reports targets ----
+
+reports_targets <- tar_plan(
   ##
 )
 
-## Deploy targets
-deploy <- tar_plan(
-  ##
+## Deploy targets ----
+
+deploy_targets <- tar_plan(
+
 )
 
 ## Set seed
