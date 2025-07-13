@@ -2,7 +2,7 @@
 #' Extract per district midyear population
 #' 
 
-extract_midyear_pop_district <- function(pdf, page) {
+extract_midyear_pop_district <- function(pdf, page, ref_map) {
   year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
   df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
@@ -98,21 +98,33 @@ extract_midyear_pop_district <- function(pdf, page) {
 
   df <- df |>
     dplyr::mutate(
-      region = get_region(district) |>
-        factor(
-          levels = c(
-            "North", "South", "East", "West", "Central", 
-            "Praslin", "La Digue and Inner Islands", "Other Islands"
-          )
-        ), 
-      .before = district
+      district_alt = dplyr::case_when(
+        district == "Ile Perseverance" ~ "Perseverance Island",
+        district == "La Digue and Inner Islands" ~ "La Digue",
+        .default = district
+      )
     ) |>
-    dplyr::mutate(year = year, .before = region) |>
-    arrange(region, district)
+    dplyr::left_join(
+      y = ref_map |>
+        sf::st_drop_geometry() |>
+        dplyr::select(
+          dplyr::starts_with("ADM1"), 
+          dplyr::starts_with("ADM2"),
+          dplyr::starts_with("ADM3")
+        ),
+      by = c("district_alt" = "ADM3_EN")
+    ) |>
+    dplyr::select(-district_alt, -dplyr::contains("TYPE")) |>
+    dplyr::relocate(district:total, .after = ADM3_PCODE) |>
+    setNames(
+      nm = c(
+        "island", "island_code", "region", "region_code", 
+        "district_code", "district", "total"
+      )
+    ) |>
+    dplyr::relocate(district, .before = district_code) |>
+    dplyr::mutate(year = year, .before = island) |>
+    arrange(year, island_code, region_code, district_code)
 
-  df <- df |>
-    dplyr::mutate(region = get_region(district))
-
-
-  df
+  tibble::as_tibble(df)
 }

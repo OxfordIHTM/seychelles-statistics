@@ -3,6 +3,10 @@
 .RData
 .Ruserdata
 
+_targets
+
 pdf
 !pdf/.gitkeep
-_targets
+
+maps
+!maps/.gitkeep
