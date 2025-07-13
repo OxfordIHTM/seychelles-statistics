@@ -20,12 +20,12 @@ extract_midyear_pop <- function(pdf, page) {
     (\(x) rbind(x[ , 1:4], x[ , 5:8], x[ , 9:12]))() |>
     data.frame() |>
     dplyr::filter(X1 != "") |>
-    stats::setNames(nm = c("age", "male", "female", "total")) |>
+    stats::setNames(nm = c("age", "male", "female", "both")) |>
     dplyr::mutate(
       male = suppressWarnings(as.integer(male)) |>
         (\(x) ifelse(is.na(x), -3, x))(),
       female = as.integer(female),
-      total = as.integer(total)
+      both = as.integer(both)
     ) |>
     dplyr::mutate(year = year, .before = age)
 
@@ -34,7 +34,16 @@ extract_midyear_pop <- function(pdf, page) {
     dplyr::mutate(
       age = stringr::str_remove_all(string = age, pattern = "\\+") |>
         as.integer()
-    )
+    ) |>
+    tidyr::pivot_longer(
+      cols = male:both, names_to = "sex", values_to = "population"
+    ) |>
+    dplyr::mutate(
+      year = as.integer(year),
+      sex = factor(x = sex, levels = c("female", "male", "both")),
+      population = as.integer(population)
+    ) |>
+    dplyr::arrange(year, sex, age)
   
   df
 }

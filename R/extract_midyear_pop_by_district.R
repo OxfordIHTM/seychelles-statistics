@@ -28,7 +28,7 @@ extract_midyear_pop_district <- function(pdf, page, ref_map) {
     stringr::str_split(pattern = ",", simplify = TRUE) |>
     data.frame() |>
     (\(x) x[ , c(1, ncol(x))])() |>
-    setNames(nm = c("district", "total"))
+    setNames(nm = c("district", "population"))
 
   if (any(c("Perseverance", "Ile Perseverance") %in% df$district)) {
     perseverance <- df_text |>
@@ -42,10 +42,10 @@ extract_midyear_pop_district <- function(pdf, page, ref_map) {
       stringr::str_split(pattern = ",", simplify = TRUE) |>
       data.frame() |>
       (\(x) x[ , c(1, ncol(x))])() |>
-      setNames(nm = c("district", "total")) |>
-      (\(x) x$total)()
+      setNames(nm = c("district", "population")) |>
+      (\(x) x$population)()
 
-    df$total[df$district %in% c("Perseverance", "Ile Perseverance")] <- perseverance
+    df$population[df$district %in% c("Perseverance", "Ile Perseverance")] <- perseverance
   }
   
   df <- df |>
@@ -65,14 +65,14 @@ extract_midyear_pop_district <- function(pdf, page, ref_map) {
       stringr::str_split(pattern = ",", simplify = TRUE) |>
       data.frame() |>
       (\(x) x[ , c(1, ncol(x))])() |>
-      setNames(nm = c("district", "total")) |>
-      (\(x) x$total)()
+      setNames(nm = c("district", "population")) |>
+      (\(x) x$population)()
 
     df <- df |>
-      dplyr::mutate(total = ifelse(district == "Inner Islands", la_digue, total))
+      dplyr::mutate(population = ifelse(district == "Inner Islands", la_digue, population))
   }
 
-  df <- df[df$total != "", ]
+  df <- df[df$population != "", ]
 
   df <- df |>
     dplyr::mutate(
@@ -88,11 +88,11 @@ extract_midyear_pop_district <- function(pdf, page, ref_map) {
     )
 
   df <- df |>
-    dplyr::mutate(total = as.integer(total))
+    dplyr::mutate(population = as.integer(population))
   
   if (!"Ile Perseverance" %in% df$district) {
     df <- rbind(
-      df, data.frame(district = "Ile Perseverance", total = NA_integer_)
+      df, data.frame(district = "Ile Perseverance", population = NA_integer_)
     )
   }
 
@@ -115,11 +115,11 @@ extract_midyear_pop_district <- function(pdf, page, ref_map) {
       by = c("district_alt" = "ADM3_EN")
     ) |>
     dplyr::select(-district_alt, -dplyr::contains("TYPE")) |>
-    dplyr::relocate(district:total, .after = ADM3_PCODE) |>
+    dplyr::relocate(district:population, .after = ADM3_PCODE) |>
     setNames(
       nm = c(
         "island", "island_code", "region", "region_code", 
-        "district_code", "district", "total"
+        "district_code", "district", "population"
       )
     ) |>
     dplyr::relocate(district, .before = district_code) |>
