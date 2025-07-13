@@ -2,10 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-#data
-#!data/.gitkeep
+
 pdf
 !pdf/.gitkeep
-outputs
-!outputs/.gitkeep
 _targets

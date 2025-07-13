@@ -1,81 +1,55 @@
-################################################################################
-#
-# Project build script
-#
-################################################################################
+# Project build script ---------------------------------------------------------
 
-# Load packages (in packages.R) and load project-specific functions in R folder
+## Load packages and load project-specific functions in R folder ----
 suppressPackageStartupMessages(source("packages.R"))
 for (f in list.files(here::here("R"), full.names = TRUE)) source (f)
 
 
-# Set build options ------------------------------------------------------------
+## Set build options ----
 
 
+## Targets ----
 
-# Groups of targets ------------------------------------------------------------
-
-## Downloads
-download_data <- tar_plan(
-  ## Get downloads page list
-  download_list = get_downloads_manifest(url = "https://nbs.gov.sc/downloads"),
-  download_list_population = get_downloads_population(download_list),
-  download_year_latest = basename(download_list_population) |> max(),
-  download_files_path_population = download_files_population(
-    download_list_population, year = download_year_latest, path = "pdf"
+data_download <- tar_plan(
+  ### Get download categories list of links ---- 
+  tar_target(
+    name = download_categories_links,
+    command = get_download_category_links(url = "https://www.nbs.gov.sc/downloads")
   ),
-  download_file_path_midyear = download_files_path_population$file_name |> 
-    stringr::str_detect(pattern = "mid") |> 
-    (\(x) download_files_path_population$file_path[x])(),
-  download_file_path_endyear = download_files_path_population$file_name |> 
-    stringr::str_detect(pattern = "end") |> 
-    (\(x) download_files_path_population$file_path[x])(),
-  download_files_path_population_2021 = download_files_population(
-    download_list_population, year = "2021", path = "pdf"
+  ### Census data ----
+  tar_target(
+    name = download_census_documents_links,
+    command = get_download_census_links(url = download_categories_links$url[1])
   ),
-  download_file_path_midyear_2021 = download_files_path_population_2021 |>
-    (\(x) x$file_name)() |>
-    stringr::str_detect(pattern = "mid") |> 
-    (\(x) download_files_path_population_2021$file_path[x])(),
-  download_file_path_endyear_2021 = download_files_path_population |>
-    (\(x) x$file_name)() |>
-    stringr::str_detect(pattern = "end") |> 
-    (\(x) download_files_path_population_2021$file_path[x])()
+  tar_target(
+    name = download_census_documents_files,
+    command = download_files_census(
+      download_census_documents_links,
+      src = "Estimate|estimate|End|Mid|Abridged|Vital Statistics", 
+      file_type = "pdf|PDF",
+      path = "pdf"
+    )
+  ),
+  mid_population_census_files = get_mid_population_file_path(download_census_documents_files),
+  mid_population_census_pages = c(8, 10, 10, 10, 11, 13, 11, 11)
 )
 
 
 ## Extract tables
 extract_tables <- tar_plan(
-  extracted_tables_midyear_2021 = extract_tables_pdf(
-    filename = download_file_path_midyear_2021
-  ),
-  extracted_tables_endyear_2021 = extract_tables_pdf(
-    filename = download_file_path_endyear_2021
+  tar_target(
+    name = population_by_age_sex,
+    command = extract_midyear_pop(
+      pdf = mid_population_census_files,
+      page = mid_population_census_pages
+    ),
+    pattern = map(mid_population_census_files, mid_population_census_pages)
   )
 )
 
 
 ## Read raw data
 raw_data <- tar_plan(
-  ##
-  raw_midyear_demo_2021 = structure_midyear_demo_2021(
-    extracted_tables_midyear_2021[[8]]
-  ),
-  raw_endyear_demo_2021 = structure_endyear_demo_2021(
-    extracted_tables_endyear_2021[[7]]
-  ),
-  raw_midyear_pop_change_2021 = structure_midyear_pop_change_2021(
-    extracted_tables_midyear_2021[[9]]
-  ),
-  raw_endyear_pop_change_2021 = structure_endyear_pop_change_2021(
-    extracted_tables_endyear_2021[[10]]
-  ),
-  raw_endyear_demo_rates_2021 = structure_endyear_demo_rates_2021(
-    extracted_tables_endyear_2021[[8]]
-  ),
-  raw_midyear_population_by_age_2021 = structure_midyear_population_by_age_2021(
-    extracted_tables_midyear_2021[[11]]
-  )
 )
 
 
@@ -93,31 +67,12 @@ analysis <- tar_plan(
 
 ## Outputs
 outputs <- tar_plan(
-  ##
-  raw_midyear_demo_2021_csv = write.csv(
-    x = raw_midyear_demo_2021, 
-    file = "data/midyear_demographics_2021.csv", 
-    row.names = FALSE
-  ),
-  raw_endyear_demo_2021_csv = write.csv(
-    x = raw_endyear_demo_2021,
-    file = "data/endyear_demographics_2021.csv",
-    row.names = FALSE
-  ),
-  raw_midyear_pop_change_2021_csv = write.csv(
-    x = raw_midyear_pop_change_2021,
-    file = "data/midyear_population_change_2021.csv",
-    row.names = FALSE
-  ),
-  raw_endyear_pop_change_2021_csv = write.csv(
-    x = raw_endyear_pop_change_2021,
-    file = "data/endyear_population_change_2021.csv",
-    row.names = FALSE
-  ),
-  raw_midyear_population_by_age_2021_csv = write.csv(
-    x = raw_midyear_population_by_age_2021,
-    file = "data/midyear_population_by_age_2021.csv",
-    row.names = FALSE
+  tar_target(
+    name = population_by_age_sex_csv,
+    command = create_csv_data(
+      x = population_by_age_sex,
+      dest = "data/population_by_age_sex.csv"
+    )
   )
 )
 
@@ -135,14 +90,5 @@ deploy <- tar_plan(
 ## Set seed
 set.seed(1977)
 
-# Concatenate targets ----------------------------------------------------------
-list(
-  download_data,
-  extract_tables,
-  raw_data,
-  processed_data,
-  analysis,
-  outputs,
-  reports,
-  deploy
-)
+## Concatenate targets ----
+all_targets()
