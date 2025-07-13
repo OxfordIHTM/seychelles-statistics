@@ -51,7 +51,7 @@ extract_endyear_deaths <- function(pdf, page) {
     setNames(nm = c("age_group", "male", "female")) |>
     dplyr::mutate(
       age_group = stringr::str_replace(
-        string = age_group, pattern = " - | ‐ ", replacement = "-"
+        string = age_group, pattern = " - | ‐ |‐", replacement = "-"
       ) |>
         stringr::str_replace(pattern = "Under ", replacement = "<"),
       male = as.integer(male),
