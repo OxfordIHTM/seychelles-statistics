@@ -23,7 +23,7 @@ jobs:
           
       - name: Trust git repo
         run: |
-          git config --global --add safe.directory /__w/seychelles-statistics/seychelles-statistics
+          git config --global --add safe.directory /__w/seystats/seystats
           
       - name: Decrypt repository using symmetric key
         run: |
