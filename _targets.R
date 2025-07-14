@@ -119,21 +119,24 @@ outputs_targets <- tar_plan(
     command = create_csv_data(
       x = midyear_pop_by_age_sex,
       dest = "data/population_by_age_sex.csv"
-    )
+    ),
+    format = "file"
   ),
   tar_target(
     name = midyear_pop_by_district_csv,
     command = create_csv_data(
       x = midyear_pop_by_district,
       dest = "data/population_by_district.csv"
-    )
+    ),
+    format = "file"
   ),
   tar_target(
     name = endyear_deaths_by_age_sex_csv,
     command = create_csv_data(
       x = endyear_deaths_by_age_sex,
       dest = "data/deaths_by_age_sex.csv"
-    )
+    ),
+    format = "file"
   )
 )
 
