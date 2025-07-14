@@ -38,7 +38,7 @@ download_targets <- tar_plan(
   endyear_pop_census_files = get_end_population_file_path(download_census_documents_files),
   midyear_pop_census_pages = c(8, 10, 10, 10, 11, 13, 11, 11),
   midyear_pop_district_census_pages = c(14, 16, 17, 17, 18, 14, 14, 13),
-  endyear_deaths_pages = c(11, 14, 12, 14, 14, 16, 15, 16)
+  endyear_deaths_pages = c(11, 14, 12, 14, 14, 16, 15, 18)
 )
 
 
