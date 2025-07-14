@@ -123,8 +123,9 @@ extract_midyear_pop_district <- function(pdf, page, ref_map) {
       )
     ) |>
     dplyr::relocate(district, .before = district_code) |>
-    dplyr::mutate(year = year, .before = island) |>
-    arrange(year, island_code, region_code, district_code)
+    dplyr::mutate(year = as.character(year), .before = island) |>
+    dplyr::mutate(population = as.integer(population)) |>
+    dplyr::arrange(year, island_code, region_code, district_code)
 
   tibble::as_tibble(df)
 }

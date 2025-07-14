@@ -39,7 +39,7 @@ extract_midyear_pop <- function(pdf, page) {
       cols = male:both, names_to = "sex", values_to = "population"
     ) |>
     dplyr::mutate(
-      year = as.integer(year),
+      year = as.character(year),
       sex = factor(x = sex, levels = c("female", "male", "both")),
       population = as.integer(population)
     ) |>
