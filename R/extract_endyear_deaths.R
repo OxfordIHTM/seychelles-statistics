@@ -58,7 +58,7 @@ extract_endyear_deaths <- function(pdf, page) {
       female = as.integer(female),
       both = male + female
     ) |>
-    dplyr::mutate(year = year, .before = age_group) |>
+    dplyr::mutate(year = as.character(year), .before = age_group) |>
     tidyr::pivot_longer(
       cols = male:both, names_to = "sex", values_to = "death"
     ) |>
