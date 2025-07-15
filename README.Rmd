@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License for code](https://img.shields.io/badge/license (for code)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for text](https://img.shields.io/badge/license (for writing)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
-[![License for data](https://img.shields.io/badge/license (for other data)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
+[![License for data](https://img.shields.io/badge/license (for data)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
 [![test workflow](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml/badge.svg)](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml)
 
 This repository is a [`docker`](https://www.docker.com/get-started)-containerised, [`{targets}`](https://docs.ropensci.org/targets/)-based, [`{renv}`](https://rstudio.github.io/renv/articles/renv.html)-enabled [`R`](https://cran.r-project.org/) workflow for the `seystats` project on curating Seychelles data and statistics from various publicly-available sources.
@@ -23,13 +23,13 @@ This repository is a [`docker`](https://www.docker.com/get-started)-containerise
 
 In 2022, the **Seychelles-Oxford Partnership** on research capacity building leveraged the vast research experience and skills of University of Oxford research partners for training and upskilling data analysts from the Ministry of Health (MOH) Seychelles.
 
-From this process, the partnership identified that while the Seychelles is one of the few sub-Saharan African countries with efficient, accurate, and comprehensive data collection and disaggregation across a variety of sectors and across a variety of metrics. However, most of this data is not in the format, shape, and structure that is ready for analysis. A good amount of these rich data are still on paper or ledgers. For the data that are electronic, they are either stored/distributed in formats that are not easily readable by machines for analysis (e.g., portable document format or PDF).
+From this process, the partnership identified that while the Seychelles is one of the few sub-Saharan African countries with efficient, accurate, and comprehensive data collection and disaggregation across a variety of sectors and across a variety of metrics, most of this data are not in the format, shape, and structure that are ready for analysis. A good amount of these rich data are still on paper or ledgers. For the data that are electronic, they are either stored/distributed in formats that are not readily readable by machines for analysis (e.g., portable document format or PDF) or are in proprietary spreadsheet format (i.e. Microsoft Excel) structured into presentational tables meant for reports rather than for actual analysis.
 
 It is from this context that the initial ideas and motivation around this project began. The partnership involves mostly individuals whose roles and responsibilities were related to health. As such, ad hoc plans prioritised health-related data. During this time, rough and informal plans were drawn as to how the various steps will be implemented and how the different technologies required will be resourced. Alongside these, ongoing capacity-building on data management and analysis related to research continued continued within the partnership.
 
-By 2025, three years on from the start of the partnership, very little has progressed and been implemented from these ad hoc plans whilst the partnership focused on more research capacity-building focusing on other types of research skills (e.g. qualitative research), on student placement projects for University of Oxford Masters students, and other research efforts (e.g. cancer screening, cancer awareness, cancer quality-of-care). During this period and in all these activities, the same challenges and issues related to data identified in 2022 keep propping up.
+By 2025, three years on from the start of the partnership, very little has progressed and been implemented from these informal, ad hoc plans whilst the partnership continued to more research capacity-building focusing on other types of research skills (e.g. qualitative research), on student placement projects for University of Oxford Masters students, and other research efforts (e.g. cancer screening, cancer awareness, cancer quality-of-care). During this period and in all these activities, the same challenges and issues related to data identified in 2022 keep propping up.
 
-It is within this background that the `seystats` project is being (re-)launched. The current motivation is to try to get moving in a more positive direction on the ideas generated in 2022 and to be able to demonstrate the stated advantages of data that is accessible, persistent, and machine-readable and machine-actionable to catalysing research efforts in Seychelles.
+It is within this background that the `seystats` project is being (re-)launched. The current motivation is to try to get moving in a more productive direction on the ideas generated in 2022 and to be able to demonstrate the stated advantages of data that is accessible, persistent, and machine-readable/machine-actionable to catalysing research efforts in Seychelles.
 
 ## Repository Structure
 
@@ -171,3 +171,9 @@ Rscript -e  "targets::tar_make()"
 ## License
 
 All code in this project is released under a [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text) license. All text in this project is released under a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en) license. Data is released under a [CC0](https://creativecommons.org/public-domain/cc0/) license.
+
+## Community guidelines
+
+Feedback, bug reports and feature requests are welcome; file issues or seek support [here](https://github.com/OxfordIHTM/seystats/issues). If you would like to contribute to the project, please see our [contributing guidelines](https://oxford-ihtm.io/codigo/CONTRIBUTING.html).
+
+This project is released with a [Contributor Code of Conduct](https://oxford-ihtm.io/codigo/CODE_OF_CONDUCT.html). By participating in this project you agree to abide by its terms.

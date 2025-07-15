@@ -40,9 +40,10 @@ data_download_targets <- tar_plan(
   population_endyear_bulletin_files = get_end_population_file_path(
     population_bulletin_download_files
   ),
-  population_midyear_bulletin_pages = c(8, 10, 10, 10, 11, 13, 11, 11),
+  population_midyear_bulletin_pages = c(8, 10, 10, 10, 11, 12, 10, 10),
   population_midyear_bulletin_district_pages = c(14, 16, 17, 17, 18, 14, 14, 13),
-  deaths_endyear_pages = c(11, 14, 12, 14, 14, 16, 15, 18)
+  deaths_endyear_pages = c(11, 14, 12, 14, 14, 16, 15, 18),
+  births_endyear_pages = c(5, 7, 5, 7, 7, 7, 5, 6)
 )
 
 
@@ -102,6 +103,14 @@ data_extraction_targets <- tar_plan(
       page = deaths_endyear_pages
     ),
     pattern = map(population_endyear_bulletin_files, deaths_endyear_pages)
+  ),
+  tar_target(
+    name = births_deaths_total,
+    command = extract_endyear_births_deaths(
+      pdf = population_endyear_bulletin_files,
+      page = births_endyear_pages
+    ),
+    pattern = map(population_endyear_bulletin_files, births_endyear_pages)
   )
 )
 
@@ -144,6 +153,14 @@ outputs_targets <- tar_plan(
     command = create_csv_data(
       x = deaths_endyear_by_age_sex,
       dest = "data/deaths_endyear_by_age_sex.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = births_deaths_total_csv,
+    command = create_csv_data(
+      x = births_deaths_total,
+      dest = "data/births_deaths_total.csv"
     ),
     format = "file"
   )
