@@ -98,18 +98,11 @@ data_extraction_targets <- tar_plan(
     )
   ),
   tar_target(
-    name = deaths_endyear_by_age_sex,
-    command = extract_endyear_deaths(
+    name = population_midyear_total,
+    command = extract_endyear_pop_births_deaths_total(
       pdf = population_endyear_bulletin_files,
-      page = deaths_endyear_pages
-    ),
-    pattern = map(population_endyear_bulletin_files, deaths_endyear_pages)
-  ),
-  tar_target(
-    name = births_deaths_total,
-    command = extract_endyear_births_deaths(
-      pdf = population_endyear_bulletin_files,
-      page = births_endyear_pages
+      page = births_endyear_pages,
+      type = "population"
     ),
     pattern = map(population_endyear_bulletin_files, births_endyear_pages)
   ),
@@ -122,6 +115,41 @@ data_extraction_targets <- tar_plan(
     pattern = map(
       population_endyear_bulletin_files, births_endyear_monthly_pages
     )
+  ),
+  tar_target(
+    name = births_total,
+    command = extract_endyear_pop_births_deaths_total(
+      pdf = population_endyear_bulletin_files,
+      page = births_endyear_pages,
+      type = "births"
+    ),
+    pattern = map(population_endyear_bulletin_files, births_endyear_pages)
+  ),
+  tar_target(
+    name = deaths_endyear_by_age_sex,
+    command = extract_endyear_deaths(
+      pdf = population_endyear_bulletin_files,
+      page = deaths_endyear_pages
+    ),
+    pattern = map(population_endyear_bulletin_files, deaths_endyear_pages)
+  ), 
+  tar_target(
+    name = deaths_endyear_total,
+    command = extract_endyear_pop_births_deaths_total(
+      pdf = population_endyear_bulletin_files,
+      page = births_endyear_pages,
+      type = "deaths_all"
+    ),
+    pattern = map(population_endyear_bulletin_files, births_endyear_pages)
+  ),
+  tar_target(
+    name = deaths_infant_endyear_total,
+    command = extract_endyear_pop_births_deaths_total(
+      pdf = population_endyear_bulletin_files,
+      page = births_endyear_pages,
+      type = "deaths_infant"
+    ),
+    pattern = map(population_endyear_bulletin_files, births_endyear_pages)
   )
 )
 
@@ -160,18 +188,10 @@ outputs_targets <- tar_plan(
     format = "file"
   ),
   tar_target(
-    name = deaths_endyear_by_age_sex_csv,
+    name = population_midyear_total_csv,
     command = create_csv_data(
-      x = deaths_endyear_by_age_sex,
-      dest = "data/deaths_endyear_by_age_sex.csv"
-    ),
-    format = "file"
-  ),
-  tar_target(
-    name = births_deaths_total_csv,
-    command = create_csv_data(
-      x = births_deaths_total,
-      dest = "data/births_deaths_total.csv"
+      x = population_midyear_total,
+      dest = "data/population_midyear_total.csv"
     ),
     format = "file"
   ),
@@ -180,6 +200,38 @@ outputs_targets <- tar_plan(
     command = create_csv_data(
       x = births_by_month,
       dest = "data/births_by_month.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = births_total_csv,
+    command = create_csv_data(
+      x = births_total,
+      dest = "data/births_total.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = deaths_endyear_by_age_sex_csv,
+    command = create_csv_data(
+      x = deaths_endyear_by_age_sex,
+      dest = "data/deaths_endyear_by_age_sex.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = deaths_endyear_total_csv,
+    command = create_csv_data(
+      x = deaths_endyear_total,
+      dest = "data/deaths_endyear_total.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = deaths_infant_endyear_total_csv,
+    command = create_csv_data(
+      x = deaths_infant_endyear_total,
+      dest = "data/deaths_infant_endyear_total.csv"
     ),
     format = "file"
   )
