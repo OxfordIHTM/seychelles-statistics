@@ -9,7 +9,7 @@ code](https://img.shields.io/badge/license%20\(for%20code\)-GPL3.0-blue.svg)](ht
 [![License for
 text](https://img.shields.io/badge/license%20\(for%20writing\)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 [![License for
-data](https://img.shields.io/badge/license%20\(for%20other%20data\)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
+data](https://img.shields.io/badge/license%20\(for%20data\)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
 [![test
 workflow](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml/badge.svg)](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml)
 
@@ -31,12 +31,14 @@ from the Ministry of Health (MOH) Seychelles.
 From this process, the partnership identified that while the Seychelles
 is one of the few sub-Saharan African countries with efficient,
 accurate, and comprehensive data collection and disaggregation across a
-variety of sectors and across a variety of metrics. However, most of
-this data is not in the format, shape, and structure that is ready for
-analysis. A good amount of these rich data are still on paper or
-ledgers. For the data that are electronic, they are either
-stored/distributed in formats that are not easily readable by machines
-for analysis (e.g., portable document format or PDF).
+variety of sectors and across a variety of metrics, most of this data
+are not in the format, shape, and structure that are ready for analysis.
+A good amount of these rich data are still on paper or ledgers. For the
+data that are electronic, they are either stored/distributed in formats
+that are not readily readable by machines for analysis (e.g., portable
+document format or PDF) or are in proprietary spreadsheet format
+(i.e. Microsoft Excel) structured into presentational tables meant for
+reports rather than for actual analysis.
 
 It is from this context that the initial ideas and motivation around
 this project began. The partnership involves mostly individuals whose
@@ -48,20 +50,20 @@ ongoing capacity-building on data management and analysis related to
 research continued continued within the partnership.
 
 By 2025, three years on from the start of the partnership, very little
-has progressed and been implemented from these ad hoc plans whilst the
-partnership focused on more research capacity-building focusing on other
-types of research skills (e.g. qualitative research), on student
-placement projects for University of Oxford Masters students, and other
-research efforts (e.g. cancer screening, cancer awareness, cancer
-quality-of-care). During this period and in all these activities, the
-same challenges and issues related to data identified in 2022 keep
+has progressed and been implemented from these informal, ad hoc plans
+whilst the partnership continued to more research capacity-building
+focusing on other types of research skills (e.g. qualitative research),
+on student placement projects for University of Oxford Masters students,
+and other research efforts (e.g. cancer screening, cancer awareness,
+cancer quality-of-care). During this period and in all these activities,
+the same challenges and issues related to data identified in 2022 keep
 propping up.
 
 It is within this background that the `seystats` project is being
 (re-)launched. The current motivation is to try to get moving in a more
-positive direction on the ideas generated in 2022 and to be able to
+productive direction on the ideas generated in 2022 and to be able to
 demonstrate the stated advantages of data that is accessible,
-persistent, and machine-readable and machine-actionable to catalysing
+persistent, and machine-readable/machine-actionable to catalysing
 research efforts in Seychelles.
 
 ## Repository Structure
@@ -205,9 +207,15 @@ graph LR
   style Graph fill:#FFFFFF00,stroke:#000000;
   subgraph Graph
     direction LR
+    x5c7646da106bc2f6(["births_endyear_monthly_pages"]):::skipped --> x2c584c9caafc1be8["births_by_month"]:::skipped
+    xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x2c584c9caafc1be8["births_by_month"]:::skipped
+    x2c584c9caafc1be8["births_by_month"]:::skipped --> xa87bb9563f27e00c(["births_by_month_csv"]):::completed
+    xe648a7801cd2da2c(["births_endyear_pages"]):::skipped --> xe650464a12ae8fe5["births_deaths_total"]:::skipped
+    xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> xe650464a12ae8fe5["births_deaths_total"]:::skipped
+    xe650464a12ae8fe5["births_deaths_total"]:::skipped --> x1a0f4fbd7d208a5e(["births_deaths_total_csv"]):::skipped
     x344a2780ffaeb7bd(["deaths_endyear_pages"]):::skipped --> x1b2a9a62e2672111["deaths_endyear_by_age_sex"]:::skipped
     xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x1b2a9a62e2672111["deaths_endyear_by_age_sex"]:::skipped
-    x1b2a9a62e2672111["deaths_endyear_by_age_sex"]:::skipped --> x17c4726281726995(["deaths_endyear_by_age_sex_csv"]):::completed
+    x1b2a9a62e2672111["deaths_endyear_by_age_sex"]:::skipped --> x17c4726281726995(["deaths_endyear_by_age_sex_csv"]):::skipped
     x8e509dc7997a12f8(["map_download_files"]):::skipped --> x4851b2941f7c62fc(["map_adm0"]):::skipped
     x8e509dc7997a12f8(["map_download_files"]):::skipped --> xccb26dd891c9a035(["map_adm1"]):::skipped
     x8e509dc7997a12f8(["map_download_files"]):::skipped --> x30d02f8bff8e7f8d(["map_adm2"]):::skipped
@@ -218,11 +226,11 @@ graph LR
     x303dcb35f327bc97(["population_bulletin_download_files"]):::skipped --> x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped
     x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> x426614807f974316["population_midyear_by_age_sex"]:::skipped
     xefa1a60843915f9f(["population_midyear_bulletin_pages"]):::skipped --> x426614807f974316["population_midyear_by_age_sex"]:::skipped
-    x426614807f974316["population_midyear_by_age_sex"]:::skipped --> xf3039e66b37a1219(["population_midyear_by_age_sex_csv"]):::completed
+    x426614807f974316["population_midyear_by_age_sex"]:::skipped --> xf3039e66b37a1219(["population_midyear_by_age_sex_csv"]):::skipped
     x9f6b6d2ed74a37b4(["population_midyear_bulletin_district_pages"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
-    x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
     x7b26bed1fc581742(["map_adm3"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
-    xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped --> xf94a6bce4cea6c14(["population_midyear_by_district_csv"]):::completed
+    x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
+    xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped --> xf94a6bce4cea6c14(["population_midyear_by_district_csv"]):::skipped
     
   end
 ```
@@ -268,3 +276,15 @@ license. All text in this project is released under a
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
 license. Data is released under a
 [CC0](https://creativecommons.org/public-domain/cc0/) license.
+
+## Community guidelines
+
+Feedback, bug reports and feature requests are welcome; file issues or
+seek support [here](https://github.com/OxfordIHTM/seystats/issues). If
+you would like to contribute to the project, please see our
+[contributing
+guidelines](https://oxford-ihtm.io/codigo/CONTRIBUTING.html).
+
+This project is released with a [Contributor Code of
+Conduct](https://oxford-ihtm.io/codigo/CODE_OF_CONDUCT.html). By
+participating in this project you agree to abide by its terms.
