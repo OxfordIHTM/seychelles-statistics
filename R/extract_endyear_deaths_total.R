@@ -2,7 +2,7 @@
 #' Extract endyear births and deaths
 #' 
 
-extract_endyear_births_deaths <- function(page, pdf) {
+extract_endyear_deaths_total <- function(page, pdf) {
   year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
   df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
