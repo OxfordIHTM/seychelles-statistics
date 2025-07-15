@@ -126,7 +126,7 @@ data_extraction_targets <- tar_plan(
     pattern = map(population_endyear_bulletin_files, births_endyear_pages)
   ),
   tar_target(
-    name = deaths_endyear_by_age_sex,
+    name = deaths_by_age_sex,
     command = extract_endyear_deaths(
       pdf = population_endyear_bulletin_files,
       page = deaths_endyear_pages
@@ -134,7 +134,7 @@ data_extraction_targets <- tar_plan(
     pattern = map(population_endyear_bulletin_files, deaths_endyear_pages)
   ), 
   tar_target(
-    name = deaths_endyear_total,
+    name = deaths_total,
     command = extract_endyear_pop_births_deaths_total(
       pdf = population_endyear_bulletin_files,
       page = births_endyear_pages,
@@ -143,7 +143,7 @@ data_extraction_targets <- tar_plan(
     pattern = map(population_endyear_bulletin_files, births_endyear_pages)
   ),
   tar_target(
-    name = deaths_infant_endyear_total,
+    name = deaths_infant_total,
     command = extract_endyear_pop_births_deaths_total(
       pdf = population_endyear_bulletin_files,
       page = births_endyear_pages,
@@ -212,26 +212,26 @@ outputs_targets <- tar_plan(
     format = "file"
   ),
   tar_target(
-    name = deaths_endyear_by_age_sex_csv,
+    name = deaths_by_age_sex_csv,
     command = create_csv_data(
-      x = deaths_endyear_by_age_sex,
-      dest = "data/deaths_endyear_by_age_sex.csv"
+      x = deaths_by_age_sex,
+      dest = "data/deaths_by_age_sex.csv"
     ),
     format = "file"
   ),
   tar_target(
-    name = deaths_endyear_total_csv,
+    name = deaths_total_csv,
     command = create_csv_data(
-      x = deaths_endyear_total,
-      dest = "data/deaths_endyear_total.csv"
+      x = deaths_total,
+      dest = "data/deaths_total.csv"
     ),
     format = "file"
   ),
   tar_target(
-    name = deaths_infant_endyear_total_csv,
+    name = deaths_infant_total_csv,
     command = create_csv_data(
-      x = deaths_infant_endyear_total,
-      dest = "data/deaths_infant_endyear_total.csv"
+      x = deaths_infant_total,
+      dest = "data/deaths_infant_total.csv"
     ),
     format = "file"
   )
