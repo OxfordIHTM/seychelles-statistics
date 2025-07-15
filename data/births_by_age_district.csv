@@ -1,0 +1,2017 @@
+"year","district","age_group","births"
+2016,"Anse Aux Pins","<15",0
+2016,"Anse Aux Pins","15-19",9
+2016,"Anse Aux Pins","20-24",26
+2016,"Anse Aux Pins","25-29",23
+2016,"Anse Aux Pins","30-34",19
+2016,"Anse Aux Pins","35-39",10
+2016,"Anse Aux Pins","40-44",1
+2016,"Anse Aux Pins","45+",0
+2016,"Anse Aux Pins","Not Stated",0
+2016,"Anse Boileau","<15",0
+2016,"Anse Boileau","15-19",10
+2016,"Anse Boileau","20-24",14
+2016,"Anse Boileau","25-29",23
+2016,"Anse Boileau","30-34",16
+2016,"Anse Boileau","35-39",7
+2016,"Anse Boileau","40-44",4
+2016,"Anse Boileau","45+",0
+2016,"Anse Boileau","Not Stated",0
+2016,"Anse Etoile","<15",0
+2016,"Anse Etoile","15-19",7
+2016,"Anse Etoile","20-24",28
+2016,"Anse Etoile","25-29",25
+2016,"Anse Etoile","30-34",10
+2016,"Anse Etoile","35-39",21
+2016,"Anse Etoile","40-44",3
+2016,"Anse Etoile","45+",0
+2016,"Anse Etoile","Not Stated",0
+2016,"Anse Royale","<15",0
+2016,"Anse Royale","15-19",7
+2016,"Anse Royale","20-24",11
+2016,"Anse Royale","25-29",16
+2016,"Anse Royale","30-34",5
+2016,"Anse Royale","35-39",5
+2016,"Anse Royale","40-44",2
+2016,"Anse Royale","45+",0
+2016,"Anse Royale","Not Stated",0
+2016,"Au Cap","<15",0
+2016,"Au Cap","15-19",6
+2016,"Au Cap","20-24",19
+2016,"Au Cap","25-29",17
+2016,"Au Cap","30-34",12
+2016,"Au Cap","35-39",8
+2016,"Au Cap","40-44",6
+2016,"Au Cap","45+",0
+2016,"Au Cap","Not Stated",0
+2016,"Baie Lazare","<15",0
+2016,"Baie Lazare","15-19",9
+2016,"Baie Lazare","20-24",12
+2016,"Baie Lazare","25-29",11
+2016,"Baie Lazare","30-34",13
+2016,"Baie Lazare","35-39",5
+2016,"Baie Lazare","40-44",2
+2016,"Baie Lazare","45+",0
+2016,"Baie Lazare","Not Stated",0
+2016,"Baie Sainte Anne","<15",0
+2016,"Baie Sainte Anne","15-19",16
+2016,"Baie Sainte Anne","20-24",23
+2016,"Baie Sainte Anne","25-29",12
+2016,"Baie Sainte Anne","30-34",14
+2016,"Baie Sainte Anne","35-39",3
+2016,"Baie Sainte Anne","40-44",4
+2016,"Baie Sainte Anne","45+",0
+2016,"Baie Sainte Anne","Not Stated",0
+2016,"Beau Vallon","<15",0
+2016,"Beau Vallon","15-19",5
+2016,"Beau Vallon","20-24",10
+2016,"Beau Vallon","25-29",20
+2016,"Beau Vallon","30-34",15
+2016,"Beau Vallon","35-39",14
+2016,"Beau Vallon","40-44",3
+2016,"Beau Vallon","45+",1
+2016,"Beau Vallon","Not Stated",0
+2016,"Bel Air","<15",0
+2016,"Bel Air","15-19",7
+2016,"Bel Air","20-24",11
+2016,"Bel Air","25-29",14
+2016,"Bel Air","30-34",11
+2016,"Bel Air","35-39",5
+2016,"Bel Air","40-44",2
+2016,"Bel Air","45+",0
+2016,"Bel Air","Not Stated",0
+2016,"Belombre","<15",0
+2016,"Belombre","15-19",6
+2016,"Belombre","20-24",9
+2016,"Belombre","25-29",11
+2016,"Belombre","30-34",17
+2016,"Belombre","35-39",12
+2016,"Belombre","40-44",2
+2016,"Belombre","45+",0
+2016,"Belombre","Not Stated",0
+2016,"Cascade","<15",0
+2016,"Cascade","15-19",11
+2016,"Cascade","20-24",22
+2016,"Cascade","25-29",11
+2016,"Cascade","30-34",22
+2016,"Cascade","35-39",11
+2016,"Cascade","40-44",4
+2016,"Cascade","45+",0
+2016,"Cascade","Not Stated",0
+2016,"English River","<15",0
+2016,"English River","15-19",31
+2016,"English River","20-24",44
+2016,"English River","25-29",39
+2016,"English River","30-34",23
+2016,"English River","35-39",20
+2016,"English River","40-44",7
+2016,"English River","45+",0
+2016,"English River","Not Stated",0
+2016,"Glacis","<15",0
+2016,"Glacis","15-19",7
+2016,"Glacis","20-24",19
+2016,"Glacis","25-29",13
+2016,"Glacis","30-34",16
+2016,"Glacis","35-39",9
+2016,"Glacis","40-44",6
+2016,"Glacis","45+",0
+2016,"Glacis","Not Stated",0
+2016,"Grand Anse Mahe","<15",0
+2016,"Grand Anse Mahe","15-19",14
+2016,"Grand Anse Mahe","20-24",12
+2016,"Grand Anse Mahe","25-29",15
+2016,"Grand Anse Mahe","30-34",10
+2016,"Grand Anse Mahe","35-39",5
+2016,"Grand Anse Mahe","40-44",1
+2016,"Grand Anse Mahe","45+",0
+2016,"Grand Anse Mahe","Not Stated",0
+2016,"Grand Anse Praslin","<15",1
+2016,"Grand Anse Praslin","15-19",13
+2016,"Grand Anse Praslin","20-24",10
+2016,"Grand Anse Praslin","25-29",23
+2016,"Grand Anse Praslin","30-34",12
+2016,"Grand Anse Praslin","35-39",3
+2016,"Grand Anse Praslin","40-44",2
+2016,"Grand Anse Praslin","45+",0
+2016,"Grand Anse Praslin","Not Stated",0
+2016,"Ile Perseverance","<15",NA
+2016,"Ile Perseverance","15-19",NA
+2016,"Ile Perseverance","20-24",NA
+2016,"Ile Perseverance","25-29",NA
+2016,"Ile Perseverance","30-34",NA
+2016,"Ile Perseverance","35-39",NA
+2016,"Ile Perseverance","40-44",NA
+2016,"Ile Perseverance","45+",NA
+2016,"Ile Perseverance","Not Stated",NA
+2016,"La Digue and Inner Islands","<15",0
+2016,"La Digue and Inner Islands","15-19",2
+2016,"La Digue and Inner Islands","20-24",13
+2016,"La Digue and Inner Islands","25-29",10
+2016,"La Digue and Inner Islands","30-34",10
+2016,"La Digue and Inner Islands","35-39",6
+2016,"La Digue and Inner Islands","40-44",0
+2016,"La Digue and Inner Islands","45+",0
+2016,"La Digue and Inner Islands","Not Stated",0
+2016,"Les Mamelles","<15",0
+2016,"Les Mamelles","15-19",5
+2016,"Les Mamelles","20-24",13
+2016,"Les Mamelles","25-29",17
+2016,"Les Mamelles","30-34",6
+2016,"Les Mamelles","35-39",10
+2016,"Les Mamelles","40-44",0
+2016,"Les Mamelles","45+",0
+2016,"Les Mamelles","Not Stated",0
+2016,"Mont Buxton","<15",0
+2016,"Mont Buxton","15-19",12
+2016,"Mont Buxton","20-24",21
+2016,"Mont Buxton","25-29",13
+2016,"Mont Buxton","30-34",13
+2016,"Mont Buxton","35-39",7
+2016,"Mont Buxton","40-44",5
+2016,"Mont Buxton","45+",0
+2016,"Mont Buxton","Not Stated",0
+2016,"Mont Fleuri","<15",0
+2016,"Mont Fleuri","15-19",4
+2016,"Mont Fleuri","20-24",7
+2016,"Mont Fleuri","25-29",17
+2016,"Mont Fleuri","30-34",12
+2016,"Mont Fleuri","35-39",8
+2016,"Mont Fleuri","40-44",4
+2016,"Mont Fleuri","45+",0
+2016,"Mont Fleuri","Not Stated",0
+2016,"Other Islands","<15",0
+2016,"Other Islands","15-19",0
+2016,"Other Islands","20-24",0
+2016,"Other Islands","25-29",0
+2016,"Other Islands","30-34",0
+2016,"Other Islands","35-39",1
+2016,"Other Islands","40-44",0
+2016,"Other Islands","45+",0
+2016,"Other Islands","Not Stated",0
+2016,"Plaisance","<15",0
+2016,"Plaisance","15-19",5
+2016,"Plaisance","20-24",20
+2016,"Plaisance","25-29",18
+2016,"Plaisance","30-34",5
+2016,"Plaisance","35-39",10
+2016,"Plaisance","40-44",2
+2016,"Plaisance","45+",0
+2016,"Plaisance","Not Stated",0
+2016,"Pointe Larue","<15",1
+2016,"Pointe Larue","15-19",3
+2016,"Pointe Larue","20-24",17
+2016,"Pointe Larue","25-29",17
+2016,"Pointe Larue","30-34",15
+2016,"Pointe Larue","35-39",7
+2016,"Pointe Larue","40-44",1
+2016,"Pointe Larue","45+",0
+2016,"Pointe Larue","Not Stated",0
+2016,"Port Glaud","<15",0
+2016,"Port Glaud","15-19",2
+2016,"Port Glaud","20-24",6
+2016,"Port Glaud","25-29",4
+2016,"Port Glaud","30-34",7
+2016,"Port Glaud","35-39",6
+2016,"Port Glaud","40-44",5
+2016,"Port Glaud","45+",0
+2016,"Port Glaud","Not Stated",0
+2016,"Roche Caiman","<15",1
+2016,"Roche Caiman","15-19",4
+2016,"Roche Caiman","20-24",19
+2016,"Roche Caiman","25-29",13
+2016,"Roche Caiman","30-34",18
+2016,"Roche Caiman","35-39",4
+2016,"Roche Caiman","40-44",2
+2016,"Roche Caiman","45+",0
+2016,"Roche Caiman","Not Stated",0
+2016,"Saint Louis","<15",0
+2016,"Saint Louis","15-19",5
+2016,"Saint Louis","20-24",18
+2016,"Saint Louis","25-29",17
+2016,"Saint Louis","30-34",11
+2016,"Saint Louis","35-39",9
+2016,"Saint Louis","40-44",3
+2016,"Saint Louis","45+",0
+2016,"Saint Louis","Not Stated",0
+2016,"Takamaka","<15",0
+2016,"Takamaka","15-19",6
+2016,"Takamaka","20-24",13
+2016,"Takamaka","25-29",11
+2016,"Takamaka","30-34",11
+2016,"Takamaka","35-39",7
+2016,"Takamaka","40-44",1
+2016,"Takamaka","45+",0
+2016,"Takamaka","Not Stated",0
+2016,"Not Stated","<15",NA
+2016,"Not Stated","15-19",NA
+2016,"Not Stated","20-24",NA
+2016,"Not Stated","25-29",NA
+2016,"Not Stated","30-34",NA
+2016,"Not Stated","35-39",NA
+2016,"Not Stated","40-44",NA
+2016,"Not Stated","45+",NA
+2016,"Not Stated","Not Stated",NA
+2018,"Anse Aux Pins","<15",0
+2018,"Anse Aux Pins","15-19",13
+2018,"Anse Aux Pins","20-24",20
+2018,"Anse Aux Pins","25-29",28
+2018,"Anse Aux Pins","30-34",15
+2018,"Anse Aux Pins","35-39",11
+2018,"Anse Aux Pins","40-44",2
+2018,"Anse Aux Pins","45+",1
+2018,"Anse Aux Pins","Not Stated",0
+2018,"Anse Boileau","<15",0
+2018,"Anse Boileau","15-19",10
+2018,"Anse Boileau","20-24",17
+2018,"Anse Boileau","25-29",16
+2018,"Anse Boileau","30-34",13
+2018,"Anse Boileau","35-39",5
+2018,"Anse Boileau","40-44",3
+2018,"Anse Boileau","45+",0
+2018,"Anse Boileau","Not Stated",0
+2018,"Anse Etoile","<15",0
+2018,"Anse Etoile","15-19",6
+2018,"Anse Etoile","20-24",17
+2018,"Anse Etoile","25-29",22
+2018,"Anse Etoile","30-34",22
+2018,"Anse Etoile","35-39",11
+2018,"Anse Etoile","40-44",7
+2018,"Anse Etoile","45+",0
+2018,"Anse Etoile","Not Stated",0
+2018,"Anse Royale","<15",0
+2018,"Anse Royale","15-19",5
+2018,"Anse Royale","20-24",11
+2018,"Anse Royale","25-29",12
+2018,"Anse Royale","30-34",13
+2018,"Anse Royale","35-39",9
+2018,"Anse Royale","40-44",8
+2018,"Anse Royale","45+",0
+2018,"Anse Royale","Not Stated",0
+2018,"Au Cap","<15",0
+2018,"Au Cap","15-19",7
+2018,"Au Cap","20-24",18
+2018,"Au Cap","25-29",14
+2018,"Au Cap","30-34",12
+2018,"Au Cap","35-39",4
+2018,"Au Cap","40-44",5
+2018,"Au Cap","45+",0
+2018,"Au Cap","Not Stated",0
+2018,"Baie Lazare","<15",0
+2018,"Baie Lazare","15-19",15
+2018,"Baie Lazare","20-24",12
+2018,"Baie Lazare","25-29",12
+2018,"Baie Lazare","30-34",13
+2018,"Baie Lazare","35-39",8
+2018,"Baie Lazare","40-44",5
+2018,"Baie Lazare","45+",0
+2018,"Baie Lazare","Not Stated",0
+2018,"Baie Sainte Anne","<15",0
+2018,"Baie Sainte Anne","15-19",7
+2018,"Baie Sainte Anne","20-24",21
+2018,"Baie Sainte Anne","25-29",18
+2018,"Baie Sainte Anne","30-34",9
+2018,"Baie Sainte Anne","35-39",11
+2018,"Baie Sainte Anne","40-44",3
+2018,"Baie Sainte Anne","45+",0
+2018,"Baie Sainte Anne","Not Stated",0
+2018,"Beau Vallon","<15",0
+2018,"Beau Vallon","15-19",10
+2018,"Beau Vallon","20-24",22
+2018,"Beau Vallon","25-29",22
+2018,"Beau Vallon","30-34",19
+2018,"Beau Vallon","35-39",7
+2018,"Beau Vallon","40-44",6
+2018,"Beau Vallon","45+",0
+2018,"Beau Vallon","Not Stated",0
+2018,"Bel Air","<15",1
+2018,"Bel Air","15-19",1
+2018,"Bel Air","20-24",6
+2018,"Bel Air","25-29",7
+2018,"Bel Air","30-34",2
+2018,"Bel Air","35-39",5
+2018,"Bel Air","40-44",0
+2018,"Bel Air","45+",0
+2018,"Bel Air","Not Stated",0
+2018,"Belombre","<15",0
+2018,"Belombre","15-19",5
+2018,"Belombre","20-24",11
+2018,"Belombre","25-29",13
+2018,"Belombre","30-34",14
+2018,"Belombre","35-39",3
+2018,"Belombre","40-44",3
+2018,"Belombre","45+",0
+2018,"Belombre","Not Stated",0
+2018,"Cascade","<15",0
+2018,"Cascade","15-19",12
+2018,"Cascade","20-24",14
+2018,"Cascade","25-29",15
+2018,"Cascade","30-34",12
+2018,"Cascade","35-39",9
+2018,"Cascade","40-44",6
+2018,"Cascade","45+",0
+2018,"Cascade","Not Stated",0
+2018,"English River","<15",0
+2018,"English River","15-19",27
+2018,"English River","20-24",41
+2018,"English River","25-29",42
+2018,"English River","30-34",30
+2018,"English River","35-39",25
+2018,"English River","40-44",5
+2018,"English River","45+",0
+2018,"English River","Not Stated",0
+2018,"Glacis","<15",0
+2018,"Glacis","15-19",8
+2018,"Glacis","20-24",11
+2018,"Glacis","25-29",12
+2018,"Glacis","30-34",15
+2018,"Glacis","35-39",7
+2018,"Glacis","40-44",1
+2018,"Glacis","45+",0
+2018,"Glacis","Not Stated",0
+2018,"Grand Anse Mahe","<15",0
+2018,"Grand Anse Mahe","15-19",9
+2018,"Grand Anse Mahe","20-24",11
+2018,"Grand Anse Mahe","25-29",11
+2018,"Grand Anse Mahe","30-34",11
+2018,"Grand Anse Mahe","35-39",14
+2018,"Grand Anse Mahe","40-44",6
+2018,"Grand Anse Mahe","45+",0
+2018,"Grand Anse Mahe","Not Stated",0
+2018,"Grand Anse Praslin","<15",1
+2018,"Grand Anse Praslin","15-19",10
+2018,"Grand Anse Praslin","20-24",16
+2018,"Grand Anse Praslin","25-29",15
+2018,"Grand Anse Praslin","30-34",10
+2018,"Grand Anse Praslin","35-39",12
+2018,"Grand Anse Praslin","40-44",2
+2018,"Grand Anse Praslin","45+",0
+2018,"Grand Anse Praslin","Not Stated",0
+2018,"Ile Perseverance","<15",NA
+2018,"Ile Perseverance","15-19",NA
+2018,"Ile Perseverance","20-24",NA
+2018,"Ile Perseverance","25-29",NA
+2018,"Ile Perseverance","30-34",NA
+2018,"Ile Perseverance","35-39",NA
+2018,"Ile Perseverance","40-44",NA
+2018,"Ile Perseverance","45+",NA
+2018,"Ile Perseverance","Not Stated",NA
+2018,"La Digue and Inner Islands","<15",0
+2018,"La Digue and Inner Islands","15-19",6
+2018,"La Digue and Inner Islands","20-24",13
+2018,"La Digue and Inner Islands","25-29",10
+2018,"La Digue and Inner Islands","30-34",12
+2018,"La Digue and Inner Islands","35-39",2
+2018,"La Digue and Inner Islands","40-44",2
+2018,"La Digue and Inner Islands","45+",0
+2018,"La Digue and Inner Islands","Not Stated",0
+2018,"Les Mamelles","<15",0
+2018,"Les Mamelles","15-19",3
+2018,"Les Mamelles","20-24",14
+2018,"Les Mamelles","25-29",11
+2018,"Les Mamelles","30-34",8
+2018,"Les Mamelles","35-39",5
+2018,"Les Mamelles","40-44",2
+2018,"Les Mamelles","45+",0
+2018,"Les Mamelles","Not Stated",0
+2018,"Mont Buxton","<15",0
+2018,"Mont Buxton","15-19",5
+2018,"Mont Buxton","20-24",18
+2018,"Mont Buxton","25-29",27
+2018,"Mont Buxton","30-34",14
+2018,"Mont Buxton","35-39",9
+2018,"Mont Buxton","40-44",1
+2018,"Mont Buxton","45+",0
+2018,"Mont Buxton","Not Stated",0
+2018,"Mont Fleuri","<15",0
+2018,"Mont Fleuri","15-19",6
+2018,"Mont Fleuri","20-24",21
+2018,"Mont Fleuri","25-29",15
+2018,"Mont Fleuri","30-34",14
+2018,"Mont Fleuri","35-39",6
+2018,"Mont Fleuri","40-44",3
+2018,"Mont Fleuri","45+",0
+2018,"Mont Fleuri","Not Stated",0
+2018,"Other Islands","<15",NA
+2018,"Other Islands","15-19",NA
+2018,"Other Islands","20-24",NA
+2018,"Other Islands","25-29",NA
+2018,"Other Islands","30-34",NA
+2018,"Other Islands","35-39",NA
+2018,"Other Islands","40-44",NA
+2018,"Other Islands","45+",NA
+2018,"Other Islands","Not Stated",NA
+2018,"Plaisance","<15",2
+2018,"Plaisance","15-19",7
+2018,"Plaisance","20-24",17
+2018,"Plaisance","25-29",21
+2018,"Plaisance","30-34",17
+2018,"Plaisance","35-39",6
+2018,"Plaisance","40-44",1
+2018,"Plaisance","45+",1
+2018,"Plaisance","Not Stated",0
+2018,"Pointe Larue","<15",0
+2018,"Pointe Larue","15-19",9
+2018,"Pointe Larue","20-24",21
+2018,"Pointe Larue","25-29",15
+2018,"Pointe Larue","30-34",8
+2018,"Pointe Larue","35-39",9
+2018,"Pointe Larue","40-44",3
+2018,"Pointe Larue","45+",0
+2018,"Pointe Larue","Not Stated",0
+2018,"Port Glaud","<15",0
+2018,"Port Glaud","15-19",7
+2018,"Port Glaud","20-24",9
+2018,"Port Glaud","25-29",12
+2018,"Port Glaud","30-34",6
+2018,"Port Glaud","35-39",7
+2018,"Port Glaud","40-44",4
+2018,"Port Glaud","45+",0
+2018,"Port Glaud","Not Stated",0
+2018,"Roche Caiman","<15",0
+2018,"Roche Caiman","15-19",10
+2018,"Roche Caiman","20-24",16
+2018,"Roche Caiman","25-29",13
+2018,"Roche Caiman","30-34",10
+2018,"Roche Caiman","35-39",4
+2018,"Roche Caiman","40-44",1
+2018,"Roche Caiman","45+",0
+2018,"Roche Caiman","Not Stated",0
+2018,"Saint Louis","<15",1
+2018,"Saint Louis","15-19",8
+2018,"Saint Louis","20-24",19
+2018,"Saint Louis","25-29",14
+2018,"Saint Louis","30-34",14
+2018,"Saint Louis","35-39",11
+2018,"Saint Louis","40-44",2
+2018,"Saint Louis","45+",0
+2018,"Saint Louis","Not Stated",0
+2018,"Takamaka","<15",0
+2018,"Takamaka","15-19",6
+2018,"Takamaka","20-24",16
+2018,"Takamaka","25-29",7
+2018,"Takamaka","30-34",9
+2018,"Takamaka","35-39",6
+2018,"Takamaka","40-44",6
+2018,"Takamaka","45+",0
+2018,"Takamaka","Not Stated",0
+2018,"Not Stated","<15",NA
+2018,"Not Stated","15-19",NA
+2018,"Not Stated","20-24",NA
+2018,"Not Stated","25-29",NA
+2018,"Not Stated","30-34",NA
+2018,"Not Stated","35-39",NA
+2018,"Not Stated","40-44",NA
+2018,"Not Stated","45+",NA
+2018,"Not Stated","Not Stated",NA
+2017,"Anse Aux Pins","<15",0
+2017,"Anse Aux Pins","15-19",14
+2017,"Anse Aux Pins","20-24",27
+2017,"Anse Aux Pins","25-29",18
+2017,"Anse Aux Pins","30-34",17
+2017,"Anse Aux Pins","35-39",9
+2017,"Anse Aux Pins","40-44",2
+2017,"Anse Aux Pins","45+",0
+2017,"Anse Aux Pins","Not Stated",0
+2017,"Anse Boileau","<15",0
+2017,"Anse Boileau","15-19",7
+2017,"Anse Boileau","20-24",20
+2017,"Anse Boileau","25-29",14
+2017,"Anse Boileau","30-34",12
+2017,"Anse Boileau","35-39",9
+2017,"Anse Boileau","40-44",3
+2017,"Anse Boileau","45+",0
+2017,"Anse Boileau","Not Stated",0
+2017,"Anse Etoile","<15",0
+2017,"Anse Etoile","15-19",5
+2017,"Anse Etoile","20-24",17
+2017,"Anse Etoile","25-29",22
+2017,"Anse Etoile","30-34",9
+2017,"Anse Etoile","35-39",11
+2017,"Anse Etoile","40-44",7
+2017,"Anse Etoile","45+",0
+2017,"Anse Etoile","Not Stated",0
+2017,"Anse Royale","<15",0
+2017,"Anse Royale","15-19",7
+2017,"Anse Royale","20-24",14
+2017,"Anse Royale","25-29",23
+2017,"Anse Royale","30-34",13
+2017,"Anse Royale","35-39",5
+2017,"Anse Royale","40-44",3
+2017,"Anse Royale","45+",0
+2017,"Anse Royale","Not Stated",0
+2017,"Au Cap","<15",0
+2017,"Au Cap","15-19",9
+2017,"Au Cap","20-24",15
+2017,"Au Cap","25-29",13
+2017,"Au Cap","30-34",10
+2017,"Au Cap","35-39",8
+2017,"Au Cap","40-44",3
+2017,"Au Cap","45+",0
+2017,"Au Cap","Not Stated",0
+2017,"Baie Lazare","<15",0
+2017,"Baie Lazare","15-19",10
+2017,"Baie Lazare","20-24",17
+2017,"Baie Lazare","25-29",15
+2017,"Baie Lazare","30-34",19
+2017,"Baie Lazare","35-39",8
+2017,"Baie Lazare","40-44",6
+2017,"Baie Lazare","45+",0
+2017,"Baie Lazare","Not Stated",0
+2017,"Baie Sainte Anne","<15",1
+2017,"Baie Sainte Anne","15-19",11
+2017,"Baie Sainte Anne","20-24",32
+2017,"Baie Sainte Anne","25-29",15
+2017,"Baie Sainte Anne","30-34",15
+2017,"Baie Sainte Anne","35-39",4
+2017,"Baie Sainte Anne","40-44",3
+2017,"Baie Sainte Anne","45+",2
+2017,"Baie Sainte Anne","Not Stated",0
+2017,"Beau Vallon","<15",0
+2017,"Beau Vallon","15-19",3
+2017,"Beau Vallon","20-24",21
+2017,"Beau Vallon","25-29",25
+2017,"Beau Vallon","30-34",18
+2017,"Beau Vallon","35-39",13
+2017,"Beau Vallon","40-44",1
+2017,"Beau Vallon","45+",0
+2017,"Beau Vallon","Not Stated",0
+2017,"Bel Air","<15",0
+2017,"Bel Air","15-19",2
+2017,"Bel Air","20-24",6
+2017,"Bel Air","25-29",7
+2017,"Bel Air","30-34",7
+2017,"Bel Air","35-39",5
+2017,"Bel Air","40-44",0
+2017,"Bel Air","45+",0
+2017,"Bel Air","Not Stated",0
+2017,"Belombre","<15",0
+2017,"Belombre","15-19",6
+2017,"Belombre","20-24",23
+2017,"Belombre","25-29",20
+2017,"Belombre","30-34",19
+2017,"Belombre","35-39",8
+2017,"Belombre","40-44",0
+2017,"Belombre","45+",0
+2017,"Belombre","Not Stated",0
+2017,"Cascade","<15",0
+2017,"Cascade","15-19",11
+2017,"Cascade","20-24",20
+2017,"Cascade","25-29",16
+2017,"Cascade","30-34",18
+2017,"Cascade","35-39",6
+2017,"Cascade","40-44",0
+2017,"Cascade","45+",0
+2017,"Cascade","Not Stated",0
+2017,"English River","<15",0
+2017,"English River","15-19",39
+2017,"English River","20-24",38
+2017,"English River","25-29",36
+2017,"English River","30-34",27
+2017,"English River","35-39",18
+2017,"English River","40-44",3
+2017,"English River","45+",0
+2017,"English River","Not Stated",0
+2017,"Glacis","<15",1
+2017,"Glacis","15-19",7
+2017,"Glacis","20-24",21
+2017,"Glacis","25-29",14
+2017,"Glacis","30-34",15
+2017,"Glacis","35-39",7
+2017,"Glacis","40-44",0
+2017,"Glacis","45+",0
+2017,"Glacis","Not Stated",0
+2017,"Grand Anse Mahe","<15",1
+2017,"Grand Anse Mahe","15-19",6
+2017,"Grand Anse Mahe","20-24",14
+2017,"Grand Anse Mahe","25-29",21
+2017,"Grand Anse Mahe","30-34",4
+2017,"Grand Anse Mahe","35-39",8
+2017,"Grand Anse Mahe","40-44",2
+2017,"Grand Anse Mahe","45+",0
+2017,"Grand Anse Mahe","Not Stated",0
+2017,"Grand Anse Praslin","<15",0
+2017,"Grand Anse Praslin","15-19",11
+2017,"Grand Anse Praslin","20-24",14
+2017,"Grand Anse Praslin","25-29",20
+2017,"Grand Anse Praslin","30-34",13
+2017,"Grand Anse Praslin","35-39",9
+2017,"Grand Anse Praslin","40-44",0
+2017,"Grand Anse Praslin","45+",0
+2017,"Grand Anse Praslin","Not Stated",0
+2017,"Ile Perseverance","<15",NA
+2017,"Ile Perseverance","15-19",NA
+2017,"Ile Perseverance","20-24",NA
+2017,"Ile Perseverance","25-29",NA
+2017,"Ile Perseverance","30-34",NA
+2017,"Ile Perseverance","35-39",NA
+2017,"Ile Perseverance","40-44",NA
+2017,"Ile Perseverance","45+",NA
+2017,"Ile Perseverance","Not Stated",NA
+2017,"La Digue and Inner Islands","<15",0
+2017,"La Digue and Inner Islands","15-19",5
+2017,"La Digue and Inner Islands","20-24",20
+2017,"La Digue and Inner Islands","25-29",9
+2017,"La Digue and Inner Islands","30-34",11
+2017,"La Digue and Inner Islands","35-39",6
+2017,"La Digue and Inner Islands","40-44",2
+2017,"La Digue and Inner Islands","45+",0
+2017,"La Digue and Inner Islands","Not Stated",0
+2017,"Les Mamelles","<15",0
+2017,"Les Mamelles","15-19",5
+2017,"Les Mamelles","20-24",11
+2017,"Les Mamelles","25-29",10
+2017,"Les Mamelles","30-34",9
+2017,"Les Mamelles","35-39",5
+2017,"Les Mamelles","40-44",0
+2017,"Les Mamelles","45+",0
+2017,"Les Mamelles","Not Stated",0
+2017,"Mont Buxton","<15",0
+2017,"Mont Buxton","15-19",7
+2017,"Mont Buxton","20-24",21
+2017,"Mont Buxton","25-29",20
+2017,"Mont Buxton","30-34",11
+2017,"Mont Buxton","35-39",11
+2017,"Mont Buxton","40-44",1
+2017,"Mont Buxton","45+",0
+2017,"Mont Buxton","Not Stated",0
+2017,"Mont Fleuri","<15",0
+2017,"Mont Fleuri","15-19",4
+2017,"Mont Fleuri","20-24",20
+2017,"Mont Fleuri","25-29",12
+2017,"Mont Fleuri","30-34",8
+2017,"Mont Fleuri","35-39",10
+2017,"Mont Fleuri","40-44",0
+2017,"Mont Fleuri","45+",0
+2017,"Mont Fleuri","Not Stated",0
+2017,"Other Islands","<15",NA
+2017,"Other Islands","15-19",NA
+2017,"Other Islands","20-24",NA
+2017,"Other Islands","25-29",NA
+2017,"Other Islands","30-34",NA
+2017,"Other Islands","35-39",NA
+2017,"Other Islands","40-44",NA
+2017,"Other Islands","45+",NA
+2017,"Other Islands","Not Stated",NA
+2017,"Plaisance","<15",0
+2017,"Plaisance","15-19",4
+2017,"Plaisance","20-24",16
+2017,"Plaisance","25-29",32
+2017,"Plaisance","30-34",10
+2017,"Plaisance","35-39",7
+2017,"Plaisance","40-44",3
+2017,"Plaisance","45+",0
+2017,"Plaisance","Not Stated",0
+2017,"Pointe Larue","<15",0
+2017,"Pointe Larue","15-19",4
+2017,"Pointe Larue","20-24",21
+2017,"Pointe Larue","25-29",18
+2017,"Pointe Larue","30-34",16
+2017,"Pointe Larue","35-39",6
+2017,"Pointe Larue","40-44",1
+2017,"Pointe Larue","45+",0
+2017,"Pointe Larue","Not Stated",0
+2017,"Port Glaud","<15",0
+2017,"Port Glaud","15-19",7
+2017,"Port Glaud","20-24",14
+2017,"Port Glaud","25-29",14
+2017,"Port Glaud","30-34",14
+2017,"Port Glaud","35-39",9
+2017,"Port Glaud","40-44",4
+2017,"Port Glaud","45+",1
+2017,"Port Glaud","Not Stated",0
+2017,"Roche Caiman","<15",0
+2017,"Roche Caiman","15-19",4
+2017,"Roche Caiman","20-24",16
+2017,"Roche Caiman","25-29",9
+2017,"Roche Caiman","30-34",9
+2017,"Roche Caiman","35-39",3
+2017,"Roche Caiman","40-44",2
+2017,"Roche Caiman","45+",0
+2017,"Roche Caiman","Not Stated",0
+2017,"Saint Louis","<15",0
+2017,"Saint Louis","15-19",7
+2017,"Saint Louis","20-24",14
+2017,"Saint Louis","25-29",20
+2017,"Saint Louis","30-34",5
+2017,"Saint Louis","35-39",2
+2017,"Saint Louis","40-44",4
+2017,"Saint Louis","45+",0
+2017,"Saint Louis","Not Stated",0
+2017,"Takamaka","<15",0
+2017,"Takamaka","15-19",6
+2017,"Takamaka","20-24",6
+2017,"Takamaka","25-29",6
+2017,"Takamaka","30-34",7
+2017,"Takamaka","35-39",3
+2017,"Takamaka","40-44",1
+2017,"Takamaka","45+",0
+2017,"Takamaka","Not Stated",0
+2017,"Not Stated","<15",NA
+2017,"Not Stated","15-19",NA
+2017,"Not Stated","20-24",NA
+2017,"Not Stated","25-29",NA
+2017,"Not Stated","30-34",NA
+2017,"Not Stated","35-39",NA
+2017,"Not Stated","40-44",NA
+2017,"Not Stated","45+",NA
+2017,"Not Stated","Not Stated",NA
+2019,"Anse Aux Pins","<15",1
+2019,"Anse Aux Pins","15-19",15
+2019,"Anse Aux Pins","20-24",23
+2019,"Anse Aux Pins","25-29",23
+2019,"Anse Aux Pins","30-34",7
+2019,"Anse Aux Pins","35-39",14
+2019,"Anse Aux Pins","40-44",2
+2019,"Anse Aux Pins","45+",0
+2019,"Anse Aux Pins","Not Stated",0
+2019,"Anse Boileau","<15",0
+2019,"Anse Boileau","15-19",10
+2019,"Anse Boileau","20-24",23
+2019,"Anse Boileau","25-29",11
+2019,"Anse Boileau","30-34",18
+2019,"Anse Boileau","35-39",7
+2019,"Anse Boileau","40-44",3
+2019,"Anse Boileau","45+",0
+2019,"Anse Boileau","Not Stated",0
+2019,"Anse Etoile","<15",1
+2019,"Anse Etoile","15-19",9
+2019,"Anse Etoile","20-24",12
+2019,"Anse Etoile","25-29",20
+2019,"Anse Etoile","30-34",22
+2019,"Anse Etoile","35-39",9
+2019,"Anse Etoile","40-44",3
+2019,"Anse Etoile","45+",0
+2019,"Anse Etoile","Not Stated",0
+2019,"Anse Royale","<15",0
+2019,"Anse Royale","15-19",14
+2019,"Anse Royale","20-24",18
+2019,"Anse Royale","25-29",14
+2019,"Anse Royale","30-34",10
+2019,"Anse Royale","35-39",9
+2019,"Anse Royale","40-44",5
+2019,"Anse Royale","45+",0
+2019,"Anse Royale","Not Stated",0
+2019,"Au Cap","<15",0
+2019,"Au Cap","15-19",6
+2019,"Au Cap","20-24",13
+2019,"Au Cap","25-29",23
+2019,"Au Cap","30-34",12
+2019,"Au Cap","35-39",9
+2019,"Au Cap","40-44",0
+2019,"Au Cap","45+",0
+2019,"Au Cap","Not Stated",0
+2019,"Baie Lazare","<15",0
+2019,"Baie Lazare","15-19",10
+2019,"Baie Lazare","20-24",11
+2019,"Baie Lazare","25-29",21
+2019,"Baie Lazare","30-34",9
+2019,"Baie Lazare","35-39",6
+2019,"Baie Lazare","40-44",2
+2019,"Baie Lazare","45+",1
+2019,"Baie Lazare","Not Stated",0
+2019,"Baie Sainte Anne","<15",0
+2019,"Baie Sainte Anne","15-19",9
+2019,"Baie Sainte Anne","20-24",23
+2019,"Baie Sainte Anne","25-29",28
+2019,"Baie Sainte Anne","30-34",16
+2019,"Baie Sainte Anne","35-39",12
+2019,"Baie Sainte Anne","40-44",7
+2019,"Baie Sainte Anne","45+",1
+2019,"Baie Sainte Anne","Not Stated",0
+2019,"Beau Vallon","<15",0
+2019,"Beau Vallon","15-19",9
+2019,"Beau Vallon","20-24",20
+2019,"Beau Vallon","25-29",28
+2019,"Beau Vallon","30-34",20
+2019,"Beau Vallon","35-39",11
+2019,"Beau Vallon","40-44",2
+2019,"Beau Vallon","45+",0
+2019,"Beau Vallon","Not Stated",0
+2019,"Bel Air","<15",0
+2019,"Bel Air","15-19",5
+2019,"Bel Air","20-24",8
+2019,"Bel Air","25-29",7
+2019,"Bel Air","30-34",10
+2019,"Bel Air","35-39",5
+2019,"Bel Air","40-44",5
+2019,"Bel Air","45+",0
+2019,"Bel Air","Not Stated",0
+2019,"Belombre","<15",0
+2019,"Belombre","15-19",2
+2019,"Belombre","20-24",12
+2019,"Belombre","25-29",17
+2019,"Belombre","30-34",10
+2019,"Belombre","35-39",7
+2019,"Belombre","40-44",3
+2019,"Belombre","45+",0
+2019,"Belombre","Not Stated",0
+2019,"Cascade","<15",0
+2019,"Cascade","15-19",6
+2019,"Cascade","20-24",8
+2019,"Cascade","25-29",12
+2019,"Cascade","30-34",9
+2019,"Cascade","35-39",10
+2019,"Cascade","40-44",6
+2019,"Cascade","45+",1
+2019,"Cascade","Not Stated",0
+2019,"English River","<15",0
+2019,"English River","15-19",11
+2019,"English River","20-24",15
+2019,"English River","25-29",11
+2019,"English River","30-34",17
+2019,"English River","35-39",5
+2019,"English River","40-44",3
+2019,"English River","45+",0
+2019,"English River","Not Stated",0
+2019,"Glacis","<15",0
+2019,"Glacis","15-19",6
+2019,"Glacis","20-24",15
+2019,"Glacis","25-29",12
+2019,"Glacis","30-34",19
+2019,"Glacis","35-39",11
+2019,"Glacis","40-44",1
+2019,"Glacis","45+",0
+2019,"Glacis","Not Stated",0
+2019,"Grand Anse Mahe","<15",1
+2019,"Grand Anse Mahe","15-19",7
+2019,"Grand Anse Mahe","20-24",11
+2019,"Grand Anse Mahe","25-29",11
+2019,"Grand Anse Mahe","30-34",11
+2019,"Grand Anse Mahe","35-39",10
+2019,"Grand Anse Mahe","40-44",4
+2019,"Grand Anse Mahe","45+",0
+2019,"Grand Anse Mahe","Not Stated",0
+2019,"Grand Anse Praslin","<15",0
+2019,"Grand Anse Praslin","15-19",8
+2019,"Grand Anse Praslin","20-24",13
+2019,"Grand Anse Praslin","25-29",17
+2019,"Grand Anse Praslin","30-34",13
+2019,"Grand Anse Praslin","35-39",7
+2019,"Grand Anse Praslin","40-44",1
+2019,"Grand Anse Praslin","45+",0
+2019,"Grand Anse Praslin","Not Stated",0
+2019,"Ile Perseverance","<15",1
+2019,"Ile Perseverance","15-19",18
+2019,"Ile Perseverance","20-24",28
+2019,"Ile Perseverance","25-29",16
+2019,"Ile Perseverance","30-34",15
+2019,"Ile Perseverance","35-39",12
+2019,"Ile Perseverance","40-44",6
+2019,"Ile Perseverance","45+",1
+2019,"Ile Perseverance","Not Stated",0
+2019,"La Digue and Inner Islands","<15",0
+2019,"La Digue and Inner Islands","15-19",8
+2019,"La Digue and Inner Islands","20-24",10
+2019,"La Digue and Inner Islands","25-29",6
+2019,"La Digue and Inner Islands","30-34",9
+2019,"La Digue and Inner Islands","35-39",1
+2019,"La Digue and Inner Islands","40-44",1
+2019,"La Digue and Inner Islands","45+",0
+2019,"La Digue and Inner Islands","Not Stated",0
+2019,"Les Mamelles","<15",2
+2019,"Les Mamelles","15-19",7
+2019,"Les Mamelles","20-24",11
+2019,"Les Mamelles","25-29",15
+2019,"Les Mamelles","30-34",9
+2019,"Les Mamelles","35-39",6
+2019,"Les Mamelles","40-44",1
+2019,"Les Mamelles","45+",0
+2019,"Les Mamelles","Not Stated",0
+2019,"Mont Buxton","<15",1
+2019,"Mont Buxton","15-19",5
+2019,"Mont Buxton","20-24",14
+2019,"Mont Buxton","25-29",17
+2019,"Mont Buxton","30-34",11
+2019,"Mont Buxton","35-39",5
+2019,"Mont Buxton","40-44",2
+2019,"Mont Buxton","45+",0
+2019,"Mont Buxton","Not Stated",0
+2019,"Mont Fleuri","<15",1
+2019,"Mont Fleuri","15-19",9
+2019,"Mont Fleuri","20-24",7
+2019,"Mont Fleuri","25-29",8
+2019,"Mont Fleuri","30-34",10
+2019,"Mont Fleuri","35-39",6
+2019,"Mont Fleuri","40-44",1
+2019,"Mont Fleuri","45+",0
+2019,"Mont Fleuri","Not Stated",0
+2019,"Other Islands","<15",NA
+2019,"Other Islands","15-19",NA
+2019,"Other Islands","20-24",NA
+2019,"Other Islands","25-29",NA
+2019,"Other Islands","30-34",NA
+2019,"Other Islands","35-39",NA
+2019,"Other Islands","40-44",NA
+2019,"Other Islands","45+",NA
+2019,"Other Islands","Not Stated",NA
+2019,"Plaisance","<15",1
+2019,"Plaisance","15-19",8
+2019,"Plaisance","20-24",20
+2019,"Plaisance","25-29",17
+2019,"Plaisance","30-34",22
+2019,"Plaisance","35-39",10
+2019,"Plaisance","40-44",1
+2019,"Plaisance","45+",0
+2019,"Plaisance","Not Stated",0
+2019,"Pointe Larue","<15",0
+2019,"Pointe Larue","15-19",8
+2019,"Pointe Larue","20-24",8
+2019,"Pointe Larue","25-29",14
+2019,"Pointe Larue","30-34",10
+2019,"Pointe Larue","35-39",8
+2019,"Pointe Larue","40-44",2
+2019,"Pointe Larue","45+",0
+2019,"Pointe Larue","Not Stated",0
+2019,"Port Glaud","<15",0
+2019,"Port Glaud","15-19",15
+2019,"Port Glaud","20-24",17
+2019,"Port Glaud","25-29",7
+2019,"Port Glaud","30-34",4
+2019,"Port Glaud","35-39",3
+2019,"Port Glaud","40-44",2
+2019,"Port Glaud","45+",0
+2019,"Port Glaud","Not Stated",0
+2019,"Roche Caiman","<15",0
+2019,"Roche Caiman","15-19",9
+2019,"Roche Caiman","20-24",12
+2019,"Roche Caiman","25-29",7
+2019,"Roche Caiman","30-34",11
+2019,"Roche Caiman","35-39",5
+2019,"Roche Caiman","40-44",4
+2019,"Roche Caiman","45+",0
+2019,"Roche Caiman","Not Stated",0
+2019,"Saint Louis","<15",0
+2019,"Saint Louis","15-19",9
+2019,"Saint Louis","20-24",10
+2019,"Saint Louis","25-29",14
+2019,"Saint Louis","30-34",14
+2019,"Saint Louis","35-39",11
+2019,"Saint Louis","40-44",0
+2019,"Saint Louis","45+",0
+2019,"Saint Louis","Not Stated",0
+2019,"Takamaka","<15",0
+2019,"Takamaka","15-19",5
+2019,"Takamaka","20-24",11
+2019,"Takamaka","25-29",12
+2019,"Takamaka","30-34",11
+2019,"Takamaka","35-39",6
+2019,"Takamaka","40-44",2
+2019,"Takamaka","45+",0
+2019,"Takamaka","Not Stated",0
+2019,"Not Stated","<15",NA
+2019,"Not Stated","15-19",NA
+2019,"Not Stated","20-24",NA
+2019,"Not Stated","25-29",NA
+2019,"Not Stated","30-34",NA
+2019,"Not Stated","35-39",NA
+2019,"Not Stated","40-44",NA
+2019,"Not Stated","45+",NA
+2019,"Not Stated","Not Stated",NA
+2020,"Anse Aux Pins","<15",0
+2020,"Anse Aux Pins","15-19",15
+2020,"Anse Aux Pins","20-24",15
+2020,"Anse Aux Pins","25-29",15
+2020,"Anse Aux Pins","30-34",20
+2020,"Anse Aux Pins","35-39",10
+2020,"Anse Aux Pins","40-44",5
+2020,"Anse Aux Pins","45+",0
+2020,"Anse Aux Pins","Not Stated",0
+2020,"Anse Boileau","<15",0
+2020,"Anse Boileau","15-19",11
+2020,"Anse Boileau","20-24",24
+2020,"Anse Boileau","25-29",18
+2020,"Anse Boileau","30-34",13
+2020,"Anse Boileau","35-39",12
+2020,"Anse Boileau","40-44",1
+2020,"Anse Boileau","45+",1
+2020,"Anse Boileau","Not Stated",0
+2020,"Anse Etoile","<15",1
+2020,"Anse Etoile","15-19",4
+2020,"Anse Etoile","20-24",16
+2020,"Anse Etoile","25-29",26
+2020,"Anse Etoile","30-34",24
+2020,"Anse Etoile","35-39",8
+2020,"Anse Etoile","40-44",5
+2020,"Anse Etoile","45+",0
+2020,"Anse Etoile","Not Stated",0
+2020,"Anse Royale","<15",0
+2020,"Anse Royale","15-19",5
+2020,"Anse Royale","20-24",20
+2020,"Anse Royale","25-29",14
+2020,"Anse Royale","30-34",6
+2020,"Anse Royale","35-39",8
+2020,"Anse Royale","40-44",1
+2020,"Anse Royale","45+",0
+2020,"Anse Royale","Not Stated",0
+2020,"Au Cap","<15",0
+2020,"Au Cap","15-19",6
+2020,"Au Cap","20-24",16
+2020,"Au Cap","25-29",17
+2020,"Au Cap","30-34",14
+2020,"Au Cap","35-39",6
+2020,"Au Cap","40-44",1
+2020,"Au Cap","45+",0
+2020,"Au Cap","Not Stated",0
+2020,"Baie Lazare","<15",0
+2020,"Baie Lazare","15-19",5
+2020,"Baie Lazare","20-24",17
+2020,"Baie Lazare","25-29",10
+2020,"Baie Lazare","30-34",8
+2020,"Baie Lazare","35-39",10
+2020,"Baie Lazare","40-44",2
+2020,"Baie Lazare","45+",0
+2020,"Baie Lazare","Not Stated",0
+2020,"Baie Sainte Anne","<15",0
+2020,"Baie Sainte Anne","15-19",10
+2020,"Baie Sainte Anne","20-24",25
+2020,"Baie Sainte Anne","25-29",28
+2020,"Baie Sainte Anne","30-34",25
+2020,"Baie Sainte Anne","35-39",11
+2020,"Baie Sainte Anne","40-44",4
+2020,"Baie Sainte Anne","45+",0
+2020,"Baie Sainte Anne","Not Stated",0
+2020,"Beau Vallon","<15",0
+2020,"Beau Vallon","15-19",4
+2020,"Beau Vallon","20-24",14
+2020,"Beau Vallon","25-29",23
+2020,"Beau Vallon","30-34",12
+2020,"Beau Vallon","35-39",8
+2020,"Beau Vallon","40-44",5
+2020,"Beau Vallon","45+",0
+2020,"Beau Vallon","Not Stated",0
+2020,"Bel Air","<15",0
+2020,"Bel Air","15-19",6
+2020,"Bel Air","20-24",5
+2020,"Bel Air","25-29",8
+2020,"Bel Air","30-34",8
+2020,"Bel Air","35-39",2
+2020,"Bel Air","40-44",2
+2020,"Bel Air","45+",0
+2020,"Bel Air","Not Stated",0
+2020,"Belombre","<15",0
+2020,"Belombre","15-19",1
+2020,"Belombre","20-24",15
+2020,"Belombre","25-29",15
+2020,"Belombre","30-34",9
+2020,"Belombre","35-39",9
+2020,"Belombre","40-44",0
+2020,"Belombre","45+",0
+2020,"Belombre","Not Stated",0
+2020,"Cascade","<15",0
+2020,"Cascade","15-19",7
+2020,"Cascade","20-24",23
+2020,"Cascade","25-29",16
+2020,"Cascade","30-34",13
+2020,"Cascade","35-39",11
+2020,"Cascade","40-44",6
+2020,"Cascade","45+",0
+2020,"Cascade","Not Stated",0
+2020,"English River","<15",1
+2020,"English River","15-19",9
+2020,"English River","20-24",11
+2020,"English River","25-29",15
+2020,"English River","30-34",10
+2020,"English River","35-39",6
+2020,"English River","40-44",2
+2020,"English River","45+",0
+2020,"English River","Not Stated",0
+2020,"Glacis","<15",0
+2020,"Glacis","15-19",9
+2020,"Glacis","20-24",8
+2020,"Glacis","25-29",15
+2020,"Glacis","30-34",11
+2020,"Glacis","35-39",8
+2020,"Glacis","40-44",3
+2020,"Glacis","45+",0
+2020,"Glacis","Not Stated",0
+2020,"Grand Anse Mahe","<15",0
+2020,"Grand Anse Mahe","15-19",11
+2020,"Grand Anse Mahe","20-24",16
+2020,"Grand Anse Mahe","25-29",8
+2020,"Grand Anse Mahe","30-34",8
+2020,"Grand Anse Mahe","35-39",7
+2020,"Grand Anse Mahe","40-44",3
+2020,"Grand Anse Mahe","45+",0
+2020,"Grand Anse Mahe","Not Stated",0
+2020,"Grand Anse Praslin","<15",1
+2020,"Grand Anse Praslin","15-19",8
+2020,"Grand Anse Praslin","20-24",6
+2020,"Grand Anse Praslin","25-29",9
+2020,"Grand Anse Praslin","30-34",9
+2020,"Grand Anse Praslin","35-39",7
+2020,"Grand Anse Praslin","40-44",1
+2020,"Grand Anse Praslin","45+",0
+2020,"Grand Anse Praslin","Not Stated",0
+2020,"Ile Perseverance","<15",0
+2020,"Ile Perseverance","15-19",15
+2020,"Ile Perseverance","20-24",24
+2020,"Ile Perseverance","25-29",15
+2020,"Ile Perseverance","30-34",19
+2020,"Ile Perseverance","35-39",12
+2020,"Ile Perseverance","40-44",5
+2020,"Ile Perseverance","45+",0
+2020,"Ile Perseverance","Not Stated",0
+2020,"La Digue and Inner Islands","<15",0
+2020,"La Digue and Inner Islands","15-19",6
+2020,"La Digue and Inner Islands","20-24",12
+2020,"La Digue and Inner Islands","25-29",12
+2020,"La Digue and Inner Islands","30-34",12
+2020,"La Digue and Inner Islands","35-39",6
+2020,"La Digue and Inner Islands","40-44",1
+2020,"La Digue and Inner Islands","45+",0
+2020,"La Digue and Inner Islands","Not Stated",0
+2020,"Les Mamelles","<15",0
+2020,"Les Mamelles","15-19",4
+2020,"Les Mamelles","20-24",10
+2020,"Les Mamelles","25-29",9
+2020,"Les Mamelles","30-34",8
+2020,"Les Mamelles","35-39",5
+2020,"Les Mamelles","40-44",3
+2020,"Les Mamelles","45+",0
+2020,"Les Mamelles","Not Stated",0
+2020,"Mont Buxton","<15",0
+2020,"Mont Buxton","15-19",5
+2020,"Mont Buxton","20-24",11
+2020,"Mont Buxton","25-29",15
+2020,"Mont Buxton","30-34",11
+2020,"Mont Buxton","35-39",2
+2020,"Mont Buxton","40-44",2
+2020,"Mont Buxton","45+",0
+2020,"Mont Buxton","Not Stated",0
+2020,"Mont Fleuri","<15",0
+2020,"Mont Fleuri","15-19",6
+2020,"Mont Fleuri","20-24",13
+2020,"Mont Fleuri","25-29",18
+2020,"Mont Fleuri","30-34",15
+2020,"Mont Fleuri","35-39",3
+2020,"Mont Fleuri","40-44",2
+2020,"Mont Fleuri","45+",0
+2020,"Mont Fleuri","Not Stated",0
+2020,"Other Islands","<15",NA
+2020,"Other Islands","15-19",NA
+2020,"Other Islands","20-24",NA
+2020,"Other Islands","25-29",NA
+2020,"Other Islands","30-34",NA
+2020,"Other Islands","35-39",NA
+2020,"Other Islands","40-44",NA
+2020,"Other Islands","45+",NA
+2020,"Other Islands","Not Stated",NA
+2020,"Plaisance","<15",0
+2020,"Plaisance","15-19",6
+2020,"Plaisance","20-24",13
+2020,"Plaisance","25-29",17
+2020,"Plaisance","30-34",14
+2020,"Plaisance","35-39",9
+2020,"Plaisance","40-44",4
+2020,"Plaisance","45+",1
+2020,"Plaisance","Not Stated",0
+2020,"Pointe Larue","<15",0
+2020,"Pointe Larue","15-19",7
+2020,"Pointe Larue","20-24",9
+2020,"Pointe Larue","25-29",21
+2020,"Pointe Larue","30-34",10
+2020,"Pointe Larue","35-39",9
+2020,"Pointe Larue","40-44",2
+2020,"Pointe Larue","45+",1
+2020,"Pointe Larue","Not Stated",0
+2020,"Port Glaud","<15",0
+2020,"Port Glaud","15-19",4
+2020,"Port Glaud","20-24",9
+2020,"Port Glaud","25-29",7
+2020,"Port Glaud","30-34",7
+2020,"Port Glaud","35-39",2
+2020,"Port Glaud","40-44",1
+2020,"Port Glaud","45+",0
+2020,"Port Glaud","Not Stated",0
+2020,"Roche Caiman","<15",1
+2020,"Roche Caiman","15-19",9
+2020,"Roche Caiman","20-24",11
+2020,"Roche Caiman","25-29",9
+2020,"Roche Caiman","30-34",11
+2020,"Roche Caiman","35-39",4
+2020,"Roche Caiman","40-44",2
+2020,"Roche Caiman","45+",0
+2020,"Roche Caiman","Not Stated",0
+2020,"Saint Louis","<15",0
+2020,"Saint Louis","15-19",14
+2020,"Saint Louis","20-24",17
+2020,"Saint Louis","25-29",26
+2020,"Saint Louis","30-34",19
+2020,"Saint Louis","35-39",11
+2020,"Saint Louis","40-44",1
+2020,"Saint Louis","45+",1
+2020,"Saint Louis","Not Stated",0
+2020,"Takamaka","<15",0
+2020,"Takamaka","15-19",2
+2020,"Takamaka","20-24",17
+2020,"Takamaka","25-29",6
+2020,"Takamaka","30-34",15
+2020,"Takamaka","35-39",7
+2020,"Takamaka","40-44",0
+2020,"Takamaka","45+",0
+2020,"Takamaka","Not Stated",0
+2020,"Not Stated","<15",NA
+2020,"Not Stated","15-19",NA
+2020,"Not Stated","20-24",NA
+2020,"Not Stated","25-29",NA
+2020,"Not Stated","30-34",NA
+2020,"Not Stated","35-39",NA
+2020,"Not Stated","40-44",NA
+2020,"Not Stated","45+",NA
+2020,"Not Stated","Not Stated",NA
+2021,"Anse Aux Pins","<15",0
+2021,"Anse Aux Pins","15-19",10
+2021,"Anse Aux Pins","20-24",22
+2021,"Anse Aux Pins","25-29",24
+2021,"Anse Aux Pins","30-34",13
+2021,"Anse Aux Pins","35-39",15
+2021,"Anse Aux Pins","40-44",0
+2021,"Anse Aux Pins","45+",0
+2021,"Anse Aux Pins","Not Stated",0
+2021,"Anse Boileau","<15",0
+2021,"Anse Boileau","15-19",6
+2021,"Anse Boileau","20-24",17
+2021,"Anse Boileau","25-29",27
+2021,"Anse Boileau","30-34",16
+2021,"Anse Boileau","35-39",10
+2021,"Anse Boileau","40-44",2
+2021,"Anse Boileau","45+",1
+2021,"Anse Boileau","Not Stated",0
+2021,"Anse Etoile","<15",0
+2021,"Anse Etoile","15-19",5
+2021,"Anse Etoile","20-24",23
+2021,"Anse Etoile","25-29",23
+2021,"Anse Etoile","30-34",22
+2021,"Anse Etoile","35-39",9
+2021,"Anse Etoile","40-44",4
+2021,"Anse Etoile","45+",0
+2021,"Anse Etoile","Not Stated",0
+2021,"Anse Royale","<15",2
+2021,"Anse Royale","15-19",7
+2021,"Anse Royale","20-24",22
+2021,"Anse Royale","25-29",21
+2021,"Anse Royale","30-34",15
+2021,"Anse Royale","35-39",5
+2021,"Anse Royale","40-44",3
+2021,"Anse Royale","45+",0
+2021,"Anse Royale","Not Stated",0
+2021,"Au Cap","<15",0
+2021,"Au Cap","15-19",13
+2021,"Au Cap","20-24",21
+2021,"Au Cap","25-29",22
+2021,"Au Cap","30-34",12
+2021,"Au Cap","35-39",3
+2021,"Au Cap","40-44",2
+2021,"Au Cap","45+",0
+2021,"Au Cap","Not Stated",0
+2021,"Baie Lazare","<15",0
+2021,"Baie Lazare","15-19",5
+2021,"Baie Lazare","20-24",14
+2021,"Baie Lazare","25-29",16
+2021,"Baie Lazare","30-34",13
+2021,"Baie Lazare","35-39",8
+2021,"Baie Lazare","40-44",4
+2021,"Baie Lazare","45+",0
+2021,"Baie Lazare","Not Stated",0
+2021,"Baie Sainte Anne","<15",0
+2021,"Baie Sainte Anne","15-19",9
+2021,"Baie Sainte Anne","20-24",20
+2021,"Baie Sainte Anne","25-29",26
+2021,"Baie Sainte Anne","30-34",7
+2021,"Baie Sainte Anne","35-39",17
+2021,"Baie Sainte Anne","40-44",3
+2021,"Baie Sainte Anne","45+",0
+2021,"Baie Sainte Anne","Not Stated",0
+2021,"Beau Vallon","<15",0
+2021,"Beau Vallon","15-19",10
+2021,"Beau Vallon","20-24",21
+2021,"Beau Vallon","25-29",21
+2021,"Beau Vallon","30-34",18
+2021,"Beau Vallon","35-39",13
+2021,"Beau Vallon","40-44",4
+2021,"Beau Vallon","45+",1
+2021,"Beau Vallon","Not Stated",0
+2021,"Bel Air","<15",0
+2021,"Bel Air","15-19",3
+2021,"Bel Air","20-24",6
+2021,"Bel Air","25-29",14
+2021,"Bel Air","30-34",6
+2021,"Bel Air","35-39",2
+2021,"Bel Air","40-44",1
+2021,"Bel Air","45+",0
+2021,"Bel Air","Not Stated",0
+2021,"Belombre","<15",0
+2021,"Belombre","15-19",5
+2021,"Belombre","20-24",13
+2021,"Belombre","25-29",14
+2021,"Belombre","30-34",7
+2021,"Belombre","35-39",11
+2021,"Belombre","40-44",6
+2021,"Belombre","45+",0
+2021,"Belombre","Not Stated",0
+2021,"Cascade","<15",0
+2021,"Cascade","15-19",8
+2021,"Cascade","20-24",21
+2021,"Cascade","25-29",22
+2021,"Cascade","30-34",12
+2021,"Cascade","35-39",13
+2021,"Cascade","40-44",4
+2021,"Cascade","45+",0
+2021,"Cascade","Not Stated",0
+2021,"English River","<15",0
+2021,"English River","15-19",9
+2021,"English River","20-24",13
+2021,"English River","25-29",13
+2021,"English River","30-34",10
+2021,"English River","35-39",9
+2021,"English River","40-44",1
+2021,"English River","45+",0
+2021,"English River","Not Stated",0
+2021,"Glacis","<15",0
+2021,"Glacis","15-19",7
+2021,"Glacis","20-24",16
+2021,"Glacis","25-29",26
+2021,"Glacis","30-34",11
+2021,"Glacis","35-39",2
+2021,"Glacis","40-44",2
+2021,"Glacis","45+",0
+2021,"Glacis","Not Stated",0
+2021,"Grand Anse Mahe","<15",0
+2021,"Grand Anse Mahe","15-19",8
+2021,"Grand Anse Mahe","20-24",8
+2021,"Grand Anse Mahe","25-29",17
+2021,"Grand Anse Mahe","30-34",5
+2021,"Grand Anse Mahe","35-39",9
+2021,"Grand Anse Mahe","40-44",4
+2021,"Grand Anse Mahe","45+",0
+2021,"Grand Anse Mahe","Not Stated",0
+2021,"Grand Anse Praslin","<15",0
+2021,"Grand Anse Praslin","15-19",14
+2021,"Grand Anse Praslin","20-24",17
+2021,"Grand Anse Praslin","25-29",19
+2021,"Grand Anse Praslin","30-34",15
+2021,"Grand Anse Praslin","35-39",5
+2021,"Grand Anse Praslin","40-44",2
+2021,"Grand Anse Praslin","45+",0
+2021,"Grand Anse Praslin","Not Stated",0
+2021,"Ile Perseverance","<15",4
+2021,"Ile Perseverance","15-19",16
+2021,"Ile Perseverance","20-24",22
+2021,"Ile Perseverance","25-29",21
+2021,"Ile Perseverance","30-34",23
+2021,"Ile Perseverance","35-39",10
+2021,"Ile Perseverance","40-44",2
+2021,"Ile Perseverance","45+",0
+2021,"Ile Perseverance","Not Stated",0
+2021,"La Digue and Inner Islands","<15",0
+2021,"La Digue and Inner Islands","15-19",3
+2021,"La Digue and Inner Islands","20-24",13
+2021,"La Digue and Inner Islands","25-29",13
+2021,"La Digue and Inner Islands","30-34",9
+2021,"La Digue and Inner Islands","35-39",4
+2021,"La Digue and Inner Islands","40-44",2
+2021,"La Digue and Inner Islands","45+",0
+2021,"La Digue and Inner Islands","Not Stated",0
+2021,"Les Mamelles","<15",0
+2021,"Les Mamelles","15-19",5
+2021,"Les Mamelles","20-24",9
+2021,"Les Mamelles","25-29",13
+2021,"Les Mamelles","30-34",3
+2021,"Les Mamelles","35-39",4
+2021,"Les Mamelles","40-44",0
+2021,"Les Mamelles","45+",0
+2021,"Les Mamelles","Not Stated",0
+2021,"Mont Buxton","<15",0
+2021,"Mont Buxton","15-19",4
+2021,"Mont Buxton","20-24",12
+2021,"Mont Buxton","25-29",13
+2021,"Mont Buxton","30-34",10
+2021,"Mont Buxton","35-39",8
+2021,"Mont Buxton","40-44",3
+2021,"Mont Buxton","45+",0
+2021,"Mont Buxton","Not Stated",0
+2021,"Mont Fleuri","<15",0
+2021,"Mont Fleuri","15-19",5
+2021,"Mont Fleuri","20-24",11
+2021,"Mont Fleuri","25-29",10
+2021,"Mont Fleuri","30-34",13
+2021,"Mont Fleuri","35-39",5
+2021,"Mont Fleuri","40-44",3
+2021,"Mont Fleuri","45+",0
+2021,"Mont Fleuri","Not Stated",0
+2021,"Other Islands","<15",NA
+2021,"Other Islands","15-19",NA
+2021,"Other Islands","20-24",NA
+2021,"Other Islands","25-29",NA
+2021,"Other Islands","30-34",NA
+2021,"Other Islands","35-39",NA
+2021,"Other Islands","40-44",NA
+2021,"Other Islands","45+",NA
+2021,"Other Islands","Not Stated",NA
+2021,"Plaisance","<15",0
+2021,"Plaisance","15-19",17
+2021,"Plaisance","20-24",16
+2021,"Plaisance","25-29",19
+2021,"Plaisance","30-34",17
+2021,"Plaisance","35-39",13
+2021,"Plaisance","40-44",3
+2021,"Plaisance","45+",0
+2021,"Plaisance","Not Stated",0
+2021,"Pointe Larue","<15",0
+2021,"Pointe Larue","15-19",5
+2021,"Pointe Larue","20-24",13
+2021,"Pointe Larue","25-29",12
+2021,"Pointe Larue","30-34",9
+2021,"Pointe Larue","35-39",8
+2021,"Pointe Larue","40-44",1
+2021,"Pointe Larue","45+",0
+2021,"Pointe Larue","Not Stated",0
+2021,"Port Glaud","<15",0
+2021,"Port Glaud","15-19",4
+2021,"Port Glaud","20-24",11
+2021,"Port Glaud","25-29",5
+2021,"Port Glaud","30-34",8
+2021,"Port Glaud","35-39",3
+2021,"Port Glaud","40-44",1
+2021,"Port Glaud","45+",0
+2021,"Port Glaud","Not Stated",0
+2021,"Roche Caiman","<15",0
+2021,"Roche Caiman","15-19",4
+2021,"Roche Caiman","20-24",7
+2021,"Roche Caiman","25-29",14
+2021,"Roche Caiman","30-34",10
+2021,"Roche Caiman","35-39",7
+2021,"Roche Caiman","40-44",3
+2021,"Roche Caiman","45+",0
+2021,"Roche Caiman","Not Stated",0
+2021,"Saint Louis","<15",0
+2021,"Saint Louis","15-19",16
+2021,"Saint Louis","20-24",17
+2021,"Saint Louis","25-29",22
+2021,"Saint Louis","30-34",11
+2021,"Saint Louis","35-39",11
+2021,"Saint Louis","40-44",3
+2021,"Saint Louis","45+",0
+2021,"Saint Louis","Not Stated",0
+2021,"Takamaka","<15",0
+2021,"Takamaka","15-19",9
+2021,"Takamaka","20-24",15
+2021,"Takamaka","25-29",18
+2021,"Takamaka","30-34",12
+2021,"Takamaka","35-39",9
+2021,"Takamaka","40-44",1
+2021,"Takamaka","45+",0
+2021,"Takamaka","Not Stated",0
+2021,"Not Stated","<15",0
+2021,"Not Stated","15-19",0
+2021,"Not Stated","20-24",0
+2021,"Not Stated","25-29",0
+2021,"Not Stated","30-34",0
+2021,"Not Stated","35-39",0
+2021,"Not Stated","40-44",0
+2021,"Not Stated","45+",0
+2021,"Not Stated","Not Stated",1
+2023,"Anse Aux Pins","<15",1
+2023,"Anse Aux Pins","15-19",10
+2023,"Anse Aux Pins","20-24",18
+2023,"Anse Aux Pins","25-29",29
+2023,"Anse Aux Pins","30-34",14
+2023,"Anse Aux Pins","35-39",9
+2023,"Anse Aux Pins","40-44",3
+2023,"Anse Aux Pins","45+",0
+2023,"Anse Aux Pins","Not Stated",0
+2023,"Anse Boileau","<15",0
+2023,"Anse Boileau","15-19",7
+2023,"Anse Boileau","20-24",28
+2023,"Anse Boileau","25-29",21
+2023,"Anse Boileau","30-34",13
+2023,"Anse Boileau","35-39",4
+2023,"Anse Boileau","40-44",0
+2023,"Anse Boileau","45+",0
+2023,"Anse Boileau","Not Stated",0
+2023,"Anse Etoile","<15",2
+2023,"Anse Etoile","15-19",6
+2023,"Anse Etoile","20-24",20
+2023,"Anse Etoile","25-29",19
+2023,"Anse Etoile","30-34",17
+2023,"Anse Etoile","35-39",10
+2023,"Anse Etoile","40-44",1
+2023,"Anse Etoile","45+",1
+2023,"Anse Etoile","Not Stated",0
+2023,"Anse Royale","<15",1
+2023,"Anse Royale","15-19",9
+2023,"Anse Royale","20-24",15
+2023,"Anse Royale","25-29",20
+2023,"Anse Royale","30-34",8
+2023,"Anse Royale","35-39",7
+2023,"Anse Royale","40-44",2
+2023,"Anse Royale","45+",0
+2023,"Anse Royale","Not Stated",0
+2023,"Au Cap","<15",0
+2023,"Au Cap","15-19",9
+2023,"Au Cap","20-24",6
+2023,"Au Cap","25-29",16
+2023,"Au Cap","30-34",10
+2023,"Au Cap","35-39",13
+2023,"Au Cap","40-44",0
+2023,"Au Cap","45+",0
+2023,"Au Cap","Not Stated",0
+2023,"Baie Lazare","<15",1
+2023,"Baie Lazare","15-19",3
+2023,"Baie Lazare","20-24",17
+2023,"Baie Lazare","25-29",18
+2023,"Baie Lazare","30-34",12
+2023,"Baie Lazare","35-39",10
+2023,"Baie Lazare","40-44",1
+2023,"Baie Lazare","45+",0
+2023,"Baie Lazare","Not Stated",0
+2023,"Baie Sainte Anne","<15",0
+2023,"Baie Sainte Anne","15-19",5
+2023,"Baie Sainte Anne","20-24",16
+2023,"Baie Sainte Anne","25-29",21
+2023,"Baie Sainte Anne","30-34",10
+2023,"Baie Sainte Anne","35-39",11
+2023,"Baie Sainte Anne","40-44",0
+2023,"Baie Sainte Anne","45+",0
+2023,"Baie Sainte Anne","Not Stated",0
+2023,"Beau Vallon","<15",1
+2023,"Beau Vallon","15-19",8
+2023,"Beau Vallon","20-24",13
+2023,"Beau Vallon","25-29",13
+2023,"Beau Vallon","30-34",25
+2023,"Beau Vallon","35-39",4
+2023,"Beau Vallon","40-44",3
+2023,"Beau Vallon","45+",0
+2023,"Beau Vallon","Not Stated",0
+2023,"Bel Air","<15",1
+2023,"Bel Air","15-19",1
+2023,"Bel Air","20-24",6
+2023,"Bel Air","25-29",4
+2023,"Bel Air","30-34",4
+2023,"Bel Air","35-39",4
+2023,"Bel Air","40-44",2
+2023,"Bel Air","45+",0
+2023,"Bel Air","Not Stated",0
+2023,"Belombre","<15",0
+2023,"Belombre","15-19",1
+2023,"Belombre","20-24",12
+2023,"Belombre","25-29",15
+2023,"Belombre","30-34",16
+2023,"Belombre","35-39",9
+2023,"Belombre","40-44",5
+2023,"Belombre","45+",1
+2023,"Belombre","Not Stated",0
+2023,"Cascade","<15",0
+2023,"Cascade","15-19",12
+2023,"Cascade","20-24",16
+2023,"Cascade","25-29",14
+2023,"Cascade","30-34",13
+2023,"Cascade","35-39",10
+2023,"Cascade","40-44",2
+2023,"Cascade","45+",0
+2023,"Cascade","Not Stated",0
+2023,"English River","<15",0
+2023,"English River","15-19",4
+2023,"English River","20-24",10
+2023,"English River","25-29",16
+2023,"English River","30-34",18
+2023,"English River","35-39",3
+2023,"English River","40-44",0
+2023,"English River","45+",0
+2023,"English River","Not Stated",0
+2023,"Glacis","<15",0
+2023,"Glacis","15-19",6
+2023,"Glacis","20-24",16
+2023,"Glacis","25-29",17
+2023,"Glacis","30-34",18
+2023,"Glacis","35-39",7
+2023,"Glacis","40-44",3
+2023,"Glacis","45+",0
+2023,"Glacis","Not Stated",0
+2023,"Grand Anse Mahe","<15",0
+2023,"Grand Anse Mahe","15-19",9
+2023,"Grand Anse Mahe","20-24",12
+2023,"Grand Anse Mahe","25-29",15
+2023,"Grand Anse Mahe","30-34",12
+2023,"Grand Anse Mahe","35-39",7
+2023,"Grand Anse Mahe","40-44",1
+2023,"Grand Anse Mahe","45+",0
+2023,"Grand Anse Mahe","Not Stated",0
+2023,"Grand Anse Praslin","<15",2
+2023,"Grand Anse Praslin","15-19",8
+2023,"Grand Anse Praslin","20-24",20
+2023,"Grand Anse Praslin","25-29",15
+2023,"Grand Anse Praslin","30-34",5
+2023,"Grand Anse Praslin","35-39",12
+2023,"Grand Anse Praslin","40-44",2
+2023,"Grand Anse Praslin","45+",0
+2023,"Grand Anse Praslin","Not Stated",0
+2023,"Ile Perseverance","<15",2
+2023,"Ile Perseverance","15-19",23
+2023,"Ile Perseverance","20-24",36
+2023,"Ile Perseverance","25-29",27
+2023,"Ile Perseverance","30-34",18
+2023,"Ile Perseverance","35-39",8
+2023,"Ile Perseverance","40-44",5
+2023,"Ile Perseverance","45+",2
+2023,"Ile Perseverance","Not Stated",0
+2023,"La Digue and Inner Islands","<15",0
+2023,"La Digue and Inner Islands","15-19",2
+2023,"La Digue and Inner Islands","20-24",16
+2023,"La Digue and Inner Islands","25-29",7
+2023,"La Digue and Inner Islands","30-34",7
+2023,"La Digue and Inner Islands","35-39",6
+2023,"La Digue and Inner Islands","40-44",4
+2023,"La Digue and Inner Islands","45+",0
+2023,"La Digue and Inner Islands","Not Stated",0
+2023,"Les Mamelles","<15",0
+2023,"Les Mamelles","15-19",5
+2023,"Les Mamelles","20-24",11
+2023,"Les Mamelles","25-29",7
+2023,"Les Mamelles","30-34",7
+2023,"Les Mamelles","35-39",10
+2023,"Les Mamelles","40-44",2
+2023,"Les Mamelles","45+",0
+2023,"Les Mamelles","Not Stated",0
+2023,"Mont Buxton","<15",0
+2023,"Mont Buxton","15-19",4
+2023,"Mont Buxton","20-24",9
+2023,"Mont Buxton","25-29",17
+2023,"Mont Buxton","30-34",13
+2023,"Mont Buxton","35-39",7
+2023,"Mont Buxton","40-44",4
+2023,"Mont Buxton","45+",0
+2023,"Mont Buxton","Not Stated",0
+2023,"Mont Fleuri","<15",0
+2023,"Mont Fleuri","15-19",5
+2023,"Mont Fleuri","20-24",16
+2023,"Mont Fleuri","25-29",12
+2023,"Mont Fleuri","30-34",13
+2023,"Mont Fleuri","35-39",7
+2023,"Mont Fleuri","40-44",1
+2023,"Mont Fleuri","45+",0
+2023,"Mont Fleuri","Not Stated",0
+2023,"Other Islands","<15",NA
+2023,"Other Islands","15-19",NA
+2023,"Other Islands","20-24",NA
+2023,"Other Islands","25-29",NA
+2023,"Other Islands","30-34",NA
+2023,"Other Islands","35-39",NA
+2023,"Other Islands","40-44",NA
+2023,"Other Islands","45+",NA
+2023,"Other Islands","Not Stated",NA
+2023,"Plaisance","<15",0
+2023,"Plaisance","15-19",7
+2023,"Plaisance","20-24",6
+2023,"Plaisance","25-29",14
+2023,"Plaisance","30-34",7
+2023,"Plaisance","35-39",4
+2023,"Plaisance","40-44",2
+2023,"Plaisance","45+",0
+2023,"Plaisance","Not Stated",0
+2023,"Pointe Larue","<15",0
+2023,"Pointe Larue","15-19",8
+2023,"Pointe Larue","20-24",15
+2023,"Pointe Larue","25-29",24
+2023,"Pointe Larue","30-34",15
+2023,"Pointe Larue","35-39",9
+2023,"Pointe Larue","40-44",7
+2023,"Pointe Larue","45+",0
+2023,"Pointe Larue","Not Stated",0
+2023,"Port Glaud","<15",1
+2023,"Port Glaud","15-19",4
+2023,"Port Glaud","20-24",9
+2023,"Port Glaud","25-29",9
+2023,"Port Glaud","30-34",8
+2023,"Port Glaud","35-39",3
+2023,"Port Glaud","40-44",1
+2023,"Port Glaud","45+",0
+2023,"Port Glaud","Not Stated",0
+2023,"Roche Caiman","<15",1
+2023,"Roche Caiman","15-19",11
+2023,"Roche Caiman","20-24",12
+2023,"Roche Caiman","25-29",14
+2023,"Roche Caiman","30-34",13
+2023,"Roche Caiman","35-39",3
+2023,"Roche Caiman","40-44",2
+2023,"Roche Caiman","45+",0
+2023,"Roche Caiman","Not Stated",0
+2023,"Saint Louis","<15",1
+2023,"Saint Louis","15-19",5
+2023,"Saint Louis","20-24",13
+2023,"Saint Louis","25-29",15
+2023,"Saint Louis","30-34",16
+2023,"Saint Louis","35-39",8
+2023,"Saint Louis","40-44",5
+2023,"Saint Louis","45+",0
+2023,"Saint Louis","Not Stated",0
+2023,"Takamaka","<15",1
+2023,"Takamaka","15-19",4
+2023,"Takamaka","20-24",12
+2023,"Takamaka","25-29",8
+2023,"Takamaka","30-34",10
+2023,"Takamaka","35-39",5
+2023,"Takamaka","40-44",1
+2023,"Takamaka","45+",0
+2023,"Takamaka","Not Stated",0
+2023,"Not Stated","<15",NA
+2023,"Not Stated","15-19",NA
+2023,"Not Stated","20-24",NA
+2023,"Not Stated","25-29",NA
+2023,"Not Stated","30-34",NA
+2023,"Not Stated","35-39",NA
+2023,"Not Stated","40-44",NA
+2023,"Not Stated","45+",NA
+2023,"Not Stated","Not Stated",NA
+2024,"Anse Aux Pins","<15",1
+2024,"Anse Aux Pins","15-19",9
+2024,"Anse Aux Pins","20-24",21
+2024,"Anse Aux Pins","25-29",15
+2024,"Anse Aux Pins","30-34",13
+2024,"Anse Aux Pins","35-39",6
+2024,"Anse Aux Pins","40-44",2
+2024,"Anse Aux Pins","45+",0
+2024,"Anse Aux Pins","Not Stated",0
+2024,"Anse Boileau","<15",0
+2024,"Anse Boileau","15-19",3
+2024,"Anse Boileau","20-24",18
+2024,"Anse Boileau","25-29",20
+2024,"Anse Boileau","30-34",18
+2024,"Anse Boileau","35-39",2
+2024,"Anse Boileau","40-44",1
+2024,"Anse Boileau","45+",0
+2024,"Anse Boileau","Not Stated",0
+2024,"Anse Etoile","<15",0
+2024,"Anse Etoile","15-19",5
+2024,"Anse Etoile","20-24",17
+2024,"Anse Etoile","25-29",19
+2024,"Anse Etoile","30-34",27
+2024,"Anse Etoile","35-39",6
+2024,"Anse Etoile","40-44",3
+2024,"Anse Etoile","45+",0
+2024,"Anse Etoile","Not Stated",0
+2024,"Anse Royale","<15",0
+2024,"Anse Royale","15-19",6
+2024,"Anse Royale","20-24",18
+2024,"Anse Royale","25-29",16
+2024,"Anse Royale","30-34",13
+2024,"Anse Royale","35-39",8
+2024,"Anse Royale","40-44",3
+2024,"Anse Royale","45+",0
+2024,"Anse Royale","Not Stated",0
+2024,"Au Cap","<15",0
+2024,"Au Cap","15-19",10
+2024,"Au Cap","20-24",17
+2024,"Au Cap","25-29",15
+2024,"Au Cap","30-34",20
+2024,"Au Cap","35-39",4
+2024,"Au Cap","40-44",5
+2024,"Au Cap","45+",0
+2024,"Au Cap","Not Stated",0
+2024,"Baie Lazare","<15",0
+2024,"Baie Lazare","15-19",5
+2024,"Baie Lazare","20-24",8
+2024,"Baie Lazare","25-29",9
+2024,"Baie Lazare","30-34",14
+2024,"Baie Lazare","35-39",9
+2024,"Baie Lazare","40-44",2
+2024,"Baie Lazare","45+",0
+2024,"Baie Lazare","Not Stated",0
+2024,"Baie Sainte Anne","<15",0
+2024,"Baie Sainte Anne","15-19",7
+2024,"Baie Sainte Anne","20-24",20
+2024,"Baie Sainte Anne","25-29",16
+2024,"Baie Sainte Anne","30-34",13
+2024,"Baie Sainte Anne","35-39",9
+2024,"Baie Sainte Anne","40-44",1
+2024,"Baie Sainte Anne","45+",0
+2024,"Baie Sainte Anne","Not Stated",0
+2024,"Beau Vallon","<15",0
+2024,"Beau Vallon","15-19",8
+2024,"Beau Vallon","20-24",15
+2024,"Beau Vallon","25-29",11
+2024,"Beau Vallon","30-34",17
+2024,"Beau Vallon","35-39",8
+2024,"Beau Vallon","40-44",2
+2024,"Beau Vallon","45+",0
+2024,"Beau Vallon","Not Stated",0
+2024,"Bel Air","<15",0
+2024,"Bel Air","15-19",1
+2024,"Bel Air","20-24",4
+2024,"Bel Air","25-29",6
+2024,"Bel Air","30-34",7
+2024,"Bel Air","35-39",2
+2024,"Bel Air","40-44",0
+2024,"Bel Air","45+",0
+2024,"Bel Air","Not Stated",0
+2024,"Belombre","<15",0
+2024,"Belombre","15-19",2
+2024,"Belombre","20-24",4
+2024,"Belombre","25-29",12
+2024,"Belombre","30-34",6
+2024,"Belombre","35-39",6
+2024,"Belombre","40-44",7
+2024,"Belombre","45+",0
+2024,"Belombre","Not Stated",0
+2024,"Cascade","<15",0
+2024,"Cascade","15-19",4
+2024,"Cascade","20-24",11
+2024,"Cascade","25-29",15
+2024,"Cascade","30-34",8
+2024,"Cascade","35-39",3
+2024,"Cascade","40-44",2
+2024,"Cascade","45+",0
+2024,"Cascade","Not Stated",0
+2024,"English River","<15",0
+2024,"English River","15-19",6
+2024,"English River","20-24",14
+2024,"English River","25-29",17
+2024,"English River","30-34",13
+2024,"English River","35-39",4
+2024,"English River","40-44",4
+2024,"English River","45+",1
+2024,"English River","Not Stated",0
+2024,"Glacis","<15",0
+2024,"Glacis","15-19",4
+2024,"Glacis","20-24",13
+2024,"Glacis","25-29",13
+2024,"Glacis","30-34",14
+2024,"Glacis","35-39",6
+2024,"Glacis","40-44",2
+2024,"Glacis","45+",0
+2024,"Glacis","Not Stated",0
+2024,"Grand Anse Mahe","<15",0
+2024,"Grand Anse Mahe","15-19",8
+2024,"Grand Anse Mahe","20-24",16
+2024,"Grand Anse Mahe","25-29",9
+2024,"Grand Anse Mahe","30-34",14
+2024,"Grand Anse Mahe","35-39",2
+2024,"Grand Anse Mahe","40-44",0
+2024,"Grand Anse Mahe","45+",0
+2024,"Grand Anse Mahe","Not Stated",0
+2024,"Grand Anse Praslin","<15",0
+2024,"Grand Anse Praslin","15-19",8
+2024,"Grand Anse Praslin","20-24",12
+2024,"Grand Anse Praslin","25-29",13
+2024,"Grand Anse Praslin","30-34",11
+2024,"Grand Anse Praslin","35-39",6
+2024,"Grand Anse Praslin","40-44",1
+2024,"Grand Anse Praslin","45+",0
+2024,"Grand Anse Praslin","Not Stated",0
+2024,"Ile Perseverance","<15",1
+2024,"Ile Perseverance","15-19",19
+2024,"Ile Perseverance","20-24",24
+2024,"Ile Perseverance","25-29",14
+2024,"Ile Perseverance","30-34",11
+2024,"Ile Perseverance","35-39",11
+2024,"Ile Perseverance","40-44",3
+2024,"Ile Perseverance","45+",1
+2024,"Ile Perseverance","Not Stated",0
+2024,"La Digue and Inner Islands","<15",0
+2024,"La Digue and Inner Islands","15-19",3
+2024,"La Digue and Inner Islands","20-24",11
+2024,"La Digue and Inner Islands","25-29",9
+2024,"La Digue and Inner Islands","30-34",2
+2024,"La Digue and Inner Islands","35-39",3
+2024,"La Digue and Inner Islands","40-44",4
+2024,"La Digue and Inner Islands","45+",0
+2024,"La Digue and Inner Islands","Not Stated",0
+2024,"Les Mamelles","<15",0
+2024,"Les Mamelles","15-19",5
+2024,"Les Mamelles","20-24",8
+2024,"Les Mamelles","25-29",12
+2024,"Les Mamelles","30-34",7
+2024,"Les Mamelles","35-39",2
+2024,"Les Mamelles","40-44",0
+2024,"Les Mamelles","45+",0
+2024,"Les Mamelles","Not Stated",0
+2024,"Mont Buxton","<15",0
+2024,"Mont Buxton","15-19",7
+2024,"Mont Buxton","20-24",11
+2024,"Mont Buxton","25-29",14
+2024,"Mont Buxton","30-34",7
+2024,"Mont Buxton","35-39",6
+2024,"Mont Buxton","40-44",0
+2024,"Mont Buxton","45+",0
+2024,"Mont Buxton","Not Stated",0
+2024,"Mont Fleuri","<15",1
+2024,"Mont Fleuri","15-19",12
+2024,"Mont Fleuri","20-24",6
+2024,"Mont Fleuri","25-29",7
+2024,"Mont Fleuri","30-34",7
+2024,"Mont Fleuri","35-39",7
+2024,"Mont Fleuri","40-44",0
+2024,"Mont Fleuri","45+",1
+2024,"Mont Fleuri","Not Stated",0
+2024,"Other Islands","<15",NA
+2024,"Other Islands","15-19",NA
+2024,"Other Islands","20-24",NA
+2024,"Other Islands","25-29",NA
+2024,"Other Islands","30-34",NA
+2024,"Other Islands","35-39",NA
+2024,"Other Islands","40-44",NA
+2024,"Other Islands","45+",NA
+2024,"Other Islands","Not Stated",NA
+2024,"Plaisance","<15",0
+2024,"Plaisance","15-19",6
+2024,"Plaisance","20-24",13
+2024,"Plaisance","25-29",16
+2024,"Plaisance","30-34",15
+2024,"Plaisance","35-39",4
+2024,"Plaisance","40-44",3
+2024,"Plaisance","45+",0
+2024,"Plaisance","Not Stated",0
+2024,"Pointe Larue","<15",0
+2024,"Pointe Larue","15-19",11
+2024,"Pointe Larue","20-24",13
+2024,"Pointe Larue","25-29",10
+2024,"Pointe Larue","30-34",11
+2024,"Pointe Larue","35-39",6
+2024,"Pointe Larue","40-44",0
+2024,"Pointe Larue","45+",0
+2024,"Pointe Larue","Not Stated",0
+2024,"Port Glaud","<15",0
+2024,"Port Glaud","15-19",5
+2024,"Port Glaud","20-24",13
+2024,"Port Glaud","25-29",8
+2024,"Port Glaud","30-34",5
+2024,"Port Glaud","35-39",1
+2024,"Port Glaud","40-44",1
+2024,"Port Glaud","45+",0
+2024,"Port Glaud","Not Stated",0
+2024,"Roche Caiman","<15",0
+2024,"Roche Caiman","15-19",6
+2024,"Roche Caiman","20-24",9
+2024,"Roche Caiman","25-29",11
+2024,"Roche Caiman","30-34",6
+2024,"Roche Caiman","35-39",5
+2024,"Roche Caiman","40-44",2
+2024,"Roche Caiman","45+",0
+2024,"Roche Caiman","Not Stated",0
+2024,"Saint Louis","<15",0
+2024,"Saint Louis","15-19",5
+2024,"Saint Louis","20-24",10
+2024,"Saint Louis","25-29",14
+2024,"Saint Louis","30-34",13
+2024,"Saint Louis","35-39",6
+2024,"Saint Louis","40-44",1
+2024,"Saint Louis","45+",0
+2024,"Saint Louis","Not Stated",0
+2024,"Takamaka","<15",0
+2024,"Takamaka","15-19",4
+2024,"Takamaka","20-24",14
+2024,"Takamaka","25-29",8
+2024,"Takamaka","30-34",9
+2024,"Takamaka","35-39",6
+2024,"Takamaka","40-44",0
+2024,"Takamaka","45+",0
+2024,"Takamaka","Not Stated",0
+2024,"Not Stated","<15",0
+2024,"Not Stated","15-19",0
+2024,"Not Stated","20-24",0
+2024,"Not Stated","25-29",0
+2024,"Not Stated","30-34",0
+2024,"Not Stated","35-39",0
+2024,"Not Stated","40-44",0
+2024,"Not Stated","45+",0
+2024,"Not Stated","Not Stated",1

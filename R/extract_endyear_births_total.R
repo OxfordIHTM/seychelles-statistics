@@ -3,10 +3,10 @@
 #' 
 
 extract_endyear_pop_births_deaths_total <- function(page, pdf, 
-                                                type = c("population",
-                                                         "births",
-                                                         "deaths_all",
-                                                         "deaths_infant")) {
+                                                    type = c("population",
+                                                             "births",
+                                                             "deaths_all",
+                                                             "deaths_infant")) {
   type <- match.arg(type)
 
   year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
