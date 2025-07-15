@@ -118,6 +118,16 @@ data_extraction_targets <- tar_plan(
     )
   ),
   tar_target(
+    name = births_by_sex,
+    command = extract_endyear_births_by_sex(
+      pdf = population_endyear_bulletin_files,
+      page = births_endyear_monthly_pages
+    ),
+    pattern = map(
+      population_endyear_bulletin_files, births_endyear_monthly_pages
+    )
+  ),
+  tar_target(
     name = births_total,
     command = extract_endyear_pop_births_deaths_total(
       pdf = population_endyear_bulletin_files,
@@ -211,6 +221,14 @@ outputs_targets <- tar_plan(
     command = create_csv_data(
       x = births_by_month,
       dest = "data/births_by_month.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = births_by_sex_csv,
+    command = create_csv_data(
+      x = births_by_sex,
+      dest = "data/births_by_sex.csv"
     ),
     format = "file"
   ),
