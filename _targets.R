@@ -80,7 +80,19 @@ data_extraction_targets <- tar_plan(
     name = population_midyear_by_age_sex,
     command = extract_midyear_pop(
       pdf = population_midyear_bulletin_files,
-      page = population_midyear_bulletin_pages
+      page = population_midyear_bulletin_pages,
+      total = FALSE
+    ),
+    pattern = map(
+      population_midyear_bulletin_files, population_midyear_bulletin_pages
+    )
+  ),
+  tar_target(
+    name = population_midyear_by_age,
+    command = extract_midyear_pop(
+      pdf = population_midyear_bulletin_files,
+      page = population_midyear_bulletin_pages,
+      total = TRUE
     ),
     pattern = map(
       population_midyear_bulletin_files, population_midyear_bulletin_pages
@@ -197,6 +209,14 @@ outputs_targets <- tar_plan(
     command = create_csv_data(
       x = population_midyear_by_age_sex,
       dest = "data/population_midyear_by_age_sex.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = population_midyear_by_age_csv,
+    command = create_csv_data(
+      x = population_midyear_by_age,
+      dest = "data/population_midyear_by_age.csv"
     ),
     format = "file"
   ),
