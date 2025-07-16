@@ -219,9 +219,9 @@ graph LR
     xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x2f4500c2756065a9["births_total"]:::skipped
     xe648a7801cd2da2c(["births_endyear_pages"]):::skipped --> x2f4500c2756065a9["births_total"]:::skipped
     x2f4500c2756065a9["births_total"]:::skipped --> xd95928afea598d8e(["births_total_csv"]):::skipped
-    xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> xae333981c466810a["deaths_by_age_sex"]:::completed
-    x344a2780ffaeb7bd(["deaths_endyear_pages"]):::skipped --> xae333981c466810a["deaths_by_age_sex"]:::completed
-    xae333981c466810a["deaths_by_age_sex"]:::completed --> xaf8165dda7ea936b(["deaths_by_age_sex_csv"]):::completed
+    x344a2780ffaeb7bd(["deaths_endyear_pages"]):::skipped --> xae333981c466810a["deaths_by_age_sex"]:::skipped
+    xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> xae333981c466810a["deaths_by_age_sex"]:::skipped
+    xae333981c466810a["deaths_by_age_sex"]:::skipped --> xaf8165dda7ea936b(["deaths_by_age_sex_csv"]):::skipped
     xe648a7801cd2da2c(["births_endyear_pages"]):::skipped --> x1d5c00f1e4e41ab7["deaths_infant_total"]:::skipped
     xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x1d5c00f1e4e41ab7["deaths_infant_total"]:::skipped
     x1d5c00f1e4e41ab7["deaths_infant_total"]:::skipped --> x548dbfa0844427dc(["deaths_infant_total_csv"]):::skipped
@@ -236,15 +236,18 @@ graph LR
     xa7b0e3bf1c25b597(["categories_download_links"]):::skipped --> x90a781ac8daf46c6(["population_bulletin_download_links"]):::skipped
     x303dcb35f327bc97(["population_bulletin_download_files"]):::skipped --> xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped
     x303dcb35f327bc97(["population_bulletin_download_files"]):::skipped --> x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped
-    x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> x426614807f974316["population_midyear_by_age_sex"]:::skipped
-    xefa1a60843915f9f(["population_midyear_bulletin_pages"]):::skipped --> x426614807f974316["population_midyear_by_age_sex"]:::skipped
-    x426614807f974316["population_midyear_by_age_sex"]:::skipped --> xf3039e66b37a1219(["population_midyear_by_age_sex_csv"]):::skipped
+    x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> x946771421caaa150["population_midyear_by_age"]:::completed
+    xefa1a60843915f9f(["population_midyear_bulletin_pages"]):::skipped --> x946771421caaa150["population_midyear_by_age"]:::completed
+    x946771421caaa150["population_midyear_by_age"]:::completed --> xa1686cc888963231(["population_midyear_by_age_csv"]):::completed
+    x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> x426614807f974316["population_midyear_by_age_sex"]:::completed
+    xefa1a60843915f9f(["population_midyear_bulletin_pages"]):::skipped --> x426614807f974316["population_midyear_by_age_sex"]:::completed
+    x426614807f974316["population_midyear_by_age_sex"]:::completed --> xf3039e66b37a1219(["population_midyear_by_age_sex_csv"]):::skipped
     x9f6b6d2ed74a37b4(["population_midyear_bulletin_district_pages"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
     x52e965cb7c1cd1fc(["population_midyear_bulletin_files"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
     x7b26bed1fc581742(["map_adm3"]):::skipped --> xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped
     xd0c8e8b884ab8581["population_midyear_by_district"]:::skipped --> xf94a6bce4cea6c14(["population_midyear_by_district_csv"]):::skipped
-    xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x52d6a6119be69714["population_midyear_total"]:::skipped
     xe648a7801cd2da2c(["births_endyear_pages"]):::skipped --> x52d6a6119be69714["population_midyear_total"]:::skipped
+    xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x52d6a6119be69714["population_midyear_total"]:::skipped
     x52d6a6119be69714["population_midyear_total"]:::skipped --> x37b834e41770c27f(["population_midyear_total_csv"]):::skipped
     
   end
