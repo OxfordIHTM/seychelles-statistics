@@ -190,6 +190,16 @@ data_extraction_targets <- tar_plan(
     )
   ),
   tar_target(
+    name = births_by_age_child_number,
+    command = extract_births_by_age_child_number(
+      pdf = population_endyear_bulletin_files,
+      page = births_by_child_number_pages
+    ),
+    pattern = map(
+      population_endyear_bulletin_files, births_by_child_number_pages
+    )
+  ),
+  tar_target(
     name = deaths_by_age_sex,
     command = extract_endyear_deaths(
       pdf = population_endyear_bulletin_files,
@@ -320,6 +330,14 @@ outputs_targets <- tar_plan(
     command = create_csv_data(
       x = births_by_child_number,
       dest = "data/births_by_child_number.csv"
+    ),
+    format = "file"
+  ),
+  tar_target(
+    name = births_by_age_child_number_csv,
+    command = create_csv_data(
+      x = births_by_age_child_number,
+      dest = "data/births_by_age_child_number.csv"
     ),
     format = "file"
   ),
