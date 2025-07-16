@@ -150,7 +150,17 @@ data_extraction_targets <- tar_plan(
   ),
   tar_target(
     name = births_by_age_district,
-    command = extract_endyear_births_by_district(
+    command = extract_births_by_age_district(
+      pdf = population_endyear_bulletin_files,
+      page = births_by_district_pages
+    ),
+    pattern = map(
+      population_endyear_bulletin_files, births_by_district_pages
+    )
+  ),
+  tar_target(
+    name = births_by_district,
+    command = extract_births_by_district(
       pdf = population_endyear_bulletin_files,
       page = births_by_district_pages
     ),

@@ -2,7 +2,7 @@
 #' Extract endyear births by district
 #' 
 
-extract_endyear_births_by_district <- function(page, pdf) {
+extract_births_by_district <- function(page, pdf) {
   year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
   df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
@@ -25,42 +25,11 @@ extract_endyear_births_by_district <- function(page, pdf) {
     stringr::str_replace_all(pattern = "\\s{2,}", replacement = ",") |>
     stringr::str_split(pattern = ",", simplify = TRUE) |>
     data.frame() |>
-    (\(x) x[ , 1:(ncol(x) - 1)])()
-
-  if (!year %in% c(2021, 2024)) {
-    df <- df |>
-      dplyr::mutate(`Not Stated` = 0L)
-  }
+    (\(x) x[ , c(1, ncol(x))])()
 
   df <- df |>
-    setNames(
-      nm = c(
-        "district", "<15", "15-19", "20-24", "25-29",
-        "30-34", "35-39", "40-44", "45+", "Not Stated"
-      )
-    ) |>
-    dplyr::mutate(
-      dplyr::across(
-        .cols = 2:ncol(df), 
-        .fns = function(x) {
-          ifelse(x == "-", 0, x) |>
-            as.integer()
-        }
-      )
-    ) |>
+    setNames(nm = c("district", "births")) |>
     dplyr::mutate(year = as.integer(year), .before = district) |>
-    tidyr::pivot_longer(
-      cols = 3:(ncol(df) + 1), names_to = "age_group", values_to = "births"
-    ) |>
-    dplyr::mutate(
-      age_group = factor(
-        x = age_group, 
-        levels = c(
-          "<15", "15-19", "20-24", "25-29",
-          "30-34", "35-39", "40-44", "45+", "Not Stated"
-        )
-      )
-    ) |>
     dplyr::mutate(
       district = dplyr::case_when(
         district == "La Digue & Inner Islands" ~ "La Digue and Inner Islands",
@@ -70,20 +39,7 @@ extract_endyear_births_by_district <- function(page, pdf) {
       ) |>
         factor(levels = c(districts, "Not Stated"))
     ) |>
-    tidyr::complete(year, district, age_group)
+    tidyr::complete(year, district)
 
   df
 }
-
-#'
-#' List of districts
-#' 
-
-districts <- c(
-  "Anse Aux Pins", "Anse Boileau", "Anse Etoile", "Anse Royale",
-  "Au Cap", "Baie Lazare", "Baie Sainte Anne", "Beau Vallon", "Bel Air",
-  "Belombre", "Cascade", "English River", "Glacis", "Grand Anse Mahe",
-  "Grand Anse Praslin", "Ile Perseverance", "La Digue and Inner Islands",
-  "Les Mamelles", "Mont Buxton", "Mont Fleuri", "Other Islands", "Plaisance",
-  "Pointe Larue", "Port Glaud", "Roche Caiman", "Saint Louis", "Takamaka"
-)
