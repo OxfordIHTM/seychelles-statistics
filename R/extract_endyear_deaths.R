@@ -2,7 +2,7 @@
 #' Extract end year deaths by age and sex
 #' 
 
-extract_endyear_deaths <- function(pdf, page) {
+extract_endyear_deaths <- function(pdf, page, total = FALSE) {
   year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
   df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
@@ -98,7 +98,8 @@ extract_endyear_deaths <- function(pdf, page) {
           "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"
         )
       ),
-      sex = factor(x = sex, levels = c("female", "male", "both")),
+      sex = stringr::str_to_sentence(sex) |>
+        factor(levels = c("Female", "Male")),
       death = as.integer(death) |>
         (\(x) ifelse(is.na(x), 0L, x))()
     ) |>

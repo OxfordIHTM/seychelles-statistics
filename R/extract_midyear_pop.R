@@ -46,7 +46,8 @@ extract_midyear_pop <- function(pdf, page, total = FALSE) {
         cols = male:female, names_to = "sex", values_to = "population"
       ) |>
       dplyr::mutate(
-        sex = factor(x = sex, levels = c("female", "male")),
+        sex = stringr::str_to_sentence(sex) |>
+          factor(levels = c("Female", "Male")),
         population = as.integer(population)
       )
   }
