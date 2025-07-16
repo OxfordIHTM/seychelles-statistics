@@ -42,7 +42,8 @@ extract_endyear_births_by_sex <- function(page, pdf) {
     dplyr::relocate(year, .before = sex) |>
     dplyr::mutate(
       dplyr::across(.cols = c(year, births), .fns = as.integer),
-      sex = factor(x = sex, levels = c("Males", "Females"))
+      sex = stringr::str_remove(string = sex, pattern = "s$") |>
+        factor(levels = c("Female", "Male"))
     ) |>
     dplyr::arrange(sex, year)
 
