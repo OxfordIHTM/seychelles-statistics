@@ -170,7 +170,7 @@ Rscript -e  "targets::tar_make()"
 
 ## License
 
-All code in this project is released under a [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text) license. All text in this project is released under a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en) license. Data is released under a [CC0](https://creativecommons.org/public-domain/cc0/) license.
+All code in this project is released under a [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text) license. All text in this project is released under a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en) license. All data is released under a [CC0](https://creativecommons.org/public-domain/cc0/) license.
 
 ## Community guidelines
 
