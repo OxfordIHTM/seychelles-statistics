@@ -152,7 +152,7 @@ The project repository is structured as follows:
 
 ### R version
 
-This project was built using `R 4.5.1`. To manage R versions, it is
+This project is built using `R 4.5.1`. To manage R versions, it is
 recommended to use [`rig`](https://github.com/r-lib/rig) - an R
 installation manager - to be able to install multiple versions of R and
 switch between them as needed.
@@ -313,8 +313,8 @@ Feedback, bug reports and feature requests are welcome; file issues or
 seek support [here](https://github.com/OxfordIHTM/seystats/issues). If
 you would like to contribute to the project, please see our
 [contributing
-guidelines](https://oxford-ihtm.io/codigo/CONTRIBUTING.html).
+guidelines](https://github.com/OxfordIHTM/seystats/blob/main/.github/CONTRIBUTING.md).
 
 This project is released with a [Contributor Code of
-Conduct](https://oxford-ihtm.io/codigo/CODE_OF_CONDUCT.html). By
-participating in this project you agree to abide by its terms.
+Conduct](https://github.com/OxfordIHTM/seystats/blob/main/.github/CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
