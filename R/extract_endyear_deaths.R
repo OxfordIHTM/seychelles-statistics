@@ -45,24 +45,51 @@ extract_endyear_deaths <- function(pdf, page) {
       data.frame()    
   }
 
-  df <- df |>
-    dplyr::filter(X1 != "") |>
-    (\(x) x[ , c(1, (ncol(x) - 1):ncol(x))])() |>
-    setNames(nm = c("age_group", "male", "female")) |>
+  if (year != 2016) {
+    df <- df |>
+      dplyr::filter(X1 != "") |>
+      (\(x) x[ , c(1, (ncol(x) - 1):ncol(x))])() |>
+      setNames(nm = c("age_group", "male", "female")) |>
+      dplyr::mutate(
+        age_group = stringr::str_replace(
+          string = age_group, pattern = " - | ‐ |‐", replacement = "-"
+        ) |>
+          stringr::str_replace(pattern = "Under ", replacement = "<")
+    ) |>
+    dplyr::mutate(year = as.integer(year), .before = age_group) |>
+    tidyr::pivot_longer(
+      cols = male:female, names_to = "sex", values_to = "death"
+    )
+  } else {
+      df <- df |>
+      dplyr::filter(X1 != "") |>
+      setNames(
+        nm = c(
+          "age_group", 
+          lapply(
+            X = 2012:2016, 
+            FUN = function(x) paste(c("male", "female"), x, sep = "_")
+          ) |>
+            unlist()
+        )
+      ) |>
     dplyr::mutate(
       age_group = stringr::str_replace(
         string = age_group, pattern = " - | ‐ |‐", replacement = "-"
       ) |>
-        stringr::str_replace(pattern = "Under ", replacement = "<"),
-      male = as.integer(male),
-      female = as.integer(female),
-      both = male + female
+        stringr::str_replace(pattern = "Under ", replacement = "<")
     ) |>
-    dplyr::mutate(year = as.character(year), .before = age_group) |>
     tidyr::pivot_longer(
-      cols = male:both, names_to = "sex", values_to = "death"
+      cols = male_2012:female_2016, 
+      names_to = c("sex", "year"), names_sep = "_",
+      values_to = "death"
     ) |>
+    dplyr::relocate(year, .before = age_group)
+  }
+
+  df <- df |>
     dplyr::mutate(
+      year = as.integer(year),
       age_group = factor(
         x = age_group, 
         levels = c(
@@ -71,7 +98,9 @@ extract_endyear_deaths <- function(pdf, page) {
           "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"
         )
       ),
-      sex = factor(x = sex, levels = c("female", "male", "both"))
+      sex = factor(x = sex, levels = c("female", "male", "both")),
+      death = as.integer(death) |>
+        (\(x) ifelse(is.na(x), 0L, x))()
     ) |>
     dplyr::arrange(year, sex, age_group)
 
