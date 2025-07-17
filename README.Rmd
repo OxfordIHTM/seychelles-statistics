@@ -11,11 +11,13 @@ knitr::opts_chunk$set(
 
 # seystats: Curating Seychelles data and statistics from publicly-available sources
 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+![seystats](https://img.shields.io/badge/version-0.0.0.9000-orange)
 [![License for code](https://img.shields.io/badge/license (for code)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for text](https://img.shields.io/badge/license (for writing)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 [![License for data](https://img.shields.io/badge/license (for data)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
 [![test workflow](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml/badge.svg)](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml)
+[![DOI](https://zenodo.org/badge/489512741.svg)](https://zenodo.org/badge/latestdoi/489512741)
 
 This repository is a [`docker`](https://www.docker.com/get-started)-containerised, [`{targets}`](https://docs.ropensci.org/targets/)-based, [`{renv}`](https://rstudio.github.io/renv/articles/renv.html)-enabled [`R`](https://cran.r-project.org/) workflow for the `seystats` project on curating Seychelles data and statistics from various publicly-available sources.
 
@@ -62,13 +64,56 @@ data_title <- c(
   "Population midyear total"
 )
 
-data_frequency <- rep("Yearly", 15)
+data_interval <- c(rep("Yearly", 5), "Monthly", rep("Yearly", 9))
 
-data.frame(data_title, data_frequency, data_file_name) |>
-  knitr::kable(col.names = c("Description", "Frequency", "Filename"))
+data_url <- paste0(
+  "[file](", 
+  file.path(
+    "https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data",
+    data_file_name
+  ),
+  ")"
+)
+
+data.frame(data_title, data_interval, data_file_name, data_url) |>
+  knitr::kable(
+    col.names = c("Description", "Time Interval", "Filename", "Data URL")
+  )
 ```
 
 All available datasets can be found in the `data` folder of this repository. Other modes of distribution (e.g. Dolthub SQL database, Zenodo, Figshare, etc.) are currently in development and would be available soon.
+
+## Accessing the datasets
+
+The datasets curated by `seystats` can be accessed through the following methods:
+
+### Forking and then cloning the project repository
+
+[Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) a copy of the project repository into your own GitHub account then [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your copy of the project repository into your local machine. This requires a GitHub account and knowledge of git processes. This approach will give you a copy of the entire repository of which the `data` directory contains all the datasets listed above. This approach would be ideal for those who would like to access the datasets but also would like to potentially contribute to the source code for the curation of the datasets.
+
+### Manually download from GitHub
+
+Go to the project repository, then to the `data` directory and then select and click the dataset CSV file you want to download. On the upper right hand corner you will see an downward pointing arrow icon. Click on this icon to download the selected dataset CSV file.
+
+### Programmatically download from GitHub
+
+Using the data URL indicated in the table above, one can programmatically download the dataset of interest using your choice of programming tool.
+
+In Terminal:
+
+```bash
+curl -OL https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age.csv
+```
+
+In R:
+
+```R
+download.file(
+  url = "https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age.csv"
+  destfile = "data/births_by_age.csv"
+)
+```
+In the release version of `seystats`, we will be distributing the datasets in repositories and archives that have more straightforward user interfaces for downloading the datasets.
 
 ## Repository Structure
 
@@ -109,7 +154,7 @@ seystats
 
 * `pdf/` contains PDF files downloaded by the workflow for data extraction.
 
-* `R/` contains functions developed/created specifically for use in this workflow.
+* `R/` contains R functions developed/created specifically for use in this project.
 
 * `renv/` contains `renv` package specific files and directories used by the package for maintaining R package dependencies within the project. The directory `renv/library`, is a library that contains all packages currently used by the project. This directory, and all files and sub-directories within it, are all generated and managed by the `renv` package. Users should not change/edit these manually.
 
@@ -117,7 +162,7 @@ seystats
 
 * `schema/` contains `.sql` code used for creating and deploying the project SQL database in DoltHub.
 
-* `_targets.R` file defines the steps in the workflow's data ingest, data processing, data analysis, and reporting pipeline.
+* `_targets.R` file defines the steps in the workflow's data ingest, data processing, data outputs, and reporting pipeline.
 
 * `.env` is an encrypted file that contains environment variables used in this project.
 
@@ -188,16 +233,24 @@ or issue the following command in Terminal from within the project directory
 Rscript -e  "targets::tar_make()"
 ```
 
-## Collaborators
+## Authors, contributors, and collaborators
+
+### Authors
 
 * Prof. Proochista Ariana
+* Dr. Aronrag Meeyai
+* Dr. Sylvie Pool
 * Dr. Sanjeev Pugazhendhi
 * Ituen Williams-Umanah
 * Ned Rosalie
 * Keddy Woodcock
-* Dr. Sylvie Pool
+
+The **Seychelles-Oxford Partnership**, from which this project came about, was made possible through the efforts of [Prof. Proochista Ariana](https://www.ndm.ox.ac.uk/team/proochista-ariana), [Dr. Aronrag Meeyai](https://www.tropicalmedicine.ox.ac.uk/team/aronrag-meeyai), and [Dr. Sylvie Pool](https://www.tropicalmedicine.ox.ac.uk/team/sylvie-pool). The original codebases from which this project was built on were written by [Dr. Sanjeev Pugazhendhi](https://www.linkedin.com/in/sanjeev-pugazhendhi), [Ituen Williams-Umanah](https://www.linkedin.com/in/williams-ituen-umanah-b10a8b233), Ned Rosalie, and Keddy Woodcock.
+
+### Contributors
+
 * Dr. Johanna Rapanarilala
-* Dr. Giri Rajaram
+* Dr. Giri Rajahram
 * Dr. Bushra Naz
 * Dr. Yih Seong Wong
 * Anita Makori
@@ -205,11 +258,18 @@ Rscript -e  "targets::tar_make()"
 * Neira Budiono
 * Dr. Nyasha Manyeruke
 * Dr. Ibrahim Ajami
-* Dr. Ernest Guevarra
+
+This project would also not be possible without the contributions of [Dr. Johanna Rapanarilala](https://www.linkedin.com/in/johanna-rapanarilala-bb5520312/) who supervised and mentored several of the [University of Oxford](https://www.ox.ac.uk) [MSc in International Health and Tropical Medicine](https://www.tropicalmedicine.ox.ac.uk/study-with-us/msc-ihtm) who came to Seychelles for their study placement for their MSc and [Dr. Carine Asnong](https://www.tropicalmedicine.ox.ac.uk/team/carine-asnong) who contributed to teaching on research skills and data analysis for members of the Seychelles Ministry of Health. Finally, the feedback, insights, and learning gained from [Dr. Giri Rajahram](https://www.rstmh.org/dr-giri-rajahram), [Dr. Bushra Naz](https://www.linkedin.com/in/bushra-naz-983b801b6), [Dr. Yih Seong Wong](https://www.linkedin.com/in/yihseongwong), [Anita Makori](https://www.linkedin.com/in/anita-makori), [Dr. Jillian Francise Lee](https://www.linkedin.com/in/jillianfrancise), Neira Budiono, [Dr. Nyasha Manyeruke](https://www.linkedin.com/in/nyasha-manyeruke-63a466283/), and [Dr. Ibrahim Ajami](https://www.linkedin.com/in/dr-ibrahim-f-ajami-043508146/) - students who spent their study placement in Seychelles - contributed to identifying critical and priority datasets to include in this project.
+
+The project is currently maintained by [Ernest Guevarra](https://ernest.guevarra.io).
 
 ## License
 
 All code in this project is released under a [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text) license. All text in this project is released under a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en) license. All data is released under a [CC0](https://creativecommons.org/public-domain/cc0/) license.
+
+## Citation
+
+If you use the data provided through `seystats` in your work/research, please cite `seystats` along with all the sources of data that were used for curating the data available herewith. The suggested appropriate citation metadata is provided in [CITATION.cff](https://github.com/OxfordIHTM/seystats/blob/main/CITATION.cff).
 
 ## Community guidelines
 

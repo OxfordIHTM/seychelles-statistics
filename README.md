@@ -1,9 +1,10 @@
 
 # seystats: Curating Seychelles data and statistics from publicly-available sources
 
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: WIP – Initial development is in progress, but there
+has not yet been a stable, usable release suitable for the
+public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+![seystats](https://img.shields.io/badge/version-0.0.0.9000-orange)
 [![License for
 code](https://img.shields.io/badge/license%20\(for%20code\)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for
@@ -12,6 +13,7 @@ text](https://img.shields.io/badge/license%20\(for%20writing\)-CC_BY_4.0-blue)](
 data](https://img.shields.io/badge/license%20\(for%20data\)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
 [![test
 workflow](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml/badge.svg)](https://github.com/OxfordIHTM/seychelles-statistics/actions/workflows/test-workflow.yaml)
+[![DOI](https://zenodo.org/badge/489512741.svg)](https://zenodo.org/badge/latestdoi/489512741)
 
 This repository is a
 [`docker`](https://www.docker.com/get-started)-containerised,
@@ -87,28 +89,78 @@ Statistics](https://www.nbs.gov.sc/downloads/).
 The currently available datasets from the `seystats` project are listed
 and described in the table below.
 
-| Description                                                           | Frequency | Filename                                   |
-| :-------------------------------------------------------------------- | :-------- | :----------------------------------------- |
-| Registered births by age of mother and birth order                    | Yearly    | data/births\_by\_age\_child\_number.csv    |
-| Registered births by age of mother and mother’s district of residence | Yearly    | data/births\_by\_age\_district.csv         |
-| Registered births by age of mother                                    | Yearly    | data/births\_by\_age.csv                   |
-| Registered births by birth order                                      | Yearly    | data/births\_by\_child\_number.csv         |
-| Registered births by mother’s district of residence                   | Yearly    | data/births\_by\_district.csv              |
-| Registered births by month of birth registration                      | Yearly    | data/births\_by\_month.csv                 |
-| Registered births by sex of child                                     | Yearly    | data/births\_by\_sex.csv                   |
-| Registered births total                                               | Yearly    | data/births\_total.csv                     |
-| Registered deaths by age and sex                                      | Yearly    | data/deaths\_by\_age\_sex.csv              |
-| Registered deaths of infants total                                    | Yearly    | data/deaths\_infant\_total.csv             |
-| Registered deaths total                                               | Yearly    | data/deaths\_total.csv                     |
-| Population midyear by age and sex                                     | Yearly    | data/population\_midyear\_by\_age\_sex.csv |
-| Population midyear by age                                             | Yearly    | data/population\_midyear\_by\_age.csv      |
-| Population midyear by district of residence                           | Yearly    | data/population\_midyear\_by\_district.csv |
-| Population midyear total                                              | Yearly    | data/population\_midyear\_total.csv        |
+| Description                                                           | Time Interval | Filename                              | Data URL                                                                                                              |
+| :-------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
+| Registered births by age of mother and birth order                    | Yearly        | births\_by\_age\_child\_number.csv    | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age_child_number.csv)     |
+| Registered births by age of mother and mother’s district of residence | Yearly        | births\_by\_age\_district.csv         | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age_district.csv)         |
+| Registered births by age of mother                                    | Yearly        | births\_by\_age.csv                   | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age.csv)                  |
+| Registered births by birth order                                      | Yearly        | births\_by\_child\_number.csv         | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_child_number.csv)         |
+| Registered births by mother’s district of residence                   | Yearly        | births\_by\_district.csv              | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_district.csv)             |
+| Registered births by month of birth registration                      | Monthly       | births\_by\_month.csv                 | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_month.csv)                |
+| Registered births by sex of child                                     | Yearly        | births\_by\_sex.csv                   | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_sex.csv)                  |
+| Registered births total                                               | Yearly        | births\_total.csv                     | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_total.csv)                   |
+| Registered deaths by age and sex                                      | Yearly        | deaths\_by\_age\_sex.csv              | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/deaths_by_age_sex.csv)              |
+| Registered deaths of infants total                                    | Yearly        | deaths\_infant\_total.csv             | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/deaths_infant_total.csv)            |
+| Registered deaths total                                               | Yearly        | deaths\_total.csv                     | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/deaths_total.csv)                   |
+| Population midyear by age and sex                                     | Yearly        | population\_midyear\_by\_age\_sex.csv | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/population_midyear_by_age_sex.csv)  |
+| Population midyear by age                                             | Yearly        | population\_midyear\_by\_age.csv      | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/population_midyear_by_age.csv)      |
+| Population midyear by district of residence                           | Yearly        | population\_midyear\_by\_district.csv | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/population_midyear_by_district.csv) |
+| Population midyear total                                              | Yearly        | population\_midyear\_total.csv        | [file](https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/population_midyear_total.csv)       |
 
 All available datasets can be found in the `data` folder of this
 repository. Other modes of distribution (e.g. Dolthub SQL database,
 Zenodo, Figshare, etc.) are currently in development and would be
 available soon.
+
+## Accessing the datasets
+
+The datasets curated by `seystats` can be accessed through the following
+methods:
+
+### Forking and then cloning the project repository
+
+[Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+a copy of the project repository into your own GitHub account then
+[clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+your copy of the project repository into your local machine. This
+requires a GitHub account and knowledge of git processes. This approach
+will give you a copy of the entire repository of which the `data`
+directory contains all the datasets listed above. This approach would be
+ideal for those who would like to access the datasets but also would
+like to potentially contribute to the source code for the curation of
+the datasets.
+
+### Manually download from GitHub
+
+Go to the project repository, then to the `data` directory and then
+select and click the dataset CSV file you want to download. On the upper
+right hand corner you will see an downward pointing arrow icon. Click on
+this icon to download the selected dataset CSV file.
+
+### Programmatically download from GitHub
+
+Using the data URL indicated in the table above, one can
+programmatically download the dataset of interest using your choice of
+programming tool.
+
+In Terminal:
+
+``` bash
+curl -OL https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age.csv
+```
+
+In R:
+
+``` r
+download.file(
+  url = "https://raw.githubusercontent.com/OxfordIHTM/seystats/refs/heads/main/data/births_by_age.csv"
+  destfile = "data/births_by_age.csv"
+)
+```
+
+In the release version of `seystats`, we will be distributing the
+datasets in repositories and archives that have more straightforward
+user interfaces for downloading the datasets.
 
 ## Repository Structure
 
@@ -154,8 +206,8 @@ The project repository is structured as follows:
   - `pdf/` contains PDF files downloaded by the workflow for data
     extraction.
 
-  - `R/` contains functions developed/created specifically for use in
-    this workflow.
+  - `R/` contains R functions developed/created specifically for use in
+    this project.
 
   - `renv/` contains `renv` package specific files and directories used
     by the package for maintaining R package dependencies within the
@@ -171,7 +223,7 @@ The project repository is structured as follows:
     project SQL database in DoltHub.
 
   - `_targets.R` file defines the steps in the workflow’s data ingest,
-    data processing, data analysis, and reporting pipeline.
+    data processing, data outputs, and reporting pipeline.
 
   - `.env` is an encrypted file that contains environment variables used
     in this project.
@@ -255,7 +307,7 @@ graph LR
     xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> xb5d471b223f71093["births_by_age"]:::skipped
     xd7ed52d5505f1301(["births_by_child_number_pages"]):::skipped --> xdb9387a71d9afb77["births_by_age_child_number"]:::skipped
     xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> xdb9387a71d9afb77["births_by_age_child_number"]:::skipped
-    xdb9387a71d9afb77["births_by_age_child_number"]:::skipped --> x37b1525401441d9f(["births_by_age_child_number_csv"]):::completed
+    xdb9387a71d9afb77["births_by_age_child_number"]:::skipped --> x37b1525401441d9f(["births_by_age_child_number_csv"]):::skipped
     xb5d471b223f71093["births_by_age"]:::skipped --> xbbabd51f8df64492(["births_by_age_csv"]):::skipped
     x39c53f3806f354bf(["births_by_district_pages"]):::skipped --> x4094d4f6d0f8f35a["births_by_age_district"]:::skipped
     xeea0ec396e5de5da(["population_endyear_bulletin_files"]):::skipped --> x4094d4f6d0f8f35a["births_by_age_district"]:::skipped
@@ -323,16 +375,34 @@ directory
 Rscript -e  "targets::tar_make()"
 ```
 
-## Collaborators
+## Authors, contributors, and collaborators
+
+### Authors
 
   - Prof. Proochista Ariana
+  - Dr. Aronrag Meeyai
+  - Dr. Sylvie Pool
   - Dr. Sanjeev Pugazhendhi
   - Ituen Williams-Umanah
   - Ned Rosalie
   - Keddy Woodcock
-  - Dr. Sylvie Pool
+
+The **Seychelles-Oxford Partnership**, from which this project came
+about, was made possible through the efforts of [Prof. Proochista
+Ariana](https://www.ndm.ox.ac.uk/team/proochista-ariana), [Dr. Aronrag
+Meeyai](https://www.tropicalmedicine.ox.ac.uk/team/aronrag-meeyai), and
+[Dr. Sylvie
+Pool](https://www.tropicalmedicine.ox.ac.uk/team/sylvie-pool). The
+original codebases from which this project was built on were written by
+[Dr. Sanjeev
+Pugazhendhi](https://www.linkedin.com/in/sanjeev-pugazhendhi), [Ituen
+Williams-Umanah](https://www.linkedin.com/in/williams-ituen-umanah-b10a8b233),
+Ned Rosalie, and Keddy Woodcock.
+
+### Contributors
+
   - Dr. Johanna Rapanarilala
-  - Dr. Giri Rajaram
+  - Dr. Giri Rajahram
   - Dr. Bushra Naz
   - Dr. Yih Seong Wong
   - Anita Makori
@@ -340,7 +410,33 @@ Rscript -e  "targets::tar_make()"
   - Neira Budiono
   - Dr. Nyasha Manyeruke
   - Dr. Ibrahim Ajami
-  - Dr. Ernest Guevarra
+
+This project would also not be possible without the contributions of
+[Dr. Johanna
+Rapanarilala](https://www.linkedin.com/in/johanna-rapanarilala-bb5520312/)
+who supervised and mentored several of the [University of
+Oxford](https://www.ox.ac.uk) [MSc in International Health and Tropical
+Medicine](https://www.tropicalmedicine.ox.ac.uk/study-with-us/msc-ihtm)
+who came to Seychelles for their study placement for their MSc and
+[Dr. Carine
+Asnong](https://www.tropicalmedicine.ox.ac.uk/team/carine-asnong) who
+contributed to teaching on research skills and data analysis for members
+of the Seychelles Ministry of Health. Finally, the feedback, insights,
+and learning gained from [Dr. Giri
+Rajahram](https://www.rstmh.org/dr-giri-rajahram), [Dr. Bushra
+Naz](https://www.linkedin.com/in/bushra-naz-983b801b6), [Dr. Yih Seong
+Wong](https://www.linkedin.com/in/yihseongwong), [Anita
+Makori](https://www.linkedin.com/in/anita-makori), [Dr. Jillian Francise
+Lee](https://www.linkedin.com/in/jillianfrancise), Neira Budiono,
+[Dr. Nyasha
+Manyeruke](https://www.linkedin.com/in/nyasha-manyeruke-63a466283/), and
+[Dr. Ibrahim
+Ajami](https://www.linkedin.com/in/dr-ibrahim-f-ajami-043508146/) -
+students who spent their study placement in Seychelles - contributed to
+identifying critical and priority datasets to include in this project.
+
+The project is currently maintained by [Ernest
+Guevarra](https://ernest.guevarra.io).
 
 ## License
 
@@ -350,6 +446,14 @@ license. All text in this project is released under a
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
 license. All data is released under a
 [CC0](https://creativecommons.org/public-domain/cc0/) license.
+
+## Citation
+
+If you use the data provided through `seystats` in your work/research,
+please cite `seystats` along with all the sources of data that were used
+for curating the data available herewith. The suggested appropriate
+citation metadata is provided in
+[CITATION.cff](https://github.com/OxfordIHTM/seystats/blob/main/CITATION.cff).
 
 ## Community guidelines
 
