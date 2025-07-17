@@ -32,3 +32,32 @@ all_targets <- function(env = parent.env(environment()),
   }
   return(out)
 }
+
+
+#'
+#' Get GitHub repository ID
+#' 
+#' @param repo Short remote git repository name for current project.
+#' 
+#' @returns An integer value for the GitHub repository ID.
+#' 
+#' @examples
+#' if (FALSE) get_gihtub_repository_id(repo = "katilingban/pakete")
+#' 
+#' @keywords internal
+#' 
+
+get_github_repository_id <- function(repo) {
+  ## Get repository ID ----
+  file.path("https://api.github.com/repos", repo) |>
+    jsonlite::fromJSON() |>
+    (\(x) x$id)()
+}
+
+
+  ## Set CodeFactor defaults ----
+  # badge <- paste0("https://zenodo.org/badge/", repo_id, ".svg")
+  # link <- paste0("https://zenodo.org/badge/latestdoi/", repo_id)
+
+  ## Create badge text ----
+  # badge_text <- paste0("[![DOI](", badge, ")](", link, ")")
