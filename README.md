@@ -50,14 +50,14 @@ ongoing capacity-building on data management and analysis related to
 research continued continued within the partnership.
 
 By 2025, three years on from the start of the partnership, very little
-has progressed and been implemented from these informal, ad hoc plans
-whilst the partnership continued to more research capacity-building
-focusing on other types of research skills (e.g. qualitative research),
-on student placement projects for University of Oxford Masters students,
-and other research efforts (e.g. cancer screening, cancer awareness,
-cancer quality-of-care). During this period and in all these activities,
-the same challenges and issues related to data identified in 2022 keep
-propping up.
+has progressed and has been implemented from these informal, ad hoc
+plans whilst the partnership continued to more research
+capacity-building focusing on other types of research skills
+(e.g. qualitative research), on student placement projects for
+University of Oxford Masters students, and other research efforts
+(e.g. cancer screening, cancer awareness, cancer quality-of-care).
+During this period and in all these activities, the same challenges and
+issues related to data identified in 2022 keep propping up.
 
 It is within this background that the `seystats` project is being
 (re-)launched. The current motivation is to try to get moving in a more
@@ -65,6 +65,50 @@ productive direction on the ideas generated in 2022 and to be able to
 demonstrate the stated advantages of data that is accessible,
 persistent, and machine-readable/machine-actionable to catalysing
 research efforts in Seychelles.
+
+## Current sources of data
+
+The project uses only officially-released publicly-available sources of
+data on Seychelles. Such data are primarily sourced from Seychelles
+government websites either as file downloads or data embedded onto the
+webpages themselves. Other sources are official government publications
+not released online.
+
+Currently, the available datasets from `seystats` are from the
+Seychelles [National Bureau of Statistics
+(NBS)](https://www.nbs.gov.sc/) which provides
+[downloads](https://www.nbs.gov.sc/downloads) of various official
+statistics for/about Seychelles. This current release includes data from
+the [NBS Statistical Bulletin on Population and Vital
+Statistics](https://www.nbs.gov.sc/downloads/).
+
+## Current available datasets
+
+The currently available datasets from the `seystats` project are listed
+and described in the table below.
+
+| Description                                                           | Frequency | Filename                                   |
+| :-------------------------------------------------------------------- | :-------- | :----------------------------------------- |
+| Registered births by age of mother and birth order                    | Yearly    | data/births\_by\_age\_child\_number.csv    |
+| Registered births by age of mother and mother’s district of residence | Yearly    | data/births\_by\_age\_district.csv         |
+| Registered births by age of mother                                    | Yearly    | data/births\_by\_age.csv                   |
+| Registered births by birth order                                      | Yearly    | data/births\_by\_child\_number.csv         |
+| Registered births by mother’s district of residence                   | Yearly    | data/births\_by\_district.csv              |
+| Registered births by month of birth registration                      | Yearly    | data/births\_by\_month.csv                 |
+| Registered births by sex of child                                     | Yearly    | data/births\_by\_sex.csv                   |
+| Registered births total                                               | Yearly    | data/births\_total.csv                     |
+| Registered deaths by age and sex                                      | Yearly    | data/deaths\_by\_age\_sex.csv              |
+| Registered deaths of infants total                                    | Yearly    | data/deaths\_infant\_total.csv             |
+| Registered deaths total                                               | Yearly    | data/deaths\_total.csv                     |
+| Population midyear by age and sex                                     | Yearly    | data/population\_midyear\_by\_age\_sex.csv |
+| Population midyear by age                                             | Yearly    | data/population\_midyear\_by\_age.csv      |
+| Population midyear by district of residence                           | Yearly    | data/population\_midyear\_by\_district.csv |
+| Population midyear total                                              | Yearly    | data/population\_midyear\_total.csv        |
+
+All available datasets can be found in the `data` folder of this
+repository. Other modes of distribution (e.g. Dolthub SQL database,
+Zenodo, Figshare, etc.) are currently in development and would be
+available soon.
 
 ## Repository Structure
 
@@ -98,8 +142,8 @@ The project repository is structured as follows:
 
   - `auth` contains encrypted authentication keys used in this project.
 
-  - `data/` contains intermediate and final data outputs produced by the
-    workflow.
+  - `data/` contains comma-separated value (CSV) files of the various
+    datasets curated by the project.
 
   - `maps/` contains Seychelles map data files downloaded by the
     workflow.
@@ -304,7 +348,7 @@ All code in this project is released under a
 [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text)
 license. All text in this project is released under a
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
-license. Data is released under a
+license. All data is released under a
 [CC0](https://creativecommons.org/public-domain/cc0/) license.
 
 ## Community guidelines
