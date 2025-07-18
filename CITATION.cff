@@ -35,7 +35,7 @@ title: "seystats: Curating Seychelles data and statistics from publicly-availabl
 version: 0.0.0.9000
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.489512741
+    value: 10.5281/zenodo.16061967
 date-released: 2025-07-17
 license:
   - GPL-3.0
