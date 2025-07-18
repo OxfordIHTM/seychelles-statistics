@@ -145,20 +145,20 @@ references:
       - name: "National Bureau of Statistics Seychelles"
     title: "Population and Vital Statistics December 2023"
     type: report
-    number: "Population 2024/1
+    number: "Population 2024/1"
     date: 2024-03-01
     url: https://www.nbs.gov.sc/downloads/1547-end-of-year-2023-population/viewdocument/1547
   - authors:
       - name: "National Bureau of Statistics Seychelles"
     title: "Mid-year 2024 Estimated Resident Population (ERP)"
     type: report
-    number: "Population 2024/2
+    number: "Population 2024/2"
     date: 2024-08-31
     url: https://www.nbs.gov.sc/downloads/1704-mid-2024-estimated-resident-population-revised/viewdocument/1704
   - authors:
       - name: "National Bureau of Statistics Seychelles"
     title: "Population and Vital Statistics December 2024"
     type: report
-    number: "Population 2025/1
+    number: "Population 2025/1"
     date: 2025-03-01
     url: https://www.nbs.gov.sc/downloads/1790-end-of-year-2024-population-revised/viewdocument/1790
