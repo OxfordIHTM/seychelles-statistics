@@ -2,7 +2,7 @@
 #' Extract births by child number
 #' 
 
-extract_births_by_child_number <- function(page, pdf) {
+extract_births_by_birth_order <- function(page, pdf) {
   year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
   df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
@@ -36,16 +36,16 @@ extract_births_by_child_number <- function(page, pdf) {
   df <- df |>
     tidyr::pivot_longer(
       cols = dplyr::everything(),
-      names_to = "child_number", values_to = "births"
+      names_to = "birth_order", values_to = "births"
     ) |>
     dplyr::mutate(
       births = ifelse(births == "-", 0, births) |>
         as.integer(),
-      child_number = factor(
-        x = child_number, levels = c(1:6, "+7", "Not Stated")
+      birth_order = factor(
+        x = birth_order, levels = c(1:6, "+7", "Not Stated")
       )
     ) |>
-    dplyr::mutate(year = as.integer(year), .before = child_number)
+    dplyr::mutate(year = as.integer(year), .before = birth_order)
 
   df
 }
