@@ -1,0 +1,164 @@
+cff-version: 1.2.0
+message: "If you use the data in the `seystats` project, please cite it as below."
+authors:
+  - family-names: Ariana
+    given-names: Proochista
+    orcid: https://orcid.org/0000-0002-0154-2237
+  - family-names: Pool
+    given-names: Sylvie
+    #orcid:   
+  - family-names: Meeyai
+    given-names: Aronrag
+    orcid: https://orcid.org/0000-0002-2359-1574
+  - family-names: Pugazhendhi
+    given-names: Sanjeev
+    #orcid:
+  - family-names: Ituen-Umanah
+    given-names: Williams
+    #orcid: 
+  - family-names: Rosalie
+    given-names: Ned
+    #orcid:
+  - family-names: Woodcock
+    given-names: Keddy
+    #orcid:
+  - family-names: Guevarra
+    given-names: Ernest
+    orcid: https://orcid.org/0000-0002-4887-4415
+  - name: "The Seychelles-Oxford Partnership"
+contact:
+  - affiliation: "University of Oxford MSc in International Health and Tropical Medicine"
+    email: ernest@guevarra.io
+    family-names: Guevarra
+    given-names: Ernest
+title: "seystats: Curating Seychelles data and statistics from publicly-available sources"
+version: 0.0.0.9000
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.489512741
+date-released: 2025-07-17
+license:
+  - GPL-3.0
+  - CC-BY-4.0
+  - CCO
+repository-code: https://github.com/OxfordIHTM/seystats
+references:
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2016"
+    type: report
+    number: "Population 2017/1"
+    date: 2017-03-31
+    url: https://www.nbs.gov.sc/downloads/104-population-and-vital-statistics-2017-1/viewdocument/104
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics Mid-year Population Estimates 2017"
+    type: report
+    number: "Population 2017/2"
+    date: 2017-08-31
+    url: https://www.nbs.gov.sc/downloads/202-population-and-vital-statistics-2017-2/viewdocument/202
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2017"
+    type: report
+    number: "Population 2018/1"
+    date: 2018-03-29
+    url: https://www.nbs.gov.sc/downloads/428-population-vital-statistics-2018-1/viewdocument/428
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics Mid-year Population Estimates 2018"
+    type: report
+    number: "Population 2018/2"
+    date: 2018-08-31
+    url: https://www.nbs.gov.sc/downloads/449-population-vital-statistics-2018-2/viewdocument/449
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2018"
+    type: report
+    number: "Population 2019/1"
+    date: 2019-03-29
+    url: https://www.nbs.gov.sc/downloads/595-end-2018-population-bulletin/viewdocument/595
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics Mid-year Popuation Estimates 2019"
+    type: report
+    number: "Population 2019/2"
+    date: 2019-08-30
+    url: https://www.nbs.gov.sc/downloads/686-mid-2019-population-bulletin/viewdocument/686
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2019"
+    type: report
+    number: "Population 2020/1"
+    date: 2020-03-31
+    url: https://www.nbs.gov.sc/downloads/819-end-2019-population-bulletin/viewdocument/819
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics Mid-year Popuation Estimates 2020"
+    type: report
+    number: "Population 2020/2"
+    date: 2019-08-31
+    url: https://www.nbs.gov.sc/downloads/886-mid-2020-population-bulletin/viewdocument/886
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2020"
+    type: report
+    number: "Population 2021/1"
+    date: 2021-03-31
+    url: https://www.nbs.gov.sc/downloads/1004-end-2020-population-bulletin/viewdocument/1004
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics Mid-year Popuation Estimates 2021"
+    type: report
+    number: "Population 2021/2"
+    date: 2021-08-31
+    url: https://www.nbs.gov.sc/downloads/1082-mid-2021-population-estimates/viewdocument/1082
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2021"
+    type: report
+    number: "Population 2022/1"
+    date: 2022-03-31
+    url: https://www.nbs.gov.sc/downloads/1201-end-2021-population-bulletin/viewdocument/1201
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics 2022"
+    type: report
+    number: "Population 2022/2"
+    date: 2022-08-31
+    url: https://www.nbs.gov.sc/downloads/1279-population-abridged-version/viewdocument/1279
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Special Release Edition Population and Vital Statistics Mid-year Estimatated Resident Population (ERP) and Demographics Indicators 2022"
+    type: report
+    number: "Population 2023/1"
+    date: 2023-06-06
+    url: https://www.nbs.gov.sc/downloads/1420-mid-2022-estimated-resident-population-special-edition/viewdocument/1420
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Mid-year 2023 Estimated Resident Population (ERP)"
+    type: report
+    number: "Population 2023/2"
+    date: 2023-08-31
+    url: https://www.nbs.gov.sc/downloads/1476-mid-2023-estimated-resident-population/viewdocument/1476
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2023"
+    type: report
+    number: "Population 2024/1
+    date: 2024-03-01
+    url: https://www.nbs.gov.sc/downloads/1547-end-of-year-2023-population/viewdocument/1547
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Mid-year 2024 Estimated Resident Population (ERP)"
+    type: report
+    number: "Population 2024/2
+    date: 2024-08-31
+    url: https://www.nbs.gov.sc/downloads/1704-mid-2024-estimated-resident-population-revised/viewdocument/1704
+  - authors:
+      - name: "National Bureau of Statistics Seychelles"
+    title: "Population and Vital Statistics December 2024"
+    type: report
+    number: "Population 2025/1
+    date: 2025-03-01
+    url: https://www.nbs.gov.sc/downloads/1790-end-of-year-2024-population-revised/viewdocument/1790
