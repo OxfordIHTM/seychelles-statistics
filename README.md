@@ -1,5 +1,5 @@
 
-# seystats: Curating Seychelles data and statistics from publicly-available sources
+# seystats: Curating Seychelles data and statistics from publicly-available sources <img src="handbook/images/seystats.jpeg" width="300" align="right" />
 
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
