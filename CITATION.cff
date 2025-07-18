@@ -37,10 +37,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.16061967
 date-released: 2025-07-17
-license:
-  - GPL-3.0
-  - CC-BY-4.0
-  - CCO-1.0
+license: GPL-3.0
 repository-code: https://github.com/OxfordIHTM/seystats
 references:
   - authors:
