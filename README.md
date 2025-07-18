@@ -4,7 +4,7 @@
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![seystats](https://img.shields.io/badge/version-0.0.0.9002-orange)
+![seystats](https://img.shields.io/badge/version-0.0.0.9003-orange)
 [![License for
 code](https://img.shields.io/badge/license%20\(for%20code\)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for
@@ -375,7 +375,7 @@ directory
 Rscript -e  "targets::tar_make()"
 ```
 
-## Authors, contributors, and collaborators
+## Authors and contributors
 
 ### Authors
 
