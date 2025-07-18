@@ -4,7 +4,7 @@
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![seystats](https://img.shields.io/badge/version-0.0.0.9002-orange)
+![seystats](https://img.shields.io/badge/version-0.0.0.9003-orange)
 [![License for
 code](https://img.shields.io/badge/license%20\(for%20code\)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for
@@ -375,7 +375,7 @@ directory
 Rscript -e  "targets::tar_make()"
 ```
 
-## Authors, contributors, and collaborators
+## Authors and contributors
 
 ### Authors
 
@@ -442,6 +442,29 @@ identifying critical and priority datasets to include in this project.
 
 The project is currently maintained by [Ernest
 Guevarra](https://ernest.guevarra.io).
+
+## Disclaimer
+
+This project is an independent effort by members of the
+**Seychelles-Oxford Partnership** in support of group and individual
+data needs and goals. This project is not a recognised project by the
+Seychelles government or of the ministries/agencies from which our
+Seychellois colleagues are affiliated with. Any issues or problems
+arising from the `seystats` datasets or from participating or
+contributing to the development of this project are the responsibility
+of the authors and maintainers of this project and should be addressed
+to them accordingly and not to the ministries/agencies/organisations
+from which the data has been made available from.
+
+This effort is aimed to serve as an example of how data can be curated
+and managed in a manner that is effective, efficient,
+machine-actionable, and analysis-ready using widely-available and open
+source tools. Given the open source nature of this project, it is our
+hope that the project can either be handed over to relevant and official
+entities within Seychelles to continue its upkeep and maintenance or
+that this becomes a basis for official efforts within Seychelles to
+streamline and make more effective and efficient its data curation and
+management processes.
 
 ## License
 
