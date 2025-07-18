@@ -443,6 +443,29 @@ identifying critical and priority datasets to include in this project.
 The project is currently maintained by [Ernest
 Guevarra](https://ernest.guevarra.io).
 
+## Disclaimer
+
+This project is an independent effort by members of the
+**Seychelles-Oxford Partnership** in support of group and individual
+data needs and goals. This project is not a recognised project by the
+Seychelles government or of the ministries/agencies from which our
+Seychellois colleagues are affiliated with. Any issues or problems
+arising from the `seystats` datasets or from participating or
+contributing to the development of this project are the responsibility
+of the authors and maintainers of this project and should be addressed
+to them accordingly and not to the ministries/agencies/organisations
+from which the data has been made available from.
+
+This effort is aimed to serve as an example of how data can be curated
+and managed in a manner that is effective, efficient,
+machine-actionable, and analysis-ready using widely-available and open
+source tools. Given the open source nature of this project, it is our
+hope that the project can either be handed over to relevant and official
+entities within Seychelles to continue its upkeep and maintenance or
+that this becomes a basis for official efforts within Seychelles to
+streamline and make more effective and efficient its data curation and
+management processes.
+
 ## License
 
 All code in this project is released under a
