@@ -4,7 +4,7 @@
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![seystats](https://img.shields.io/badge/version-0.0.0.9001-orange)
+![seystats](https://img.shields.io/badge/version-0.0.0.9002-orange)
 [![License for
 code](https://img.shields.io/badge/license%20\(for%20code\)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for
@@ -402,6 +402,8 @@ Ned Rosalie, and Keddy Woodcock.
 ### Contributors
 
   - Dr. Johanna Rapanarilala
+  - Dr. Carine Asnong
+  - Prof. Bruno Holthof
   - Dr. Giri Rajahram
   - Dr. Bushra Naz
   - Dr. Yih Seong Wong
@@ -419,10 +421,13 @@ Oxford](https://www.ox.ac.uk) [MSc in International Health and Tropical
 Medicine](https://www.tropicalmedicine.ox.ac.uk/study-with-us/msc-ihtm)
 who came to Seychelles for their study placement for their MSc and
 [Dr. Carine
-Asnong](https://www.tropicalmedicine.ox.ac.uk/team/carine-asnong) who
-contributed to teaching on research skills and data analysis for members
-of the Seychelles Ministry of Health. Finally, the feedback, insights,
-and learning gained from [Dr. Giri
+Asnong](https://www.tropicalmedicine.ox.ac.uk/team/carine-asnong) and
+[Prof. Bruno
+Holthof](https://www.tropicalmedicine.ox.ac.uk/team/bruno-holthof) who
+have contributed to teaching on research skills, data analysis, and
+healthcare management and quality of care for members of the [Seychelles
+Ministry of Health](https://www.health.gov.sc/). Finally, the feedback,
+insights, and learning gained from [Dr. Giri
 Rajahram](https://www.rstmh.org/dr-giri-rajahram), [Dr. Bushra
 Naz](https://www.linkedin.com/in/bushra-naz-983b801b6), [Dr. Yih Seong
 Wong](https://www.linkedin.com/in/yihseongwong), [Anita

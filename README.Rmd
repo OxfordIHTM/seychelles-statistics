@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 # seystats: Curating Seychelles data and statistics from publicly-available sources
 
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![seystats](https://img.shields.io/badge/version-0.0.0.9001-orange)
+![seystats](https://img.shields.io/badge/version-0.0.0.9002-orange)
 [![License for code](https://img.shields.io/badge/license (for code)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for text](https://img.shields.io/badge/license (for writing)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 [![License for data](https://img.shields.io/badge/license (for data)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
@@ -250,6 +250,8 @@ The **Seychelles-Oxford Partnership**, from which this project came about, was m
 ### Contributors
 
 * Dr. Johanna Rapanarilala
+* Dr. Carine Asnong
+* Prof. Bruno Holthof
 * Dr. Giri Rajahram
 * Dr. Bushra Naz
 * Dr. Yih Seong Wong
@@ -259,7 +261,7 @@ The **Seychelles-Oxford Partnership**, from which this project came about, was m
 * Dr. Nyasha Manyeruke
 * Dr. Ibrahim Ajami
 
-This project would also not be possible without the contributions of [Dr. Johanna Rapanarilala](https://www.linkedin.com/in/johanna-rapanarilala-bb5520312/) who supervised and mentored several of the [University of Oxford](https://www.ox.ac.uk) [MSc in International Health and Tropical Medicine](https://www.tropicalmedicine.ox.ac.uk/study-with-us/msc-ihtm) who came to Seychelles for their study placement for their MSc and [Dr. Carine Asnong](https://www.tropicalmedicine.ox.ac.uk/team/carine-asnong) who contributed to teaching on research skills and data analysis for members of the Seychelles Ministry of Health. Finally, the feedback, insights, and learning gained from [Dr. Giri Rajahram](https://www.rstmh.org/dr-giri-rajahram), [Dr. Bushra Naz](https://www.linkedin.com/in/bushra-naz-983b801b6), [Dr. Yih Seong Wong](https://www.linkedin.com/in/yihseongwong), [Anita Makori](https://www.linkedin.com/in/anita-makori), [Dr. Jillian Francise Lee](https://www.linkedin.com/in/jillianfrancise), Neira Budiono, [Dr. Nyasha Manyeruke](https://www.linkedin.com/in/nyasha-manyeruke-63a466283/), and [Dr. Ibrahim Ajami](https://www.linkedin.com/in/dr-ibrahim-f-ajami-043508146/) - students who spent their study placement in Seychelles - contributed to identifying critical and priority datasets to include in this project.
+This project would also not be possible without the contributions of [Dr. Johanna Rapanarilala](https://www.linkedin.com/in/johanna-rapanarilala-bb5520312/) who supervised and mentored several of the [University of Oxford](https://www.ox.ac.uk) [MSc in International Health and Tropical Medicine](https://www.tropicalmedicine.ox.ac.uk/study-with-us/msc-ihtm) who came to Seychelles for their study placement for their MSc and [Dr. Carine Asnong](https://www.tropicalmedicine.ox.ac.uk/team/carine-asnong) and [Prof. Bruno Holthof](https://www.tropicalmedicine.ox.ac.uk/team/bruno-holthof) who have contributed to teaching on research skills, data analysis, and healthcare management and quality of care for members of the [Seychelles Ministry of Health](https://www.health.gov.sc/). Finally, the feedback, insights, and learning gained from [Dr. Giri Rajahram](https://www.rstmh.org/dr-giri-rajahram), [Dr. Bushra Naz](https://www.linkedin.com/in/bushra-naz-983b801b6), [Dr. Yih Seong Wong](https://www.linkedin.com/in/yihseongwong), [Anita Makori](https://www.linkedin.com/in/anita-makori), [Dr. Jillian Francise Lee](https://www.linkedin.com/in/jillianfrancise), Neira Budiono, [Dr. Nyasha Manyeruke](https://www.linkedin.com/in/nyasha-manyeruke-63a466283/), and [Dr. Ibrahim Ajami](https://www.linkedin.com/in/dr-ibrahim-f-ajami-043508146/) - students who spent their study placement in Seychelles - contributed to identifying critical and priority datasets to include in this project.
 
 The project is currently maintained by [Ernest Guevarra](https://ernest.guevarra.io).
 
