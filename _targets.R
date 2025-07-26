@@ -40,9 +40,40 @@ data_download_targets <- tar_plan(
   population_endyear_bulletin_files = get_end_population_file_path(
     population_bulletin_download_files
   ),
-  population_midyear_bulletin_pages = c(8, 10, 10, 10, 11, 12, 10, 10),
-  population_midyear_bulletin_district_pages = c(14, 16, 17, 17, 18, 14, 14, 13),
-  deaths_endyear_pages = c(11, 14, 12, 14, 14, 16, 15, 18),
+  tar_target(
+    name = population_midyear_bulletin_text,
+    command = get_bulletin_text(population_midyear_bulletin_files),
+    pattern = map(population_midyear_bulletin_files)
+  ),
+  tar_target(
+    name = population_endyear_bulletin_text,
+    command = get_bulletin_text(population_endyear_bulletin_files),
+    pattern = map(population_endyear_bulletin_files)
+  ),
+  tar_target(
+    name = population_midyear_bulletin_pages,
+    command = find_table_page_pop(
+      bulletin_text = population_midyear_bulletin_text
+    ),
+    pattern = map(population_midyear_bulletin_text)
+  ),
+  tar_target(
+    name = population_midyear_bulletin_district_pages,
+    command = find_table_page_pop_district(
+      bulletin_text = population_midyear_bulletin_text
+    ),
+    pattern = map(population_midyear_bulletin_text)
+  ),
+  tar_target(
+    name = deaths_endyear_pages,
+    command = find_table_page_death(
+      bulletin_text = population_endyear_bulletin_text
+    ),
+    pattern = map(population_endyear_bulletin_text)
+  ),
+  #population_midyear_bulletin_pages = c(8, 10, 10, 10, 11, 12, 10, 10),
+  #population_midyear_bulletin_district_pages = c(14, 16, 17, 17, 18, 14, 14, 13),
+  #deaths_endyear_pages = c(11, 14, 12, 14, 14, 16, 15, 18),
   births_endyear_pages = c(5, 7, 5, 7, 7, 7, 5, 6),
   births_endyear_monthly_pages = c(7, 10, 8, 10, 10, 11, 10, 11),
   births_by_district_pages = c(9, 12, 10, 12, 12, 13, 12, 13),
@@ -80,34 +111,34 @@ data_extraction_targets <- tar_plan(
   tar_target(
     name = population_midyear_by_age_sex,
     command = extract_midyear_pop(
-      pdf = population_midyear_bulletin_files,
+      bulletin_text = population_midyear_bulletin_text,
       page = population_midyear_bulletin_pages,
       total = FALSE
     ),
     pattern = map(
-      population_midyear_bulletin_files, population_midyear_bulletin_pages
+      population_midyear_bulletin_text, population_midyear_bulletin_pages
     )
   ),
   tar_target(
     name = population_midyear_by_age,
     command = extract_midyear_pop(
-      pdf = population_midyear_bulletin_files,
+      bulletin_text = population_midyear_bulletin_text,
       page = population_midyear_bulletin_pages,
       total = TRUE
     ),
     pattern = map(
-      population_midyear_bulletin_files, population_midyear_bulletin_pages
+      population_midyear_bulletin_text, population_midyear_bulletin_pages
     )
   ),
   tar_target(
     name = population_midyear_by_district,
     command = extract_midyear_pop_district(
-      pdf = population_midyear_bulletin_files,
+      bulletin_text = population_midyear_bulletin_text,
       page = population_midyear_bulletin_district_pages,
       ref_map = map_adm3
     ),
     pattern = map(
-      population_midyear_bulletin_files, 
+      population_midyear_bulletin_text, 
       population_midyear_bulletin_district_pages
     )
   ),

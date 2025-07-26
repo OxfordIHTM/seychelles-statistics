@@ -2,10 +2,11 @@
 #' Extract per district midyear population
 #' 
 
-extract_midyear_pop_district <- function(pdf, page, ref_map) {
-  year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
+extract_midyear_pop_district <- function(bulletin_text, page, ref_map) {
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}")
 
-  df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
+  df_text <- bulletin_text[[1]]
 
   df <- df_text |>
     (\(x) x[[page]])() |>
