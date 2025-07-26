@@ -2,10 +2,11 @@
 #' Extract end year deaths by age and sex
 #' 
 
-extract_endyear_deaths <- function(pdf, page, total = FALSE) {
-  year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
+extract_endyear_deaths <- function(bulletin_text, page, total = FALSE) {
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}")
 
-  df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
+  df_text <- bulletin_text[[1]]
 
   df <- df_text |>
     (\(x) x[[page]])() |>
