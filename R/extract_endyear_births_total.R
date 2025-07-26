@@ -11,10 +11,8 @@ extract_endyear_pop_births_deaths_total <- function(bulletin_text, page,
 
   year <- names(bulletin_text) |>
     stringr::str_extract(pattern = "[0-9]{4}")
-  #year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
   df_text <- bulletin_text[[1]]
-  #df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
 
   df <- df_text |>
     (\(x) x[[page]])() |>
@@ -22,7 +20,6 @@ extract_endyear_pop_births_deaths_total <- function(bulletin_text, page,
     unlist()
 
   start_line <- grep(pattern = "^[0-9]{4}", x = df) |> min()
-  #end_line <- grep(pattern = "^Source", x = df)
   end_line <- grep(pattern = "^[0-9]{4}", x = df) |> max()
 
   df <- df |>

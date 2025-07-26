@@ -2,10 +2,11 @@
 #' Extract births by child number
 #' 
 
-extract_births_by_birth_order <- function(page, pdf) {
-  year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
+extract_births_by_birth_order <- function(bulletin_text, page) {
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}")
 
-  df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
+  df_text <- bulletin_text[[1]]
 
   df <- df_text |>
     (\(x) x[[page]])() |>
