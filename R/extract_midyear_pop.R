@@ -2,10 +2,11 @@
 #' Extract midyear population from PDF files
 #' 
 
-extract_midyear_pop <- function(pdf, page, total = FALSE) {
-  year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
+extract_midyear_pop <- function(bulletin_text, page, total = FALSE) {
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}")
 
-  df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
+  df_text <- bulletin_text[[1]]
 
   df <- df_text |>
     (\(x) x[[page]])() |>
