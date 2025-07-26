@@ -58,3 +58,14 @@ find_table_page_birth_month <- function(bulletin_text) {
   grep(pattern = pattern, x = bulletin_text[[1]]) |>
     (\(x) x[index])()
 }
+
+
+find_table_page_birth_district <- function(bulletin_text) {
+  pattern <- "BIRTHS BY DISTRICT OF RESIDENCE"
+
+  index <- grep(pattern = pattern, x = bulletin_text[[1]], value = TRUE) |>
+    grep(pattern = "SEYCHELLOIS", invert = TRUE)
+
+  grep(pattern = pattern, x = bulletin_text[[1]]) |>
+    (\(x) x[index])()
+}

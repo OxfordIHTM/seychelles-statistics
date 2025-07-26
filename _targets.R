@@ -85,12 +85,19 @@ data_download_targets <- tar_plan(
     ),
     pattern = map(population_endyear_bulletin_text)
   ),
+  tar_target(
+    name = births_by_district_pages,
+    command = find_table_page_birth_district(
+      bulletin_text = population_endyear_bulletin_text
+    ),
+    pattern = map(population_endyear_bulletin_text)
+  ),
   #population_midyear_bulletin_pages = c(8, 10, 10, 10, 11, 12, 10, 10),
   #population_midyear_bulletin_district_pages = c(14, 16, 17, 17, 18, 14, 14, 13),
   #deaths_endyear_pages = c(11, 14, 12, 14, 14, 16, 15, 18),
   #births_endyear_pages = c(5, 7, 5, 7, 7, 7, 5, 6),
   #births_endyear_monthly_pages = c(7, 10, 8, 10, 10, 11, 10, 11),
-  births_by_district_pages = c(9, 12, 10, 12, 12, 13, 12, 13),
+  #births_by_district_pages = c(9, 12, 10, 12, 12, 13, 12, 13),
   births_by_birth_order_pages = c(8, 11, 9, 11, 11, 12, 11, 12)
 )
 
@@ -217,11 +224,11 @@ data_extraction_targets <- tar_plan(
   tar_target(
     name = births_by_district,
     command = extract_births_by_district(
-      pdf = population_endyear_bulletin_files,
+      bulletin_text = population_endyear_bulletin_text,
       page = births_by_district_pages
     ),
     pattern = map(
-      population_endyear_bulletin_files, births_by_district_pages
+      population_endyear_bulletin_text, births_by_district_pages
     )
   ),
   tar_target(
