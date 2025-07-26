@@ -4,7 +4,7 @@
 
 extract_midyear_pop_district <- function(bulletin_text, page, ref_map) {
   year <- names(bulletin_text) |>
-    stringr::str_extract(pattern = "[0-9]{4}")
+    stringr::str_extract(pattern = "[0-9]{4}$")
 
   df_text <- bulletin_text[[1]]
 
@@ -27,11 +27,37 @@ extract_midyear_pop_district <- function(bulletin_text, page, ref_map) {
     (\(x) x[stringr::str_detect(string = x, pattern = "Total", negate = TRUE)])() |>
     (\(x) x[x != ""])() |>
     stringr::str_split(pattern = ",", simplify = TRUE) |>
-    data.frame() |>
-    (\(x) x[ , c(1, ncol(x))])() |>
-    setNames(nm = c("district", "population"))
+    data.frame() 
+  
+  if (year == 2017) {
+    df <- df |>
+      setNames(nm = c("district", 2010, 2013:2017)) 
 
-  if (any(c("Perseverance", "Ile Perseverance") %in% df$district)) {
+    if (!"Ile Perseverance" %in% df$district) {
+      df <- rbind(
+        df, 
+        data.frame(
+          district = "Ile Perseverance", rbind(rep(NA_character_, 6))
+        ) |>
+          setNames(nm = c("district", 2010, 2013:2017))
+      )
+    }
+    
+    df <- df |>
+      tidyr::pivot_longer(
+        cols = dplyr::matches(match = "[0-9]{4}"), 
+        names_to = "year", values_to = "population"
+      ) |>
+      dplyr::relocate(year, .before = district) |>
+      dplyr::arrange(year)
+  } else {
+   df <- df |>
+     (\(x) x[ , c(1, ncol(x))])() |>
+     setNames(nm = c("district", "population")) |>
+     dplyr::mutate(year = as.character(year), .before = district)
+  }
+  
+  if (any(c("Perseverance", "Ile Perseverance") %in% df$district) & year != 2017) {
     perseverance <- df_text |>
       (\(x) x[[page]])() |>
       stringr::str_split(pattern = "\n") |>
@@ -73,7 +99,9 @@ extract_midyear_pop_district <- function(bulletin_text, page, ref_map) {
       dplyr::mutate(population = ifelse(district == "Inner Islands", la_digue, population))
   }
 
-  df <- df[df$population != "", ]
+  if (year != 2017) {
+    df <- df[df$population != "", ]
+  }
 
   df <- df |>
     dplyr::mutate(
@@ -90,12 +118,6 @@ extract_midyear_pop_district <- function(bulletin_text, page, ref_map) {
 
   df <- df |>
     dplyr::mutate(population = as.integer(population))
-  
-  if (!"Ile Perseverance" %in% df$district) {
-    df <- rbind(
-      df, data.frame(district = "Ile Perseverance", population = NA_integer_)
-    )
-  }
 
   df <- df |>
     dplyr::mutate(
@@ -119,12 +141,12 @@ extract_midyear_pop_district <- function(bulletin_text, page, ref_map) {
     dplyr::relocate(district:population, .after = ADM3_PCODE) |>
     setNames(
       nm = c(
-        "island", "island_code", "region", "region_code", 
+        "year", "island", "island_code", "region", "region_code", 
         "district_code", "district", "population"
       )
     ) |>
     dplyr::relocate(district, .before = district_code) |>
-    dplyr::mutate(year = as.character(year), .before = island) |>
+    dplyr::relocate(year, .before = island) |>
     dplyr::mutate(population = as.integer(population)) |>
     dplyr::arrange(year, island_code, region_code, district_code)
 
