@@ -2,10 +2,13 @@
 #' Extract endyear births by sex
 #' 
 
-extract_endyear_births_by_sex <- function(page, pdf) {
-  year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
+extract_endyear_births_by_sex <- function(bulletin_text, page) {
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}")
+  #year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
-  df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
+  df_text <- bulletin_text[[1]]
+  #df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
 
   df <- df_text |>
     (\(x) x[[page]])() |>

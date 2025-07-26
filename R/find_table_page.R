@@ -37,3 +37,24 @@ find_table_page_death <- function(bulletin_text) {
   grep(pattern = pattern, x = bulletin_text[[1]]) |>
     (\(x) x[index])()
 }
+
+
+find_table_page_birth <- function(bulletin_text) {
+  pattern <- "REGISTERED BIRTHS AND DEATHS|KEY DEMOGRAPHIC INDICATORS"
+
+  index <- grep(pattern = pattern, x = bulletin_text[[1]], value = TRUE) |>
+    grep(pattern = "SEYCHELLOIS", invert = TRUE)
+
+  grep(pattern = pattern, x = bulletin_text[[1]]) |>
+    (\(x) x[index])()
+}
+
+find_table_page_birth_month <- function(bulletin_text) {
+  pattern <- "REGISTERED LIVE BIRTHS BY YEAR, MONTH OF REGISTRATION"
+
+  index <- grep(pattern = pattern, x = bulletin_text[[1]], value = TRUE) |>
+    grep(pattern = "SEYCHELLOIS", invert = TRUE)
+
+  grep(pattern = pattern, x = bulletin_text[[1]]) |>
+    (\(x) x[index])()
+}
