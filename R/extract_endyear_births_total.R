@@ -2,16 +2,19 @@
 #' Extract endyear births and deaths
 #' 
 
-extract_endyear_pop_births_deaths_total <- function(page, pdf, 
+extract_endyear_pop_births_deaths_total <- function(bulletin_text, page, 
                                                     type = c("population",
                                                              "births",
                                                              "deaths_all",
                                                              "deaths_infant")) {
   type <- match.arg(type)
 
-  year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}")
+  #year <- stringr::str_extract(string = pdf, pattern = "[0-9]{4}")
 
-  df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
+  df_text <- bulletin_text[[1]]
+  #df_text <- suppressMessages(pdftools::pdf_text(pdf = pdf))
 
   df <- df_text |>
     (\(x) x[[page]])() |>
