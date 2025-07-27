@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 # seystats: Curating Seychelles data and statistics from publicly-available sources <img src="https://github.com/OxfordIHTM/seystats-handbook/blob/a8e8a2d0055cd44ba5afc93fd557cc98306241cb/images/seystats.jpeg" width="300" align="right" />
 
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![seystats](https://img.shields.io/badge/version-0.0.0.9003-orange)
+![seystats](https://img.shields.io/badge/version-0.0.0.9004-orange)
 [![License for code](https://img.shields.io/badge/license (for code)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for text](https://img.shields.io/badge/license (for writing)-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 [![License for data](https://img.shields.io/badge/license (for data)-CC0-blue)](https://creativecommons.org/public-domain/cc0/)
