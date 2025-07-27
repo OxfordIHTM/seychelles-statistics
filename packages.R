@@ -1,10 +1,4 @@
-################################################################################
-#
-#'
-#' General packages needed for a targets workflow
-#'
-#
-################################################################################
+# General packages needed for a targets workflow
 
 library(targets)
 library(tarchetypes)
@@ -16,26 +10,13 @@ library(tibble)
 library(dplyr)
 
 
-################################################################################
-#
-#'
-#' Spatial packages
-#'
-#
-################################################################################
+# Spatial packages
 
 library(sf)
 library(raster)
 library(mapboxapi)
 
 
-################################################################################
-#
-#'
-#' PDF handlers
-#'
-#
-################################################################################
+# PDF handlers
 
-#library(tabulizer)
 library(pdftools)

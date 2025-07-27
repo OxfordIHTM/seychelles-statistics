@@ -4,7 +4,7 @@
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![seystats](https://img.shields.io/badge/version-0.0.0.9003-orange)
+![seystats](https://img.shields.io/badge/version-0.0.0.9004-orange)
 [![License for
 code](https://img.shields.io/badge/license%20\(for%20code\)-GPL3.0-blue.svg)](https://opensource.org/licenses/gpl-3.0.html)
 [![License for
@@ -308,14 +308,14 @@ graph LR
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> xb5d471b223f71093["births_by_age"]:::skipped
     x98cd2c1d9abf872a["births_by_birth_order_pages"]:::skipped --> xfccd4550cd074700["births_by_age_birth_order"]:::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> xfccd4550cd074700["births_by_age_birth_order"]:::skipped
-    xfccd4550cd074700["births_by_age_birth_order"]:::skipped --> x0c11dddedf200cf6(["births_by_age_birth_order_csv"]):::completed
-    xb5d471b223f71093["births_by_age"]:::skipped --> xbbabd51f8df64492(["births_by_age_csv"]):::completed
+    xfccd4550cd074700["births_by_age_birth_order"]:::skipped --> x0c11dddedf200cf6(["births_by_age_birth_order_csv"]):::skipped
+    xb5d471b223f71093["births_by_age"]:::skipped --> xbbabd51f8df64492(["births_by_age_csv"]):::skipped
     x39c53f3806f354bf["births_by_district_pages"]:::skipped --> x4094d4f6d0f8f35a["births_by_age_district"]:::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x4094d4f6d0f8f35a["births_by_age_district"]:::skipped
-    x4094d4f6d0f8f35a["births_by_age_district"]:::skipped --> x11faadcda3280dc2(["births_by_age_district_csv"]):::completed
+    x4094d4f6d0f8f35a["births_by_age_district"]:::skipped --> x11faadcda3280dc2(["births_by_age_district_csv"]):::skipped
     x98cd2c1d9abf872a["births_by_birth_order_pages"]:::skipped --> x8f0b9b44ecb1c0ea["births_by_birth_order"]:::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x8f0b9b44ecb1c0ea["births_by_birth_order"]:::skipped
-    x8f0b9b44ecb1c0ea["births_by_birth_order"]:::skipped --> x516b8a2e1c1f1ca7(["births_by_birth_order_csv"]):::completed
+    x8f0b9b44ecb1c0ea["births_by_birth_order"]:::skipped --> x516b8a2e1c1f1ca7(["births_by_birth_order_csv"]):::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x98cd2c1d9abf872a["births_by_birth_order_pages"]:::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x0c2c53d9eeb365ed["births_by_district"]:::skipped
     x39c53f3806f354bf["births_by_district_pages"]:::skipped --> x0c2c53d9eeb365ed["births_by_district"]:::skipped
@@ -332,9 +332,9 @@ graph LR
     xe648a7801cd2da2c["births_endyear_pages"]:::skipped --> x2f4500c2756065a9["births_total"]:::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x2f4500c2756065a9["births_total"]:::skipped
     x2f4500c2756065a9["births_total"]:::skipped --> xd95928afea598d8e(["births_total_csv"]):::skipped
-    x344a2780ffaeb7bd["deaths_endyear_pages"]:::skipped --> xae333981c466810a["deaths_by_age_sex"]:::completed
-    x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> xae333981c466810a["deaths_by_age_sex"]:::completed
-    xae333981c466810a["deaths_by_age_sex"]:::completed --> xaf8165dda7ea936b(["deaths_by_age_sex_csv"]):::completed
+    x344a2780ffaeb7bd["deaths_endyear_pages"]:::skipped --> xae333981c466810a["deaths_by_age_sex"]:::skipped
+    x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> xae333981c466810a["deaths_by_age_sex"]:::skipped
+    xae333981c466810a["deaths_by_age_sex"]:::skipped --> xaf8165dda7ea936b(["deaths_by_age_sex_csv"]):::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x344a2780ffaeb7bd["deaths_endyear_pages"]:::skipped
     x068156701a18b444["population_endyear_bulletin_text"]:::skipped --> x1d5c00f1e4e41ab7["deaths_infant_total"]:::skipped
     xe648a7801cd2da2c["births_endyear_pages"]:::skipped --> x1d5c00f1e4e41ab7["deaths_infant_total"]:::skipped
