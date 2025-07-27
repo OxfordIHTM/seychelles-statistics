@@ -3,7 +3,8 @@
 #' 
 
 extract_births_by_age_birth_order <- function(bulletin_text, page) {
-  year <- names(bulletin_text)
+  year <- names(bulletin_text) |>
+    stringr::str_extract(pattern = "[0-9]{4}$")
 
   df_text <- bulletin_text[[1]]
 

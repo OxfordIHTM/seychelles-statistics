@@ -4,7 +4,7 @@
 
 extract_endyear_deaths <- function(bulletin_text, page, total = FALSE) {
   year <- names(bulletin_text) |>
-    stringr::str_extract(pattern = "[0-9]{4}")
+    stringr::str_extract(pattern = "[0-9]{4}$")
 
   df_text <- bulletin_text[[1]]
 
